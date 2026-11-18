@@ -18,3 +18,14 @@ Running (background)
 Next
 - HPC: probe clusters, deploy prompts, smoke-test LLM judges on fir/rorqual/narval, choose full allocation from measured throughput.
 - Local: SHIFT execution over gold + resolved panel patches; injection study; cost ablations.
+
+## 2026-11-17 (end of session 1)
+Done
+- All measurements complete: RQ1 (46 systems, 23,454 patch rows; trajectories for 7 panel systems), SHIFT triage of 1,676 patches (1,674 valid), 500 injections, 25,245 + 8,415 LLM-judge responses (11.6 GPU-h on Rorqual/Narval; Fir unavailable), regression confirmation for all records.
+- Manuscript fully regenerated from results (`analysis/make_tex.py`); revised after author feedback (new intro with Fig. 1, overview and search figures, insight-based discussion, RQ answer boxes). 0 LaTeX errors, 21 pages.
+- Amendments A1–A12 recorded in evaluation-plan.md.
+
+Open
+- Archival DOI for the replication package (author).
+- Citation metadata of classic references to be cross-checked against DOIs (see docs/ledgers/citation-verification.md).
+- Independent human review of the manuscript (role-play reviews are not peer review).

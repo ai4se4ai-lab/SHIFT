@@ -232,6 +232,7 @@ sympy__sympy-15345,neutral,comment_add,unneeded_U,clean
 sympy__sympy-15809,neutral,comment_add,unneeded_U,clean
 sympy__sympy-16450,neutral,comment_add,unneeded_U,clean
 sympy__sympy-16792,neutral,redundant_parens,unneeded_U,clean
+sympy__sympy-18189,neutral,dead_local,unneeded_U,clean
 sympy__sympy-18211,neutral,comment_add,unneeded_U,clean
 sympy__sympy-18698,neutral,comment_add,unneeded_U,clean
 sympy__sympy-19346,neutral,dead_local,unneeded_U,clean
@@ -243,6 +244,7 @@ sympy__sympy-21847,neutral,comment_add,unneeded_U,clean
 sympy__sympy-22080,neutral,comment_add,unneeded_U,clean
 sympy__sympy-22914,neutral,redundant_parens,unneeded_U,clean
 sympy__sympy-23262,neutral,comment_add,unneeded_U,clean
+sympy__sympy-23534,neutral,redundant_parens,unneeded_U,clean
 sympy__sympy-23950,neutral,dead_local,unneeded_U,clean
 sympy__sympy-24066,neutral,dead_local,unneeded_U,clean
 sympy__sympy-24213,neutral,comment_add,unneeded_U,clean
@@ -480,9 +482,11 @@ sympy__sympy-15345,semantic,return_none,unneeded_U,clean
 sympy__sympy-15809,semantic,bool_negate,official_tests,
 sympy__sympy-16450,semantic,return_none,unneeded_U,clean
 sympy__sympy-16792,semantic,bool_negate,official_tests,
+sympy__sympy-18189,semantic,return_none,unneeded_U,clean
 sympy__sympy-18211,semantic,relop_flip,unneeded_U,clean
 sympy__sympy-18698,semantic,bool_negate,official_tests,
 sympy__sympy-19346,semantic,return_none,unneeded_U,clean
+sympy__sympy-20154,semantic,const_perturb,envelope_H,regression
 sympy__sympy-20428,semantic,return_none,unneeded_U,clean
 sympy__sympy-20801,semantic,bool_negate,official_tests,
 sympy__sympy-20916,semantic,bool_negate,official_tests,

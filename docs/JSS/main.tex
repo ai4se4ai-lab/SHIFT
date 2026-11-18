@@ -6,6 +6,8 @@
 \usepackage{amsmath,amsfonts,amssymb,amsthm,algorithm,algpseudocode,array,textcomp,url,graphicx}
 \usepackage{tikz,pgfplots,listings,booktabs,xcolor,multirow,needspace}
 \usepackage{placeins}
+\usepackage[most]{tcolorbox}
+\newtcolorbox{answerbox}{enhanced,colback=blue!4,colframe=blue!45!black,boxrule=0.5pt,arc=1.5pt,left=4pt,right=4pt,top=3pt,bottom=3pt}
 \hypersetup{hypertexnames=false,hidelinks}
 \pgfplotsset{compat=1.17}
 \usetikzlibrary{positioning,arrows.meta,fit,backgrounds,calc,shapes.misc,patterns}
@@ -29,9 +31,9 @@
 \setcounter{totalnumber}{4}
 % BEGIN:results-macros
 \newcommand{\exOracleCalls}{8}
-\newcommand{\nAgentValid}{1{,}209}
+\newcommand{\nAgentValid}{1{,}379}
 \newcommand{\nCandidates}{1{,}676}
-\newcommand{\nGoldValid}{252}
+\newcommand{\nGoldValid}{295}
 \newcommand{\nGpuHours}{11.6}
 \newcommand{\nGpuHoursNarval}{4.3}
 \newcommand{\nGpuHoursRorqual}{7.3}
@@ -39,22 +41,23 @@
 \newcommand{\nLlmGenerations}{25{,}245}
 \newcommand{\nNotValid}{2}
 \newcommand{\nOtherStatus}{0}
-\newcommand{\nUnits}{3{,}731}
-\newcommand{\nValidPatches}{1{,}461}
+\newcommand{\nUnits}{4{,}328}
+\newcommand{\nValidPatches}{1{,}674}
 \newcommand{\rqfourCallsMedian}{3}
 \newcommand{\rqfourCallsPninety}{11}
-\newcommand{\rqfourCoupled}{40}
-\newcommand{\rqfourExhLarger}{0}
-\newcommand{\rqfourExhMatch}{99.8\%}
-\newcommand{\rqfourExhN}{1{,}397}
-\newcommand{\rqfourLooGap}{3}
-\newcommand{\rqfourMultiN}{349}
-\newcommand{\rqfourN}{1{,}461}
-\newcommand{\rqfourOracleSecMedian}{15}
-\newcommand{\rqfourPatchesJ}{4}
-\newcommand{\rqfourPlainInvalid}{45}
-\newcommand{\rqfourPrecheck}{77}
-\newcommand{\rqfourWallMedian}{37}
+\newcommand{\rqfourCoupled}{43}
+\newcommand{\rqfourCoupledUnits}{82}
+\newcommand{\rqfourExhLarger}{1}
+\newcommand{\rqfourExhMatch}{99.7\%}
+\newcommand{\rqfourExhN}{1{,}603}
+\newcommand{\rqfourLooGap}{8}
+\newcommand{\rqfourMultiN}{421}
+\newcommand{\rqfourN}{1{,}674}
+\newcommand{\rqfourOracleSecMedian}{16}
+\newcommand{\rqfourPatchesJ}{7}
+\newcommand{\rqfourPlainInvalid}{47}
+\newcommand{\rqfourPrecheck}{79}
+\newcommand{\rqfourWallMedian}{39}
 \newcommand{\rqoneAuxGreater}{32}
 \newcommand{\rqoneAuxLess}{0}
 \newcommand{\rqoneAuxMedR}{1.00}
@@ -90,115 +93,123 @@
 \newcommand{\rqoneVtwoSystems}{14}
 \newcommand{\rqthreeAgentHarmful}{10}
 \newcommand{\rqthreeAgentRegCI}{[0.4\%, 2.7\%]}
-\newcommand{\rqthreeAgentRegMinimal}{4}
-\newcommand{\rqthreeAgentRegN}{16}
+\newcommand{\rqthreeAgentRegMinimal}{9}
+\newcommand{\rqthreeAgentRegN}{19}
 \newcommand{\rqthreeAgentRegRate}{1.4\%}
 \newcommand{\rqthreeEnvEmpty}{38}
-\newcommand{\rqthreeEnvPatches}{1{,}423}
+\newcommand{\rqthreeEnvPatches}{1{,}636}
 \newcommand{\rqthreeEnvTestsMedian}{104}
-\newcommand{\rqthreeGoldHarmful}{1}
-\newcommand{\rqthreeGoldRegCI}{[0.0\%, 2.0\%]}
+\newcommand{\rqthreeGoldHarmful}{0}
+\newcommand{\rqthreeGoldRegCI}{[0.0\%, 1.7\%]}
 \newcommand{\rqthreeGoldRegMinimal}{0}
 \newcommand{\rqthreeGoldRegN}{2}
-\newcommand{\rqthreeGoldRegRate}{0.8\%}
-\newcommand{\rqthreeNeutralLabelledU}{\pending{rqthreeNeutralLabelledU}}
-\newcommand{\rqthreeNeutralN}{\pending{rqthreeNeutralN}}
-\newcommand{\rqthreeSemanticEnvelope}{\pending{rqthreeSemanticEnvelope}}
-\newcommand{\rqthreeSemanticGain}{\pending{rqthreeSemanticGain}}
-\newcommand{\rqthreeSemanticN}{\pending{rqthreeSemanticN}}
-\newcommand{\rqthreeSemanticOfficial}{\pending{rqthreeSemanticOfficial}}
-\newcommand{\rqtwoAgentAuxUnits}{124}
+\newcommand{\rqthreeGoldRegRate}{0.7\%}
+\newcommand{\rqthreeNeutralEnvelope}{0.0\% [0.0\%, 0.0\%]}
+\newcommand{\rqthreeNeutralGain}{0.0\% [0.0\%, 0.0\%]}
+\newcommand{\rqthreeNeutralLabelledU}{100.0\%}
+\newcommand{\rqthreeNeutralN}{249}
+\newcommand{\rqthreeNeutralOfficial}{0.0\% [0.0\%, 0.0\%]}
+\newcommand{\rqthreeSemEnvShort}{41\%}
+\newcommand{\rqthreeSemOffShort}{31\%}
+\newcommand{\rqthreeSemanticEnvelope}{41.4\% [35.3\%, 47.4\%]}
+\newcommand{\rqthreeSemanticGain}{10.0\% [6.4\%, 14.1\%]}
+\newcommand{\rqthreeSemanticLabelledU}{58.6\%}
+\newcommand{\rqthreeSemanticN}{249}
+\newcommand{\rqthreeSemanticOfficial}{31.3\% [25.7\%, 37.3\%]}
+\newcommand{\rqtwoAgentAuxUnits}{139}
 \newcommand{\rqtwoAgentAuxUnneeded}{100.0\%}
-\newcommand{\rqtwoAgentPatches}{1{,}209}
-\newcommand{\rqtwoAgentPatchesUnneeded}{28.6\%}
-\newcommand{\rqtwoAgentPatchesUnneededCI}{[24.6\%, 32.8\%]}
-\newcommand{\rqtwoAgentShareC}{2.0\%}
-\newcommand{\rqtwoAgentShareCCI}{[1.2\%, 3.0\%]}
-\newcommand{\rqtwoAgentShareJ}{0.1\%}
-\newcommand{\rqtwoAgentShareJCI}{[0.0\%, 0.3\%]}
-\newcommand{\rqtwoAgentShareN}{63.2\%}
-\newcommand{\rqtwoAgentShareNCI}{[58.0\%, 68.8\%]}
-\newcommand{\rqtwoAgentShareU}{34.6\%}
-\newcommand{\rqtwoAgentShareUCI}{[29.3\%, 39.7\%]}
-\newcommand{\rqtwoAgentSrcUnneeded}{32.7\%}
+\newcommand{\rqtwoAgentPatches}{1{,}379}
+\newcommand{\rqtwoAgentPatchesUnneeded}{30.1\%}
+\newcommand{\rqtwoAgentPatchesUnneededCI}{[26.2\%, 34.0\%]}
+\newcommand{\rqtwoAgentShareC}{1.9\%}
+\newcommand{\rqtwoAgentShareCCI}{[1.1\%, 2.8\%]}
+\newcommand{\rqtwoAgentShareJ}{0.3\%}
+\newcommand{\rqtwoAgentShareJCI}{[0.1\%, 0.5\%]}
+\newcommand{\rqtwoAgentShareN}{62.0\%}
+\newcommand{\rqtwoAgentShareNCI}{[56.7\%, 67.5\%]}
+\newcommand{\rqtwoAgentShareU}{35.9\%}
+\newcommand{\rqtwoAgentShareUCI}{[30.4\%, 41.0\%]}
+\newcommand{\rqtwoAgentSrcUnneeded}{34.1\%}
 \newcommand{\rqtwoAgentTestUnits}{49}
 \newcommand{\rqtwoAgentTestUnneeded}{100.0\%}
-\newcommand{\rqtwoAgentUnits}{2{,}938}
+\newcommand{\rqtwoAgentUnits}{3{,}394}
+\newcommand{\rqtwoBestLlmMcc}{0.42}
 \newcommand{\rqtwoFoneLgemmab}{0.27}
-\newcommand{\rqtwoFoneLllamab}{0.31}
-\newcommand{\rqtwoFoneLmistralsmallb}{0.41}
-\newcommand{\rqtwoFoneLphib}{0.31}
-\newcommand{\rqtwoFoneLqwencoderb}{0.41}
+\newcommand{\rqtwoFoneLllamab}{0.35}
+\newcommand{\rqtwoFoneLmistralsmallb}{0.44}
+\newcommand{\rqtwoFoneLphib}{0.35}
+\newcommand{\rqtwoFoneLqwencoderb}{0.43}
 \newcommand{\rqtwoFonePall}{--}
-\newcommand{\rqtwoFonePdep}{0.31}
-\newcommand{\rqtwoFonePgoldfile}{0.40}
+\newcommand{\rqtwoFonePdep}{0.34}
+\newcommand{\rqtwoFonePgoldfile}{0.41}
 \newcommand{\rqtwoFonePissue}{0.49}
 \newcommand{\rqtwoGoldAuxUnits}{0}
 \newcommand{\rqtwoGoldAuxUnneeded}{--}
-\newcommand{\rqtwoGoldPatches}{252}
-\newcommand{\rqtwoGoldPatchesUnneeded}{24.6\%}
-\newcommand{\rqtwoGoldPatchesUnneededCI}{[19.4\%, 30.2\%]}
-\newcommand{\rqtwoGoldShareC}{2.3\%}
-\newcommand{\rqtwoGoldShareCCI}{[0.8\%, 3.8\%]}
+\newcommand{\rqtwoGoldPatches}{295}
+\newcommand{\rqtwoGoldPatchesUnneeded}{25.4\%}
+\newcommand{\rqtwoGoldPatchesUnneededCI}{[20.7\%, 30.5\%]}
+\newcommand{\rqtwoGoldShareC}{2.0\%}
+\newcommand{\rqtwoGoldShareCCI}{[0.7\%, 3.3\%]}
 \newcommand{\rqtwoGoldShareJ}{0.0\%}
 \newcommand{\rqtwoGoldShareJCI}{[0.0\%, 0.0\%]}
-\newcommand{\rqtwoGoldShareN}{64.8\%}
-\newcommand{\rqtwoGoldShareNCI}{[54.0\%, 76.4\%]}
-\newcommand{\rqtwoGoldShareU}{32.9\%}
-\newcommand{\rqtwoGoldShareUCI}{[21.8\%, 43.5\%]}
-\newcommand{\rqtwoGoldSrcUnneeded}{35.2\%}
+\newcommand{\rqtwoGoldShareN}{64.1\%}
+\newcommand{\rqtwoGoldShareNCI}{[54.4\%, 74.6\%]}
+\newcommand{\rqtwoGoldShareU}{33.9\%}
+\newcommand{\rqtwoGoldShareUCI}{[23.8\%, 43.4\%]}
+\newcommand{\rqtwoGoldSrcUnneeded}{35.9\%}
 \newcommand{\rqtwoGoldTestUnits}{0}
 \newcommand{\rqtwoGoldTestUnneeded}{--}
-\newcommand{\rqtwoGoldUnits}{793}
-\newcommand{\rqtwoInfMaxMcc}{0.43}
-\newcommand{\rqtwoInfMaxRecall}{0.46}
-\newcommand{\rqtwoLocalNeededShare}{73.1\%}
+\newcommand{\rqtwoGoldUnits}{914}
+\newcommand{\rqtwoInfMaxMcc}{0.45}
+\newcommand{\rqtwoInfMaxRecall}{0.48}
+\newcommand{\rqtwoLocalNeededShare}{72.0\%}
 \newcommand{\rqtwoMccLgemmab}{0.25}
-\newcommand{\rqtwoMccLllamab}{-0.01}
-\newcommand{\rqtwoMccLmistralsmallb}{0.40}
-\newcommand{\rqtwoMccLphib}{0.34}
-\newcommand{\rqtwoMccLqwencoderb}{0.19}
+\newcommand{\rqtwoMccLllamab}{0.03}
+\newcommand{\rqtwoMccLmistralsmallb}{0.42}
+\newcommand{\rqtwoMccLphib}{0.37}
+\newcommand{\rqtwoMccLqwencoderb}{0.22}
 \newcommand{\rqtwoMccPall}{--}
-\newcommand{\rqtwoMccPdep}{0.33}
-\newcommand{\rqtwoMccPgoldfile}{0.36}
+\newcommand{\rqtwoMccPdep}{0.35}
+\newcommand{\rqtwoMccPgoldfile}{0.37}
 \newcommand{\rqtwoMccPissue}{0.14}
-\newcommand{\rqtwoNonlocalNeeded}{50}
-\newcommand{\rqtwoNonlocalNeededShare}{17.3\%}
-\newcommand{\rqtwoNonlocalUnits}{289}
+\newcommand{\rqtwoNonlocalNeeded}{60}
+\newcommand{\rqtwoNonlocalNeededShare}{16.9\%}
+\newcommand{\rqtwoNonlocalUnits}{356}
 \newcommand{\rqtwoParseMin}{98.7\%}
 \newcommand{\rqtwoPrecLgemmab}{0.77}
-\newcommand{\rqtwoPrecLllamab}{0.31}
+\newcommand{\rqtwoPrecLllamab}{0.36}
 \newcommand{\rqtwoPrecLmistralsmallb}{0.91}
-\newcommand{\rqtwoPrecLphib}{0.92}
-\newcommand{\rqtwoPrecLqwencoderb}{0.49}
+\newcommand{\rqtwoPrecLphib}{0.93}
+\newcommand{\rqtwoPrecLqwencoderb}{0.52}
 \newcommand{\rqtwoPrecPall}{--}
-\newcommand{\rqtwoPrecPdep}{0.89}
+\newcommand{\rqtwoPrecPdep}{0.91}
 \newcommand{\rqtwoPrecPgoldfile}{0.83}
-\newcommand{\rqtwoPrecPissue}{0.39}
+\newcommand{\rqtwoPrecPissue}{0.40}
 \newcommand{\rqtwoRecLgemmab}{0.16}
-\newcommand{\rqtwoRecLllamab}{0.30}
-\newcommand{\rqtwoRecLmistralsmallb}{0.27}
-\newcommand{\rqtwoRecLphib}{0.18}
-\newcommand{\rqtwoRecLqwencoderb}{0.36}
+\newcommand{\rqtwoRecLllamab}{0.33}
+\newcommand{\rqtwoRecLmistralsmallb}{0.29}
+\newcommand{\rqtwoRecLphib}{0.21}
+\newcommand{\rqtwoRecLqwencoderb}{0.37}
 \newcommand{\rqtwoRecPall}{0.00}
-\newcommand{\rqtwoRecPdep}{0.19}
-\newcommand{\rqtwoRecPgoldfile}{0.26}
-\newcommand{\rqtwoRecPissue}{0.65}
-\newcommand{\rqtwoRetLgemmab}{100\%}
-\newcommand{\rqtwoRetLllamab}{54\%}
+\newcommand{\rqtwoRecPdep}{0.21}
+\newcommand{\rqtwoRecPgoldfile}{0.27}
+\newcommand{\rqtwoRecPissue}{0.63}
+\newcommand{\rqtwoRetLgemmab}{98\%}
+\newcommand{\rqtwoRetLllamab}{58\%}
 \newcommand{\rqtwoRetLmistralsmallb}{100\%}
 \newcommand{\rqtwoRetLphib}{100\%}
-\newcommand{\rqtwoRetLqwencoderb}{86\%}
+\newcommand{\rqtwoRetLqwencoderb}{82\%}
 \newcommand{\rqtwoRetPall}{100\%}
-\newcommand{\rqtwoRetPdep}{56\%}
+\newcommand{\rqtwoRetPdep}{63\%}
 \newcommand{\rqtwoRetPgoldfile}{0\%}
-\newcommand{\rqtwoRetPissue}{44\%}
+\newcommand{\rqtwoRetPissue}{37\%}
 \newcommand{\rqtwoSeedAgreeMax}{95.8\%}
 \newcommand{\rqtwoSeedAgreeMin}{77.1\%}
-\newcommand{\rqtwoSrcNeededN}{1{,}860}
-\newcommand{\rqtwoSrcUnits}{2{,}765}
-\newcommand{\rqtwoSrcUnneededN}{905}
-\newcommand{\rqtwoUnneededInGold}{666}
+\newcommand{\rqtwoSrcNeededN}{2{,}113}
+\newcommand{\rqtwoSrcUnits}{3{,}206}
+\newcommand{\rqtwoSrcUnneededN}{1{,}093}
+\newcommand{\rqtwoUnneededInGold}{797}
+\newcommand{\rqtwoUnneededInGoldShare}{73\%}
 % END:results-macros
 \begin{document}
 \let\WriteBookmarks\relax
@@ -212,7 +223,7 @@
 \cortext[1]{Corresponding author.}
 
 \begin{abstract}
-Abstract pending.
+LLM coding agents now resolve most issues in benchmarks such as SWE-bench Verified, so the bottleneck moves to judging their patches. Reviewers and change impact analysis judge an edit by its distance from where a human would fix the defect, while test-based acceptance keeps every edit of a passing patch. Neither tells a reviewer which edits the intended outcome actually depends on. We present \tool{}, an outcome-relative edit triage. \tool{} states the intent as goal and preservation test obligations, splits a patch into units linked by a requires relation, and uses counterfactual leave-one-out and closure-aware delta debugging to label every unit as necessary, jointly needed, coupled or unneeded, with soundness and closed 1-minimality guarantees relative to the test oracle. A dependency-selected envelope attributes behaviour changes outside the obligations to units. A footprint study of \rqoneSystems{} LLMs in one agent scaffold shows that agent patches are not larger or more scattered than human patches. Executing \nValidPatches{} resolved agent and reference patches for Django and SymPy, we find that \rqtwoAgentSrcUnneeded{} of agent source edits and \rqtwoGoldSrcUnneeded{} of reference source edits are not needed for the obligations. Location proxies recover necessity only partly (MCC \rqtwoMccPgoldfile{}), because \rqtwoUnneededInGoldShare{} of removable edits lie inside the reference files. Five open-weight LLM judges reach MCC of at most \rqtwoBestLlmMcc{} (\rqtwoInfMaxMcc{} when shown the tests), with low recall. The envelope raises the detection of injected faults from \rqthreeSemOffShort{} to \rqthreeSemEnvShort{}, and triage costs a median of \rqfourCallsMedian{} test runs per patch.
 \end{abstract}
 
 \begin{keywords}
@@ -223,30 +234,78 @@ change impact analysis \sep LLM coding agents \sep counterfactual analysis \sep 
 
 \section{Introduction}\label{sec:intro}
 
-LLM-based coding agents now resolve a majority of the real GitHub issues in benchmarks such as SWE-bench Verified~\citep{jimenez2024swebench,chowdhury2024verified}. In the public leaderboard track that runs every model in the same minimal agent~\citep{miniswe2025}, the strongest systems we study resolve about three quarters of the 500 issues. As such patches move from benchmarks into pull requests, the bottleneck shifts from producing a patch to deciding whether to accept it. Code review is already the main quality gate in modern development, and reviewers spend much of their effort understanding what a change does and why~\citep{bacchelli2013expectations}.
+LLM-based coding agents now resolve most of the real GitHub issues in benchmarks such as SWE-bench Verified~\citep{jimenez2024swebench,chowdhury2024verified}. When every model runs in the same minimal agent~\citep{miniswe2025}, the strongest systems we study resolve about three quarters of its 500 issues. As agent patches move from leaderboards into pull requests, the hard part is no longer producing a patch but deciding which of its changes to accept. Code review is the main quality gate for that decision, and reviewers spend much of their effort working out what each change does and why it is there~\citep{bacchelli2013expectations}.
 
-Two practices shape how such patches are judged today. Benchmarks and continuous integration accept a patch as a whole when its tests pass. Reviewers and tools then reason from the location of the change. Change impact analysis starts from the modified code and traverses dependencies to estimate what it may affect~\citep{bohner1996cia,li2013cia,ren2004chianti}. Agent evaluations measure localisation against the files of the reference fix~\citep{xia2025agentless}, and a common heuristic in review is that edits close to the expected fault location are relevant and distant ones are suspect. We call this view \emph{human-centric}: it uses the place where a human developer fixed the defect as the yardstick for judging another developer's edits.
+A patch that passes its tests can still contain edits that the fix does not need. Figure~\ref{fig:motivation} shows a real case. A Django issue reports that values passed from a URL to a database query crash SQLite. The maintainer fixed it with three edits in the view layer. An agent (Kimi~K2.5) instead made four edits in two database modules that the maintainer never touched. Both patches pass the issue's tests. Only two of the agent's four edits are needed: if either of them is removed, the issue's test fails again, whereas the other two can be removed without any test noticing. A reviewer who merges the patch also merges an import and a new branch in the database adapter that no test depends on, and that change remains in the code base to be read, maintained and possibly blamed later.
 
-This yardstick fails in both directions. Our running example (Section~\ref{sec:example}) is a resolved agent patch for a Django crash. The maintainer fixed the view layer, and the agent instead changed two database modules, so every edit is ``nonlocal''. A location-based reviewer has no basis for keeping or rejecting any of them. Counterfactual execution shows that two of the four edits carry the fix and two are not needed at all. Conversely, our data show that most unneeded agent edits sit \emph{inside} the files that the human edited, exactly where a location-based reviewer would look for the fix. Whole-patch acceptance has the opposite blind spot: it keeps every edit of a passing patch, including edits that no obligation requires and that may change behaviour the tests do not observe.
+\begin{figure*}[pos=htbp]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[font=\footnotesize, >={Stealth[length=2mm]},
+  box/.style={draw, rounded corners=2pt, align=left, inner sep=4pt},
+  tt/.style={font=\ttfamily\scriptsize}]
+\node[box, fill=black!4, text width=38mm, anchor=north west] (issue) at (0,0) {\textbf{Issue} (django-13297)\\URL arguments passed by \texttt{TemplateView} are wrapped in a \texttt{SimpleLazyObject}; filtering a query with one crashes SQLite.\\[3pt]\textbf{Goal test:} 1 test\\\textbf{Preserved tests:} 52};
+\node[box, fill=blue!5, text width=78mm, anchor=north west] (human) at (45mm,0) {\textbf{Reference fix (maintainer), 3 edits}\\{\ttfamily\scriptsize views/generic/base.py}: create the wrapped value with \texttt{lazy(...)} instead of \texttt{SimpleLazyObject}};
+\node[box, fill=orange!8, text width=78mm, anchor=north west] (agent) at ([yshift=-4mm]human.south west) {\textbf{Agent fix (Kimi K2.5), 4 edits, resolved}\\[2pt]
+{\ttfamily\scriptsize db/backends/base/operations.py}\\
+{\ttfamily\scriptsize\ \ u1\ \ + from ...functional import LazyObject}\\
+{\ttfamily\scriptsize\ \ u2\ \ + elif isinstance(value, LazyObject):}\\
+{\ttfamily\scriptsize\ \ \ \ \ \ +\ \ \ return self.adapt\_unknown\_value(value.\_wrapped)}\\[2pt]
+{\ttfamily\scriptsize db/models/fields/\_\_init\_\_.py}\\
+{\ttfamily\scriptsize\ \ u3\ \ + from ...functional import LazyObject}\\
+{\ttfamily\scriptsize\ \ u4\ \ + elif isinstance(value, LazyObject):}\\
+{\ttfamily\scriptsize\ \ \ \ \ \ +\ \ \ \ \ value = value.\_wrapped}};
+\node[box, fill=white, text width=64mm, anchor=north west] (judge) at (131mm,0) {\textbf{Which of u1--u4 does the fix need?}\\[4pt]
+\textit{Tests pass, so accept the patch:} keep all four.\\[3pt]
+\textit{Distance from the reference fix:} all four lie in files the maintainer did not touch, so all look equally suspicious.\\[3pt]
+\textit{Ask an LLM reviewer:} all five LLMs we asked call u2 ``the fix'' and u1 its support.\\[3pt]
+\textit{Withdraw each edit and rerun the tests (\tool{}):}\\
+\quad without u3 or u4: goal test fails $\Rightarrow$ \textcolor{green!45!black}{\textbf{needed}}\\
+\quad without u1, u2: tests pass $\Rightarrow$ \textcolor{red!70!black}{\textbf{removable}}};
+\draw[->, thick] (issue.east |- human.west) -- (human.west);
+\draw[->, thick] (issue.south) |- (agent.west);
+\draw[->, thick, dashed] (agent.east) -- (agent.east -| judge.west);
+\end{tikzpicture}}
+\caption{Motivating example (SWE-bench Verified, \code{django__django-13297}). The agent fixes the issue on a different route from the maintainer. Whole-patch acceptance, distance from the reference fix and LLM explanations do not reveal which agent edits the fix needs. Withdrawing each edit and rerunning the tests does: only u3 and u4 are needed.}
+\label{fig:motivation}
+\end{figure*}
 
-The gap is the absence of an \emph{outcome-relative} judgement at the level of individual edits: for each edit of a candidate patch, is it needed for the intended behaviour, neutral, or harmful to behaviour that must be preserved? Classic change impact analysis answers a different question (what a change may affect), patch-correctness research judges whole patches~\citep{qi2015kali,smith2015cure,wang2020apr}, and change untangling groups edits by structure without testing whether they are needed~\citep{herzig2013tangled,barnett2015untangle}. Our insight is that the relevance of an edit should be judged by what happens to explicit obligations when the edit is withdrawn, not by where it is. This reverses the direction of impact analysis, from ``what does this change affect?'' to ``what does the intended outcome depend on?''.
-
-We present \tool{}, an outcome-relative edit triage for agent-generated patches. \tool{} (i) states the intent as goal and preservation test obligations, (ii) splits a patch into units and computes which units require others so that every analysed configuration is well formed, (iii) withdraws units counterfactually and runs a dependency-aware delta debugging~\citep{zeller2002ddmin} to find a closed 1-minimal sufficient subset, labelling every unit necessary, jointly needed, coupled, unneeded or unresolved, and (iv) runs a dependency-selected preservation envelope to expose and attribute behaviour changes that the obligations do not observe. The labels come with proofs of soundness relative to the test oracle.
-
-We evaluate \tool{} on SWE-bench Verified with \rqoneSystems{} LLMs that share one agent scaffold, executing \nValidPatches{} resolved agent and reference patches on Django and SymPy, and with five open-weight LLM judges run on two HPC clusters. The paper makes three contributions:
+Current practice offers three ways to judge the edits of such a patch, and each has a limitation.
 \begin{itemize}
-\item \textbf{An empirical characterisation of agent footprints (RQ1).} Contrary to the common assumption, agent patches are not larger or more scattered than human patches. Capable agents mostly edit where humans edit, and edits away from the reference location are associated with failure. Agents explore several files for each file they edit.
-\item \textbf{\tool{}, a counterfactual edit-triage technique}, with a requires relation that keeps configurations well formed, closure-aware minimisation with a proof of closed 1-minimality, a coupled-edit label that corrects a blind spot of leave-one-out analysis, and an import-based preservation envelope with regression attribution.
-\item \textbf{An evaluation of edit necessity (RQ2--RQ4).} About one in four source edits of resolved agent patches (\rqtwoAgentSrcUnneeded{}) and a similar share of human reference edits (\rqtwoGoldSrcUnneeded{}) are not needed for the instance's obligations. Location proxies cannot recover necessity (MCC \rqtwoMccPgoldfile{} for gold-file and \rqtwoMccPdep{} for import proximity), while LLM judges are precise but miss most removable edits. The envelope raises the detection of injected faults beyond the official tests, and triage costs a median of \rqfourCallsMedian{} test runs per patch.
+\item \textbf{L1, whole-patch acceptance.} Benchmarks and continuous integration accept a patch as a unit once its tests pass~\citep{jimenez2024swebench}. They say nothing about which edits contribute to the result, so unneeded edits are merged together with needed ones.
+\item \textbf{L2, judging by location.} Change impact analysis starts from the modified code and asks what it may affect~\citep{bohner1996cia,li2013cia,ren2004chianti}, and agent evaluations score localisation against the files of the reference fix~\citep{xia2025agentless}. In both cases the place where the human developer fixed the defect becomes the yardstick for relevance. We call this yardstick \emph{human-centric}. It fails in both directions. In Figure~\ref{fig:motivation} every agent edit is far from the reference fix, yet two of them are needed. Across our study, most unneeded agent edits sit \emph{inside} the files the human edited (Section~\ref{sec:rq2}).
+\item \textbf{L3, judging by explanation.} An agent, or an LLM reviewer, can explain each edit. Such explanations are plausible but unverified~\citep{turpin2023unfaithful}. In Figure~\ref{fig:motivation}, the agent's comment and all five LLM reviewers we consulted name the removable edit u2 as the fix.
 \end{itemize}
-The implementation, raw records and analysis scripts are publicly available (Section~\ref{sec:conclusion}).
 
-The remainder of the paper is organised as follows. Section~\ref{sec:background} introduces background and the running example, Section~\ref{sec:approach} presents \tool{}, Section~\ref{sec:evaluation} reports the evaluation, Section~\ref{sec:related} discusses related work and Section~\ref{sec:conclusion} concludes.
+Our key insight is simple: \emph{an edit is needed if the patch stops working without it}. Instead of judging an edit by where it is (L2) or by what is said about it (L3), we can test it, by withdrawing the edit and re-running the tests that define success. This turns the direction of change impact analysis around, from ``what does this change affect?'' to ``what does the intended outcome depend on?''. Making the idea work on real patches raises three challenges.
+\begin{itemize}
+\item \textbf{CH1, ill-formed variants.} Withdrawing an arbitrary edit can leave code that does not even load, for example a call to a helper whose definition was withdrawn. The failure then says nothing about whether the edit is needed.
+\item \textbf{CH2, interacting edits.} Withdrawing edits one at a time misreads patches in which edits interact. Two edits that each fix the defect make each other look unneeded, and two edits that only make sense together, such as removing a decorator and compensating for it elsewhere, each look indispensable.
+\item \textbf{CH3, incomplete tests.} Tests observe only part of the behaviour. An edit whose withdrawal no test notices may still change behaviour that the tests do not check.
+\end{itemize}
+
+This paper presents \tool{}, a counterfactual edit triage for agent-generated patches that addresses these challenges. \tool{} splits a patch into small units and records which units require others, so that it only executes well-formed variants (CH1). It combines one-at-a-time withdrawal with a dependency-aware delta debugging~\citep{zeller2002ddmin} that finds a smallest sufficient set of units, and labels every unit as \emph{necessary}, \emph{jointly needed}, \emph{coupled} or \emph{unneeded}. The labels are sound relative to the tests, and the sufficient set is provably minimal in a precise sense (CH2). Finally, \tool{} runs additional, dependency-selected tests around the edited modules to expose behaviour changes outside the original tests and attribute them to the responsible units (CH3).
+
+We evaluate \tool{} on SWE-bench Verified. A footprint study covers \rqoneSystems{} LLMs that share one agent scaffold. The execution study triages \nValidPatches{} resolved agent and reference patches on Django and SymPy, and five open-weight LLM reviewers run on two HPC clusters serve as a comparison. The main findings are:
+\begin{enumerate}
+\item[\textbf{F1}] Agent patches are \emph{not} larger or more scattered than human patches. Capable agents mostly edit where humans edit, and edits away from the reference location are associated with failure (RQ1).
+\item[\textbf{F2}] About one in three source edits of resolved agent patches (\rqtwoAgentSrcUnneeded{}), and a similar share of human reference edits (\rqtwoGoldSrcUnneeded{}), are not needed by the tests that define success (RQ2).
+\item[\textbf{F3}] Location recovers necessity only partly (MCC \rqtwoMccPgoldfile{}), because \rqtwoUnneededInGoldShare{} of the removable edits lie inside the reference files. LLM reviewers are precise but miss most removable edits, even when they are shown the tests (RQ2).
+\item[\textbf{F4}] The additional tests raise the detection of injected faults from \rqthreeSemOffShort{} to \rqthreeSemEnvShort{}, and triage costs a median of \rqfourCallsMedian{} test runs per patch (RQ3, RQ4).
+\end{enumerate}
+
+In summary, this paper makes three contributions.
+\begin{itemize}
+\item An empirical characterisation of how far agent edits are from human edits, in size, location and exploration (Section~\ref{sec:rq1}).
+\item \tool{}, a counterfactual edit-triage technique with a scoped requires relation, closure-aware minimisation with a proof of closed 1-minimality, a label for coupled edits that one-at-a-time analysis misreads, and a preservation envelope with regression attribution (Section~\ref{sec:approach}).
+\item An evaluation of edit necessity, of location- and LLM-based judgement, of the envelope and of the cost of triage, with all data, scripts and HPC jobs released (Sections~\ref{sec:rq2}--\ref{sec:rq4}).
+\end{itemize}
+Section~\ref{sec:background} introduces the necessary background and notation, Section~\ref{sec:approach} presents \tool{}, Section~\ref{sec:evaluation} reports the evaluation and Section~\ref{sec:related} relates \tool{} to prior work.
 
 
 \section{Background}\label{sec:background}
 
-This section introduces the concepts on which \tool{} builds: repository-level issue resolution by coding agents, change impact analysis and regression test selection, and delta debugging. It then fixes the notation for patches, edits and test obligations, and closes with the running example used throughout the paper.
+This section introduces the three ideas \tool{} builds on (benchmarks for agent patches, change impact analysis, and delta debugging), fixes the notation for patches, edits and tests, and details the running example of Figure~\ref{fig:motivation}.
 
 \subsection{Agent-generated patches and their evaluation}\label{sec:bg-agents}
 A coding agent receives an issue description and a repository snapshot, interacts with the repository through tools such as a shell, and submits a patch. SWE-bench~\citep{jimenez2024swebench} turned this setting into a benchmark: each instance pairs a real GitHub issue with the developer-written fix (the \emph{reference} or \emph{gold} patch) and a set of tests. Tests that fail before the reference fix and pass after it are called \code{FAIL_TO_PASS} (F2P); tests that pass both before and after are \code{PASS_TO_PASS} (P2P). A candidate patch \emph{resolves} an instance when all F2P and all P2P tests pass. SWE-bench Verified is a 500-instance subset whose issues and tests were screened by human annotators~\citep{chowdhury2024verified}. Agent scaffolds range from tool-rich systems such as SWE-agent~\citep{yang2024sweagent} to pipelines with fixed localization, repair and validation phases~\citep{xia2025agentless}, and to minimal bash-only agents such as mini-swe-agent~\citep{miniswe2025}.
@@ -256,7 +315,7 @@ The resolution criterion judges a patch as a whole. It says nothing about whethe
 \subsection{Change impact analysis and regression test selection}\label{sec:bg-cia}
 Change impact analysis (CIA) estimates which parts of a program a modification may affect~\citep{bohner1996cia,li2013cia}. Static CIA traverses dependencies such as calls, data flow or imports from the modified elements. Dynamic CIA uses execution data~\citep{orso2003field}. Chianti decomposes a change into atomic changes and reports the tests affected by each one~\citep{ren2004chianti}. Regression test selection (RTS) uses the same idea to pick the tests that must be rerun after a change~\citep{rothermel1997safe,yoo2012regression,gligoric2015ekstazi}.
 
-All of these techniques start from the modification and ask what it may affect. That direction is the right one for regression testing. It is less suited to a reviewer who receives an agent's patch and must decide which of its edits are \emph{needed} for the issue and which are incidental. A location-based heuristic answers this question by distance: edits near the place where the human developer fixed the bug look relevant, distant ones look suspicious. We call this assumption \emph{human-centric} because the reference location is the one a human chose. Section~\ref{sec:rq2} tests whether it holds for agent patches.
+All of these techniques start from the modification and ask what it may affect. That direction suits regression testing, where the question is which tests to rerun. \tool{} asks the converse question, which edits the intended behaviour depends on, and uses an RTS step only to strengthen its evidence (Section~\ref{sec:envelope}).
 
 \subsection{Delta debugging}\label{sec:bg-dd}
 Delta debugging~\citep{zeller1999yesterday,zeller2002ddmin} isolates the part of a change set that matters for an observed outcome. Given a set of changes $C$ and a test that labels a subset of $C$ as interesting, the \textsc{ddmin} algorithm returns a subset $C' \subseteq C$ that is still interesting and \emph{1-minimal}: removing any single element makes it uninteresting. Zeller originally applied the idea to failure-inducing code changes~\citep{zeller1999yesterday}. Hierarchical variants exploit program structure to avoid syntactically invalid configurations~\citep{misherghi2006hdd}. \tool{} reuses \textsc{ddmin} with the opposite polarity: the interesting outcome is that the issue is resolved and the preserved behaviour is intact.
@@ -289,73 +348,60 @@ We write $\mathit{Valid}(S)$ for $\mathcal{O}(S)=\lab{valid}$.
 In our evaluation $T_g$ is the F2P set and $T_p$ the P2P set of the SWE-bench instance, which reproduces the official resolution criterion. In practice $T_g$ would come from an issue-reproduction test written before or with the fix. \tool{} does not assume that $T_g\cup T_p$ is a complete specification. All its labels are relative to $\mathcal{O}$, and Section~\ref{sec:envelope} adds tests to reduce the incompleteness of $T_p$.
 
 \subsection{Running example}\label{sec:example}
-We use one real SWE-bench Verified instance throughout the paper, \code{django__django-13297}. In Django~3.1, \code{TemplateView} wraps URL keyword arguments in a \code{SimpleLazyObject} so that accessing them can emit a deprecation warning. When a view passes such a value to a database query, SQLite fails with ``Error binding parameter 0 -- probably unsupported type''. The instance has one goal test, \code{test_template_params_filtering} in \code{generic_views.test_base}, and 52 preservation tests from the same module.
+We use the instance of Figure~\ref{fig:motivation}, \code{django__django-13297}, throughout the paper. In Django~3.1, \code{TemplateView} wraps URL keyword arguments in a \code{SimpleLazyObject} so that accessing them can emit a deprecation warning. Passing such a value to a database query makes SQLite fail with ``Error binding parameter 0 -- probably unsupported type''. The goal test is \code{test_template_params_filtering}, and the 52 preservation tests come from the same module, \code{generic_views.test_base}. Thus $T_g$ has one test and $T_p$ has 52.
 
-The reference patch, written by a Django maintainer, changes only the view layer. It edits \code{django/views/generic/base.py} so that the wrapped value is created with \code{lazy(access_value, type(value))()}, a proxy that database adapters accept. The agent patch we examine was produced by Kimi~K2.5 in mini-swe-agent and is officially resolved. It leaves the view untouched and teaches the database layer to unwrap lazy objects instead (Figure~\ref{fig:example}).
-
-\begin{figure}[pos=htbp]
-\centering
-\begin{lstlisting}[basicstyle=\ttfamily\scriptsize,frame=single,numbers=none,escapechar=|]
---- django/db/backends/base/operations.py
-|\textbf{[u1]}|  + from django.utils.functional import LazyObject
-          ...
-|\textbf{[u2]}|  +   elif isinstance(value, LazyObject):
-      +       # Force evaluation of the lazy object and adapt the result
-      +       return self.adapt_unknown_value(value._wrapped)
---- django/db/models/fields/__init__.py
-|\textbf{[u3]}|  - from django.utils.functional import Promise, cached_property
-      + from django.utils.functional import LazyObject, Promise, cached_property
-          ...                          # in Field.get_prep_value
-|\textbf{[u4]}|  +   elif isinstance(value, LazyObject):
-      +       value = value._wrapped
-\end{lstlisting}
-\caption{Running example: the four units of Kimi K2.5's patch for \code{django__django-13297}. The reference patch edits only \code{django/views/generic/base.py}.}
-\label{fig:example}
-\end{figure}
-
-A reviewer who judges edits by their distance from the reference location sees four edits in two database modules that the maintainer did not touch, and has no basis for preferring any of them. A reviewer who accepts any test-passing patch keeps all four. Neither answers the question that matters for maintenance: which of these edits does the fix actually rely on? The following sections answer it for this patch.
+The reference patch edits \code{django/views/generic/base.py} so that the wrapped value is created with \code{lazy(access_value, type(value))()}, a proxy that database adapters accept. The agent patch, produced by Kimi~K2.5 and officially resolved, leaves the view untouched and teaches the database layer to unwrap lazy objects instead. Its four units, u1--u4 in Figure~\ref{fig:motivation}, are two imports of \code{LazyObject} (u1, u3) and two new branches that unwrap such objects, one in the backend's value adapter (u2) and one in \code{Field.get_prep_value} (u4). The configuration $\{u_3,u_4\}$, for example, is the program in which only the changes to \code{fields/__init__.py} are applied. The following sections trace how \tool{} establishes that exactly this configuration is what the fix needs.
 
 
 \section{The \tool{} approach}\label{sec:approach}
 
 \subsection{Overview}\label{sec:overview}
 
-\tool{} takes an issue, a candidate patch and the base revision, and returns a verdict for each edit of the patch together with the evidence behind it. Figure~\ref{fig:overview} shows its four components. The new element is the direction of analysis: instead of starting from where an edit is and asking what it may affect, \tool{} starts from what the patch must achieve and asks, for each edit, what happens to that outcome when the edit is withdrawn.
+\tool{} answers one question for every edit of a patch: does the intended behaviour still hold without it? Its input is the candidate patch, the base revision with its test environment, and the intent, given as goal tests that must pass and preservation tests that must keep passing. Its output is a verdict per edit, a minimal patch that still satisfies the intent, and the test runs that justify both. Figure~\ref{fig:overview} shows the four components. Decomposition addresses challenge CH1 of Section~\ref{sec:intro}, triage addresses CH2 and the envelope addresses CH3.
 
 \begin{figure*}[pos=htbp]
 \centering
 \resizebox{\linewidth}{!}{%
-\begin{tikzpicture}[
-  font=\footnotesize, >={Stealth[length=2mm]},
-  io/.style={draw, rounded corners=2pt, fill=black!4, align=center, minimum height=9mm, inner sep=3pt, text width=24mm},
-  comp/.style={draw, thick, rounded corners=3pt, fill=blue!6, align=left, inner sep=4pt, text width=40mm},
-  orc/.style={draw, dashed, thick, rounded corners=3pt, fill=orange!10, align=center, inner sep=4pt, text width=27mm},
+\begin{tikzpicture}[font=\footnotesize, >={Stealth[length=2mm]},
+  stage/.style={draw, thick, rounded corners=3pt, fill=blue!6, align=left, text width=31mm, minimum height=21mm, inner sep=3pt, anchor=north west},
+  inp/.style={draw, rounded corners=2pt, fill=black!4, align=center, text width=31mm, inner sep=3pt, anchor=north west},
+  ex/.style={align=left, text width=31mm, font=\scriptsize\itshape, text=black!65, anchor=north west},
   el/.style={fill=white, inner sep=1pt, font=\scriptsize\itshape}]
-\node[io] (issue) {Issue and intent\\$(T_g, T_p)$};
-\node[io, below=7mm of issue] (patch) {Candidate patch $\Delta$\\(agent or human)};
-\node[io, below=7mm of patch] (base) {Base revision $P$\\and its environment};
-\node[comp, right=11mm of issue] (c1) {\textbf{C1 Intent obligations}\\goal tests $T_g$, preservation\\tests $T_p$ $\Rightarrow$ oracle $\mathcal{O}$};
-\node[comp, right=11mm of patch] (c2) {\textbf{C2 Edit decomposition}\\units $U$, requires relation $R$,\\closure $\mathit{cl}_R$, syntax pre-check};
-\node[comp, right=11mm of base] (c4) {\textbf{C4 Preservation envelope}\\dependency-selected tests $T_E$,\\regression attribution};
-\node[comp, right=10mm of c2] (c3) {\textbf{C3 Counterfactual triage}\\leave-one-out outcomes,\\dependency-aware \textsc{ddmin} $\Rightarrow D^\star$,\\labels \lab{N}/\lab{J}/\lab{C}/\lab{U}/\lab{X}};
-\node[orc, right=9mm of c3] (orc) {Execution oracle\\$\mathcal{O}(S)$ on $P\oplus S$\\in the official\\environment};
-\node[io, below=7mm of orc, text width=27mm, fill=green!6] (out) {Edit verdicts\\\lab{N}/\lab{J}/\lab{C}/\lab{U}/\lab{H},\\minimal patch $D^\star$,\\evidence trace};
-\draw[->] (issue) -- node[el]{specifies} (c1);
-\draw[->] (patch) -- node[el]{splits} (c2);
-\draw[->] (base.north east) -- node[el, sloped]{reads} (c2.south west);
-\draw[->] (c1.east) -| node[el, pos=.3]{obligations} (c3.north);
-\draw[->] (c2) -- node[el]{$U$, $R$} (c3);
-\draw[<->] (c3) -- node[el, above]{runs} (orc);
-\draw[->] (c3.south) |- node[el, pos=.3]{$D^\star$} (c4.east);
-\draw[<->, dashed] (c4.east) -| node[el, pos=.75]{envelope runs} (orc.south west);
-\draw[->] (c4.south) -- ++(0,-4mm) -| node[el, pos=.25]{\lab{H} labels} (out.south);
-\draw[->] (orc) -- node[el]{verdicts} (out);
+% inputs
+\node[inp] (i2) at (0,0) {\textbf{Candidate patch} $\Delta$};
+\node[inp] (i3) at (4.1,0) {\textbf{Base revision} $P$\\and its environment};
+\node[inp] (i1) at (8.2,0) {\textbf{Intent}: goal tests $T_g$,\\preservation tests $T_p$};
+% stages
+\node[stage] (c2) at (0,-1.6) {\textbf{C2 Decompose}\\split $\Delta$ into units $U$;\\requires relation $R$;\\syntax pre-check};
+\node[stage] (c3a) at (4.1,-1.6) {\textbf{C3a Withdraw}\\for each unit $u$, run the\\patch without $u$ and the\\units requiring it $\Rightarrow o_u$};
+\node[stage] (c3b) at (8.2,-1.6) {\textbf{C3b Minimise}\\\textsc{ddmin} on closed\\configurations, then\\closure-aware reduction\\$\Rightarrow$ sufficient set $D^\star$};
+\node[stage] (c4) at (12.3,-1.6) {\textbf{C4 Envelope}\\select extra tests $T_E$;\\compare base, reference\\and patch; attribute\\regressions to units};
+\node[stage, fill=green!7] (o) at (16.4,-1.6) {\textbf{Verdict per edit}\\\lab{N} necessary, \lab{J} jointly\\needed, \lab{C} coupled,\\\lab{U} unneeded, \lab{H} harmful,\\minimal patch $D^\star$};
+% annotations (running example)
+\node[ex] at (0,-3.85) {u1--u4;\\$R=\{u_2{\to}u_1,\ u_4{\to}u_3\}$};
+\node[ex] at (4.1,-3.85) {without u1 or u2: pass\\without u3 or u4: fail};
+\node[ex] at (8.2,-3.85) {$D^\star=\{u_3,u_4\}$};
+\node[ex] at (12.3,-3.85) {6 modules, 75 tests:\\no regression};
+\node[ex] at (16.4,-3.85) {u1, u2: \lab{U};\ \ u3, u4: \lab{N}};
+% oracle
+\node[draw, dashed, thick, rounded corners=3pt, fill=orange!10, align=center, text width=192mm, inner sep=4pt, anchor=north west] (orc) at (0,-4.75) {\textbf{C1 Execution oracle}: apply configuration $S$ to $P$ and run $T_g\cup T_p$ (or $T_E$) with the instance's official environment and test command $\Rightarrow$ \lab{valid}, \lab{goal-fail}, \lab{pres-fail}, \lab{invalid} or \lab{error}};
+% edges
+\draw[->] (i2.south) -- (c2.north -| i2.south);
+\draw[->] (i3.south) -- ++(0,-0.3) -| ([xshift=10mm]c2.north);
+\draw[->] (i1.south) -- (c3b.north -| i1.south);
+\draw[->] (c2.east) -- (c3a.west);
+\draw[->] (c3a.east) -- (c3b.west);
+\draw[->] (c3b.east) -- (c4.west);
+\draw[->] (c4.east) -- (o.west);
+\foreach \n in {c3a,c3b,c4} \draw[<->, dashed, black!60] ([xshift=12mm,yshift=-1mm]\n.south) -- ([xshift=12mm]\n.south |- orc.north);
 \end{tikzpicture}}
-\caption{Overview of \tool{}. C1 turns the intent into test obligations. C2 splits the patch into units and computes which units require others. C3 withdraws units counterfactually and searches for a minimal sufficient subset $D^\star$, labelling every unit necessary (\lab{N}), jointly needed (\lab{J}), coupled (\lab{C}), unneeded (\lab{U}) or unresolved (\lab{X}). C4 runs additional dependency-selected tests to expose behaviour changes outside $T_p$ and attributes them to units (\lab{H}, harmful). The execution oracle (dashed) is independent of \tool{}: it is the instance's official environment and test command.}
+\caption{Overview of \tool{}. The candidate patch is split into units (C2). Units are withdrawn one at a time (C3a) and the patch is minimised to a sufficient set (C3b), with every configuration judged by the execution oracle (C1, dashed), which uses the instance's goal and preservation tests. The envelope (C4) runs extra tests to find behaviour changes those tests miss. Grey italics show the result of each stage on the running example of Figure~\ref{fig:motivation}.}
 \label{fig:overview}
 \end{figure*}
 
-A single invocation proceeds as follows. C1 fixes the obligations: the goal tests $T_g$ and the preservation tests $T_p$ (Section~\ref{sec:intent}). C2 splits $\Delta$ into units and computes a \emph{requires} relation that records, for example, that a unit calling a new helper needs the unit that defines it (Section~\ref{sec:decomp}). C3 first checks that the full patch is valid and that the base revision is not. It then withdraws each unit in turn and runs a dependency-aware \textsc{ddmin} to find a closed 1-minimal sufficient subset $D^\star$. Each unit receives a label from these two experiments (Section~\ref{sec:triage}). C4 selects test modules that exercise the edited modules but are not part of $T_p$, runs them on the base revision, on the reference behaviour and on the patched program, and attributes any new failure to the responsible units (Section~\ref{sec:envelope}). Optionally, the per-unit verdicts can be compared with claims that a reviewer, human or LLM, makes about the same edits. We use this comparison in the evaluation (RQ2).
+
+
+We walk through one invocation on the running example. The oracle (C1, Section~\ref{sec:intent}) turns the intent into an executable judgement: it applies any subset of the patch to the base revision and runs the goal and preservation tests. Decomposition (C2, Section~\ref{sec:decomp}) splits the agent patch into the units u1--u4 and records that u2 requires u1 and u4 requires u3, because each uses the name its partner imports. Triage (C3, Section~\ref{sec:triage}) first confirms that the full patch passes and the base revision fails. It then withdraws each unit with the units that require it: the tests still pass without u1 or u2, but fail without u3 or u4. Minimisation finds the sufficient set $\{u_3,u_4\}$, so u1 and u2 are labelled unneeded and u3 and u4 necessary. The envelope (C4, Section~\ref{sec:envelope}) finally runs 75 further tests of the database layer, which detect no behaviour change. A reviewer therefore learns that the fix is the two-line change to \code{Field.get_prep_value} and that the backend change can be dropped without any test noticing.
 
 \tool{} reuses three established ideas: atomic changes from CIA~\citep{ren2004chianti}, \textsc{ddmin}~\citep{zeller2002ddmin} and static regression test selection~\citep{rothermel1997safe}. Its contribution is the combination into an outcome-relative edit triage with explicit labels and guarantees, and the empirical demonstration that this judgment differs from location-based judgments on agent patches.
 
@@ -393,7 +439,7 @@ For units $a\neq b$, $(a,b)\in R$ (``$a$ requires $b$'') if (i) the lines added 
 
 $R$ over-approximates binding dependencies by name matching. It may add a unit that is not strictly required, which only makes the evaluated configuration larger, but it never removes a unit. All oracle calls of C3 are made on closed configurations $\mathit{cl}_R(S)$. Before each call, the pre-check parses every resulting Python file. A configuration that does not parse is labelled \lab{invalid} without running tests.
 
-\emph{Running example.} The patch of Figure~\ref{fig:example} has four units. Unit u2 uses \code{LazyObject}, which u1 imports into \code{operations.py}, and u4 uses the name that u3 adds to the import in \code{fields/__init__.py}. Hence $R=\{(u_2,u_1),(u_4,u_3)\}$. Both files import the same name, but Python binds imports per module, so an earlier version of our relation that matched names across files linked $u_2$ to $u_3$ and $u_4$ to $u_1$ and made the unneeded import $u_1$ look necessary. Scoping import and assignment bindings to their file removes this artefact. Every subset of the four units parses, so the pre-check rejects nothing here.
+\emph{Running example.} The patch of Figure~\ref{fig:motivation} has four units. Unit u2 uses \code{LazyObject}, which u1 imports into \code{operations.py}, and u4 uses the name that u3 adds to the import in \code{fields/__init__.py}. Hence $R=\{(u_2,u_1),(u_4,u_3)\}$. Both files import the same name, but Python binds imports per module, so an earlier version of our relation that matched names across files linked $u_2$ to $u_3$ and $u_4$ to $u_1$ and made the unneeded import $u_1$ look necessary. Scoping import and assignment bindings to their file removes this artefact. Every subset of the four units parses, so the pre-check rejects nothing here.
 
 
 \subsection{C3: Counterfactual triage}\label{sec:triage}
@@ -455,7 +501,82 @@ The guarantees are relative to the oracle. A label \lab{U} means that the obliga
 
 \emph{Cost.} The leave-one-out loop needs $|U|$ oracle calls. \textsc{ddmin} needs $O(|U|^2)$ calls in the worst case and $O(\log |U|)$ when a single unit suffices~\citep{zeller2002ddmin}. Memoisation, closure and the syntax pre-check reduce the number of test executions further (RQ4).
 
-\emph{Running example.} The full patch passes the goal test and all 52 preservation tests twice, and the base revision fails the goal test. Leave-one-out withdraws each unit with its dependents: withdrawing $u_1$ (and therefore $u_2$) or $u_2$ alone leaves the patch valid, while withdrawing $u_3$ (with $u_4$) or $u_4$ makes the goal test fail. \textsc{DDMin} then finds $D^\star=\{u_3,u_4\}$, which is valid, and the reduction loop cannot shrink it further. The labels are therefore $u_1{:}\,\lab{U}$, $u_2{:}\,\lab{U}$, $u_3{:}\,\lab{N}$, $u_4{:}\,\lab{N}$, obtained with \exOracleCalls{} oracle executions. The fix the agent relies on is the two-line unwrapping in \code{Field.get_prep_value}. The change to the database backend's value adapter, which the agent described in a comment as the place that forces evaluation, is not needed for any obligation. This judgement does not depend on the location of the edits: all four lie outside the reference patch, two are needed and two are not. Necessity is also distinct from correctness. Unit $u_4$ reads the private attribute \code{_wrapped}, and whether that is acceptable is a question for the reviewer that no test obligation answers.
+\begin{figure}[pos=htbp]
+\centering
+\begin{tikzpicture}[font=\footnotesize,
+  on/.style={draw, fill=blue!45, minimum size=3.6mm, inner sep=0pt},
+  off/.style={draw, fill=white, minimum size=3.6mm, inner sep=0pt}]
+\node[font=\footnotesize\bfseries, anchor=west] at (0,0) {\#};
+\node[font=\footnotesize\bfseries, anchor=west] at (0.45,0) {Purpose};
+\node[font=\footnotesize\bfseries] at (4.5,0) {u1};
+\node[font=\footnotesize\bfseries] at (5.0,0) {u2};
+\node[font=\footnotesize\bfseries] at (5.5,0) {u3};
+\node[font=\footnotesize\bfseries] at (6.0,0) {u4};
+\node[font=\footnotesize\bfseries, anchor=west] at (6.6,0) {Goal test};
+\node[anchor=west] at (0,-0.5) {1};
+\node[anchor=west] at (0.45,-0.5) {full patch};
+\node[on] at (4.5,-0.5) {};
+\node[on] at (5.0,-0.5) {};
+\node[on] at (5.5,-0.5) {};
+\node[on] at (6.0,-0.5) {};
+\node[anchor=west, font=\footnotesize\bfseries, text=green!45!black] at (6.6,-0.5) {pass};
+\node[anchor=west] at (0,-1.0) {2};
+\node[anchor=west] at (0.45,-1.0) {full patch (rerun)};
+\node[on] at (4.5,-1.0) {};
+\node[on] at (5.0,-1.0) {};
+\node[on] at (5.5,-1.0) {};
+\node[on] at (6.0,-1.0) {};
+\node[anchor=west, font=\footnotesize\bfseries, text=green!45!black] at (6.6,-1.0) {pass};
+\node[anchor=west] at (0,-1.5) {3};
+\node[anchor=west] at (0.45,-1.5) {base revision};
+\node[off] at (4.5,-1.5) {};
+\node[off] at (5.0,-1.5) {};
+\node[off] at (5.5,-1.5) {};
+\node[off] at (6.0,-1.5) {};
+\node[anchor=west, font=\footnotesize\bfseries, text=red!70!black] at (6.6,-1.5) {fail};
+\node[anchor=west] at (0,-2.0) {4};
+\node[anchor=west] at (0.45,-2.0) {withdraw u1 (with u2)};
+\node[off] at (4.5,-2.0) {};
+\node[off] at (5.0,-2.0) {};
+\node[on] at (5.5,-2.0) {};
+\node[on] at (6.0,-2.0) {};
+\node[anchor=west, font=\footnotesize\bfseries, text=green!45!black] at (6.6,-2.0) {pass};
+\node[anchor=west] at (0,-2.5) {5};
+\node[anchor=west] at (0.45,-2.5) {withdraw u2};
+\node[on] at (4.5,-2.5) {};
+\node[off] at (5.0,-2.5) {};
+\node[on] at (5.5,-2.5) {};
+\node[on] at (6.0,-2.5) {};
+\node[anchor=west, font=\footnotesize\bfseries, text=green!45!black] at (6.6,-2.5) {pass};
+\node[anchor=west] at (0,-3.0) {6};
+\node[anchor=west] at (0.45,-3.0) {withdraw u3 (with u4)};
+\node[on] at (4.5,-3.0) {};
+\node[on] at (5.0,-3.0) {};
+\node[off] at (5.5,-3.0) {};
+\node[off] at (6.0,-3.0) {};
+\node[anchor=west, font=\footnotesize\bfseries, text=red!70!black] at (6.6,-3.0) {fail};
+\node[anchor=west] at (0,-3.5) {7};
+\node[anchor=west] at (0.45,-3.5) {withdraw u4};
+\node[on] at (4.5,-3.5) {};
+\node[on] at (5.0,-3.5) {};
+\node[on] at (5.5,-3.5) {};
+\node[off] at (6.0,-3.5) {};
+\node[anchor=west, font=\footnotesize\bfseries, text=red!70!black] at (6.6,-3.5) {fail};
+\node[anchor=west] at (0,-4.0) {8};
+\node[anchor=west] at (0.45,-4.0) {ddmin: try $\{u_3\}$ alone};
+\node[off] at (4.5,-4.0) {};
+\node[off] at (5.0,-4.0) {};
+\node[on] at (5.5,-4.0) {};
+\node[off] at (6.0,-4.0) {};
+\node[anchor=west, font=\footnotesize\bfseries, text=red!70!black] at (6.6,-4.0) {fail};
+\draw[black!40] (0,-4.3) -- (7.9,-4.3);
+\node[anchor=north west, align=left, text width=78mm] at (0,-4.4) {Result: $D^\star=\{u_3,u_4\}$ is valid and cannot shrink (run 8 and closure). Labels: u1, u2 \lab{U} (runs 4, 5); u3, u4 \lab{N} (runs 6, 7).};
+\end{tikzpicture}
+\caption{The eight oracle executions \tool{} performs on the running example. Filled squares mark the units applied in each configuration. The goal test passes only when both u3 and u4 are present, whatever happens to u1 and u2.}
+\label{fig:search}
+\end{figure}
+
+\emph{Running example.} Figure~\ref{fig:search} lists the executions. The full patch passes the goal test and all 52 preservation tests twice, and the base revision fails the goal test. Leave-one-out withdraws each unit with its dependents: withdrawing $u_1$ (and therefore $u_2$) or $u_2$ alone leaves the patch valid, while withdrawing $u_3$ (with $u_4$) or $u_4$ makes the goal test fail. \textsc{DDMin} then finds $D^\star=\{u_3,u_4\}$, which is valid, and the reduction loop cannot shrink it further. The labels are therefore $u_1{:}\,\lab{U}$, $u_2{:}\,\lab{U}$, $u_3{:}\,\lab{N}$, $u_4{:}\,\lab{N}$, obtained with \exOracleCalls{} oracle executions. The fix the agent relies on is the two-line unwrapping in \code{Field.get_prep_value}. The change to the database backend's value adapter, which the agent described in a comment as the place that forces evaluation, is not needed for any obligation. This judgement does not depend on the location of the edits: all four lie outside the reference patch, two are needed and two are not. Necessity is also distinct from correctness. Unit $u_4$ reads the private attribute \code{_wrapped}, and whether that is acceptable is a question for the reviewer that no test obligation answers.
 
 
 \subsection{C4: Preservation envelope and attribution}\label{sec:envelope}
@@ -502,7 +623,7 @@ Reviewers, and increasingly LLMs, explain patches by stating which edit fixes th
 \item[RQ3 (Preservation)] Does the preservation envelope expose behaviour changes that the benchmark's regression tests miss, and does \tool{} attribute them to the responsible edits?
 \item[RQ4 (Cost)] What does counterfactual triage cost, and how much do memoisation, the requires closure and the syntax pre-check reduce oracle executions relative to alternative strategies?
 \end{description}
-RQ1 is a descriptive study whose directional hypotheses (agents and humans differ in edit footprint) were fixed in advance. RQ2 and RQ3 are the primary tests of \tool{}. RQ4 characterises its cost. The protocol, including decision rules, was written before any \tool{} measurement and is part of the replication package. The protocol records seven dated amendments: four made before the affected measurements (LLM models available on the clusters, one unavailable cluster, architecture-related exclusions, one LLM excluded after its smoke test) and three corrections of the implementation found by consistency checks during execution, after which every affected record was re-run (Section~\ref{sec:threats}).
+RQ1 is a descriptive study whose directional hypotheses (agents and humans differ in edit footprint) were fixed in advance. RQ2 and RQ3 are the primary tests of \tool{}. RQ4 characterises its cost. The protocol, including decision rules, was written before any \tool{} measurement and is part of the replication package. The protocol records twelve dated amendments. Five were made before the affected measurements: the LLMs available on the clusters, one unavailable cluster, architecture-related exclusions, one LLM excluded after its smoke test, and a seeded sample of SymPy instances for the injection study to bound its cost. Four corrected the implementation after consistency checks during execution, and every affected record was re-run. Two improved efficiency without changing any measurement, and one added an exploratory informed-judge variant (Section~\ref{sec:threats}).
 
 \paragraph{Benchmark and agent patches.} We use SWE-bench Verified~\citep{chowdhury2024verified} (500 instances from 12 Python repositories). Agent patches come from the public bash-only track of the SWE-bench leaderboard, in which every submission uses the same scaffold, mini-swe-agent~\citep{miniswe2025}, with a different LLM. Holding the scaffold fixed removes one major source of variation between systems. We downloaded the submitted patch, the official evaluation report and, where published, the full trajectory of every system. RQ1 includes every system with at least 450 patch files (\rqoneSystems{} systems). For RQ2--RQ4 we fixed in advance an execution panel of eight systems spanning vendors, open and closed weights, and capability (Table~\ref{tab:panel}).
 
@@ -515,15 +636,15 @@ RQ1 is a descriptive study whose directional hypotheses (agents and humans diffe
 \toprule
 System & Resolved (Verified) & Candidates & Valid & Not valid & Other & Units \\
 \midrule
-Claude 4.6 Opus & 76.8\% & 229 & 198 & 0 & 0 & 442 \\
-GPT-5.2 (high) & 72.8\% & 223 & 193 & 0 & 0 & 630 \\
-Gemini 3 Pro (high) & 74.0\% & 207 & 191 & 0 & 0 & 427 \\
-Kimi K2.5 (high)$^\dagger$ & 71.5\% & 222 & 194 & 0 & 0 & 391 \\
-DeepSeek V3.2 (high)$^\dagger$ & 70.1\% & 219 & 191 & 0 & 0 & 469 \\
-GPT-5 mini & 58.8\% & 174 & 154 & 0 & 0 & 274 \\
-Qwen2.5-Coder 32B$^\dagger$ & 9.8\% & 28 & 22 & 0 & 0 & 49 \\
-GPT-4o & 23.6\% & 79 & 66 & 2 & 0 & 256 \\
-Reference (human) & -- & 295 & 252 & 0 & 0 & 793 \\
+Claude 4.6 Opus & 76.8\% & 229 & 229 & 0 & 0 & 492 \\
+GPT-5.2 (high) & 72.8\% & 223 & 223 & 0 & 0 & 706 \\
+Gemini 3 Pro (high) & 74.0\% & 207 & 207 & 0 & 0 & 490 \\
+Kimi K2.5 (high)$^\dagger$ & 71.5\% & 222 & 222 & 0 & 0 & 470 \\
+DeepSeek V3.2 (high)$^\dagger$ & 70.1\% & 219 & 219 & 0 & 0 & 590 \\
+GPT-5 mini & 58.8\% & 174 & 174 & 0 & 0 & 314 \\
+Qwen2.5-Coder 32B$^\dagger$ & 9.8\% & 28 & 28 & 0 & 0 & 66 \\
+GPT-4o & 23.6\% & 79 & 77 & 2 & 0 & 286 \\
+Reference (human) & -- & 295 & 295 & 0 & 0 & 914 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -533,7 +654,7 @@ Reference (human) & -- & 295 & 252 & 0 & 0 & 793 \\
 
 \paragraph{Proxies and LLM judges (RQ2).} We compare \tool{}'s labels with four location-based proxies that predict whether a source edit is needed: \emph{gold-file} (the edit is in a file that the reference patch modifies), \emph{issue-mention} (the issue text names the file, its module path or its base name), \emph{import-proximity} (the edited module is at most one import hop from a reference-patch module) and \emph{all-needed} (every edit is needed, the implicit assumption of whole-patch acceptance). We also use five open-weight LLMs as reviewers: Qwen2.5-Coder 7B, Llama~3.1 8B, Gemma~2 9B, Phi-4 14B and Mistral Small 24B. Each receives the issue and the patch split into the same units that \tool{} analyses, and returns repair hypotheses and, for each unit, a hypothesis, a role and a needed/not-needed judgement in a JSON schema. We sample three generations per patch (temperature 0.2, seeds 11, 22 and 33) and take the majority vote.
 
-\paragraph{Injection study (RQ3).} Real regressions outside the benchmark tests are rare and have no ground truth, so we complement them with a controlled study. For every validated instance we append one unit to the reference patch in a module that the reference does not edit but that lies within two import hops of an edited module. The unit is either \emph{semantic} (relational-operator flip, condition negation, integer-constant increment, or return-value replacement by \code{None}) or \emph{neutral} (an added comment, redundant parentheses around a return value, or an unused local assignment). Mutation operators of this kind are standard proxies for real faults~\citep{jia2011mutation,just2014mutants}. Operator, module and site are drawn from a seeded generator. The expected outcome is known by construction: a neutral unit must be labelled \lab{U} and never \lab{H}, and a semantic unit should be detected by the official tests or by the envelope.
+\paragraph{Injection study (RQ3).} Real regressions outside the benchmark tests are rare and have no ground truth, so we complement them with a controlled study. For every validated instance we append one unit to the reference patch in a module that the reference does not edit but that lies within two import hops of an edited module. The unit is either \emph{semantic} (relational-operator flip, condition negation, integer-constant increment, or return-value replacement by \code{None}) or \emph{neutral} (an added comment, redundant parentheses around a return value, or an unused local assignment). Mutation operators of this kind are standard proxies for real faults~\citep{jia2011mutation,just2014mutants}. Operator, module and site are drawn from a seeded generator. Because some SymPy envelopes include catch-all test modules that take up to 15 minutes per run, we injected into all eligible Django instances and into a seeded random sample of 30 SymPy instances. The expected outcome is known by construction: a neutral unit must be labelled \lab{U} and never \lab{H}, and a semantic unit should be detected by the official tests or by the envelope.
 
 \paragraph{Metrics.} RQ1 measures, per patch, the number of edited source files, change blocks (units in source files), source churn (added plus removed lines), the number of auxiliary files (files outside the package and its tests, such as reproduction scripts), the share of source change blocks in files that the reference patch does not edit (\emph{nonlocal share}), and \emph{dispersion}, the mean pairwise distance between edited source modules in the undirected module-import graph of the base revision. From trajectories we count the distinct repository files referenced by the agent's commands and the \emph{exploration-to-edit ratio} (referenced files per edited file). RQ2 reports label shares, precision, recall and F1 for flagging unneeded edits, the Matthews correlation coefficient (MCC)~\citep{chicco2020mcc} for the needed/unneeded decision, and the \emph{nonlocal-needed retention} of each proxy: the fraction of needed edits outside reference-patch files that the proxy classifies as needed. RQ3 reports the fraction of patches with envelope regressions and, for the injection study, detection rates by official tests and by official tests plus envelope. RQ4 counts oracle executions, syntax pre-check rejections and wall-clock time.
 
@@ -596,7 +717,7 @@ Qwen2.5-Coder 32B & 496 & 9.1\% & 32 & 1 [0--1] & 0 & 1.0 \\
 
 Exploration is broader than editing. The panel systems name a median of \rqoneExploreRefMin{} to \rqoneExploreRefMax{} repository files in their commands, but edit a median of one (Table~\ref{tab:explore}). Stronger systems do not explore less. DeepSeek V3.2 takes the most steps and references the most files at a resolution rate similar to the strongest systems.
 
-\emph{Answer to RQ1.} Agent patches resemble human patches in size and are, if anything, more concentrated. Capable agents mostly edit where the human developer edited, and edits away from the reference location are associated with failure. Agents explore several files for every file they edit. These findings refine rather than confirm the starting hypothesis: the risk with agent patches is not sprawling edits but a minority of edits whose relevance a location-based reviewer cannot judge. RQ2 examines those edits.
+\begin{answerbox}\textbf{Answer to RQ1.} Agent patches resemble human patches in size and are, if anything, more concentrated. Capable agents mostly edit where the human developer edited, and edits away from the reference location are associated with failure. Agents explore several files for every file they edit. These findings refine rather than confirm the starting hypothesis: the risk with agent patches is not sprawling edits but a minority of edits whose relevance a location-based reviewer cannot judge. RQ2 examines those edits.\end{answerbox}
 
 \subsection{RQ2: Counterfactual necessity of agent edits}\label{sec:rq2}
 \emph{Design.} We triaged every officially resolved panel patch and every reference patch on the validated instances (Table~\ref{tab:panel}). Of the \nCandidates{} candidate patches, \nValidPatches{} (\nAgentValid{} agent, \nGoldValid{} reference) reproduced their resolution and were labelled, \nNotValid{} did not reproduce it and \nOtherStatus{} ended as flaky or erroneous. We then compared the labels with the location proxies and the LLM judges. In this comparison, the counterfactual labels serve as the reference \emph{measurement} of necessity relative to the obligations, and the question is how well cheaper signals approximate it. RQ2 therefore does not evaluate \tool{} against itself: the validity of the labels rests on Propositions~\ref{prop:min} and~\ref{prop:sound} and on the injection study with known ground truth (RQ3). Because only resolved patches can be triaged, all necessity results describe successful patches.
@@ -610,15 +731,15 @@ Exploration is broader than editing. The panel systems name a median of \rqoneEx
 \toprule
 System & Patches & Units & \lab{N} & \lab{J} & \lab{C} & \lab{U} & Src U & Non-src & $\geq$1 removable \\
 \midrule
-Claude 4.6 Opus & 198 & 442 & 66.5\% & 0.2\% & 2.0\% & 31.2\% & 32.8\% & 3 & 19.7\% \\
-GPT-5.2 (high) & 193 & 630 & 57.0\% & 0.2\% & 3.0\% & 39.8\% & 41.8\% & 11 & 35.2\% \\
-Gemini 3 Pro (high) & 191 & 427 & 65.8\% & 0.0\% & 3.5\% & 30.7\% & 33.7\% & 3 & 22.0\% \\
-Kimi K2.5 (high) & 194 & 391 & 77.7\% & 0.3\% & 1.3\% & 20.7\% & 21.4\% & 3 & 20.1\% \\
-DeepSeek V3.2 (high) & 191 & 469 & 62.7\% & 0.0\% & 2.3\% & 35.0\% & 36.9\% & 3 & 34.6\% \\
-GPT-5 mini & 154 & 274 & 78.8\% & 0.0\% & 0.0\% & 21.2\% & 21.2\% & 0 & 23.4\% \\
-Qwen2.5-Coder 32B & 22 & 49 & 69.4\% & 0.0\% & 0.0\% & 30.6\% & 12.8\% & 10 & 31.8\% \\
-GPT-4o & 66 & 256 & 28.9\% & 0.4\% & 0.4\% & 70.3\% & 35.3\% & 140 & 74.2\% \\
-Reference (human) & 252 & 793 & 64.8\% & 0.0\% & 2.3\% & 32.9\% & 35.2\% & 0 & 24.6\% \\
+Claude 4.6 Opus & 229 & 492 & 68.3\% & 0.2\% & 1.8\% & 29.7\% & 31.1\% & 3 & 19.2\% \\
+GPT-5.2 (high) & 223 & 706 & 57.8\% & 0.4\% & 2.7\% & 39.1\% & 40.9\% & 11 & 34.5\% \\
+Gemini 3 Pro (high) & 207 & 485 & 63.9\% & 0.0\% & 3.1\% & 33.0\% & 35.7\% & 3 & 23.2\% \\
+Kimi K2.5 (high) & 222 & 463 & 73.7\% & 0.6\% & 1.1\% & 24.6\% & 25.2\% & 3 & 22.5\% \\
+DeepSeek V3.2 (high) & 219 & 583 & 57.6\% & 0.0\% & 2.2\% & 40.1\% & 42.1\% & 3 & 37.0\% \\
+GPT-5 mini & 174 & 313 & 77.0\% & 0.3\% & 0.6\% & 22.0\% & 22.7\% & 0 & 24.7\% \\
+Qwen2.5-Coder 32B & 28 & 66 & 65.2\% & 0.0\% & 0.0\% & 34.8\% & 10.4\% & 18 & 46.4\% \\
+GPT-4o & 77 & 286 & 31.1\% & 0.3\% & 0.3\% & 68.2\% & 35.3\% & 147 & 76.6\% \\
+Reference (human) & 295 & 914 & 64.1\% & 0.0\% & 2.0\% & 33.9\% & 35.9\% & 0 & 25.4\% \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -628,33 +749,33 @@ Reference (human) & 252 & 793 & 64.8\% & 0.0\% & 2.3\% & 32.9\% & 35.2\% & 0 & 2
 
 Reference patches are not a gold standard of necessity either. \rqtwoGoldShareU{} \rqtwoGoldShareUCI{} of their units and \rqtwoGoldSrcUnneeded{} of their source units are removable under their own F2P and P2P tests, and \rqtwoGoldPatchesUnneeded{} of reference patches contain at least one such unit. Typical cases are the same fix applied to a sibling code path that the tests do not exercise, or a defensive check added beside the fix. These edits may well be good engineering. The point is that a test-based oracle cannot see their value, and that treating the human patch as the definition of relevant code would count them as relevant by fiat.
 
-\emph{Do location proxies recover necessity?} No. Table~\ref{tab:proxies} shows that the gold-file proxy flags almost none of the removable units (recall \rqtwoRecPgoldfile{}) and its MCC is \rqtwoMccPgoldfile{}. The reason is visible in the data: of the \rqtwoSrcUnneededN{} removable agent source units, \rqtwoUnneededInGold{} lie inside reference-patch files, exactly where a location-based reviewer would look for the fix. Import proximity behaves the same way (MCC \rqtwoMccPdep{}), and the issue-mention proxy flags more units but with low precision (MCC \rqtwoMccPissue{}). Conversely, \rqtwoNonlocalNeeded{} needed units lie outside reference-patch files, and the gold-file proxy misclassifies all of them as unneeded by construction. The high nonlocal retention of the LLM judges must be read together with their low recall: a judge that rarely calls any unit unneeded also rarely calls a nonlocal unit unneeded. Necessity and location are nearly independent: \rqtwoLocalNeededShare{} of agent source units inside reference files are needed, compared with \rqtwoNonlocalNeededShare{} outside them.
+\emph{Do location proxies recover necessity?} Only partly, and in a characteristic way (Table~\ref{tab:proxies}). The gold-file proxy is precise when it flags a unit as removable (precision \rqtwoPrecPgoldfile{}): agent edits outside reference-patch files are mostly unneeded. It finds, however, only \rqtwoRecPgoldfile{} of the removable units, because \rqtwoUnneededInGold{} of the \rqtwoSrcUnneededN{} removable agent source units lie \emph{inside} reference-patch files, exactly where a location-based reviewer looks for the fix. At the same time it rejects every one of the \rqtwoNonlocalNeeded{} needed units that lie outside reference-patch files. Import proximity behaves similarly (MCC \rqtwoMccPdep{}) but retains more of the nonlocal needed units (\rqtwoRetPdep{}), and the issue-mention proxy flags more units at low precision (MCC \rqtwoMccPissue{}). Location therefore carries information about necessity (MCC \rqtwoMccPgoldfile{} for gold-file), but it is blind to most removable edits and to needed edits on alternative repair routes. Measured against the pre-registered decision rule (nonlocal retention below 0.5 and F1 below the best LLM judge), the hypothesis that location proxies fail to distinguish necessity is supported for gold-file and partly for the other two proxies: issue-mention exceeds the best judge's F1 and import proximity retains more than half of the nonlocal needed units.
 
 % BEGIN:rq2-proxy-table
 \begin{table*}[t]
-\caption{How well location proxies and LLM judges recover counterfactual necessity for the 2{,}765 source units of valid agent patches. Precision, recall and F1 refer to flagging \emph{removable} units. MCC refers to the needed/removable decision. Brackets: 95\% instance-cluster bootstrap intervals. \emph{Nonlocal retention}: share of the 50 needed units outside reference-patch files that the proxy classifies as needed. LLM judges: majority vote over three seeds.}
+\caption{How well location proxies and LLM judges recover counterfactual necessity for the 3{,}206 source units of valid agent patches. Precision, recall and F1 refer to flagging \emph{removable} units. MCC refers to the needed/removable decision. Brackets: 95\% instance-cluster bootstrap intervals. \emph{Nonlocal retention}: share of the 60 needed units outside reference-patch files that the proxy classifies as needed. LLM judges: majority vote over three seeds.}
 \label{tab:proxies}
 \centering\footnotesize
 \begin{tabular}{llrrrrr}
 \toprule
 Family & Proxy & Precision & Recall & F1 [95\% CI] & MCC [95\% CI] & Nonlocal retention \\
 \midrule
-Location & Gold-file & 0.83 & 0.26 & 0.40 [0.27, 0.52] & 0.36 [0.25, 0.46] & 0\% \\
-Location & Issue-mention & 0.39 & 0.65 & 0.49 [0.38, 0.57] & 0.14 [0.03, 0.25] & 44\% \\
-Location & Import-proximity & 0.89 & 0.19 & 0.31 [0.18, 0.45] & 0.33 [0.21, 0.43] & 56\% \\
+Location & Gold-file & 0.83 & 0.27 & 0.41 [0.28, 0.51] & 0.37 [0.26, 0.46] & 0\% \\
+Location & Issue-mention & 0.40 & 0.63 & 0.49 [0.39, 0.58] & 0.14 [0.03, 0.24] & 37\% \\
+Location & Import-proximity & 0.91 & 0.21 & 0.34 [0.20, 0.46] & 0.35 [0.24, 0.44] & 63\% \\
 Location & All-needed & -- & 0.00 & -- & -- & 100\% \\
 \midrule
-LLM judge & Gemma 2 9B & 0.77 & 0.16 & 0.27 [0.20, 0.34] & 0.25 [0.18, 0.34] & 100\% \\
-LLM judge & Llama 3.1 8B & 0.31 & 0.30 & 0.31 [0.25, 0.37] & -0.01 [-0.09, 0.08] & 54\% \\
-LLM judge & Mistral Small 24B & 0.91 & 0.27 & 0.41 [0.30, 0.53] & 0.40 [0.31, 0.50] & 100\% \\
-LLM judge & Phi-4 14B & 0.92 & 0.18 & 0.31 [0.21, 0.42] & 0.34 [0.26, 0.43] & 100\% \\
-LLM judge & Qwen2.5-Coder 7B & 0.49 & 0.36 & 0.41 [0.34, 0.49] & 0.19 [0.10, 0.31] & 86\% \\
+LLM judge & Gemma 2 9B & 0.77 & 0.16 & 0.27 [0.21, 0.34] & 0.25 [0.19, 0.33] & 98\% \\
+LLM judge & Llama 3.1 8B & 0.36 & 0.33 & 0.35 [0.28, 0.41] & 0.03 [-0.05, 0.11] & 58\% \\
+LLM judge & Mistral Small 24B & 0.91 & 0.29 & 0.44 [0.34, 0.53] & 0.42 [0.34, 0.49] & 100\% \\
+LLM judge & Phi-4 14B & 0.93 & 0.21 & 0.35 [0.25, 0.44] & 0.37 [0.29, 0.44] & 100\% \\
+LLM judge & Qwen2.5-Coder 7B & 0.52 & 0.37 & 0.43 [0.36, 0.51] & 0.22 [0.13, 0.31] & 82\% \\
 \bottomrule
 \end{tabular}
 \end{table*}
 % END:rq2-proxy-table
 
-\emph{Can LLM judges stand in for counterfactual evidence?} Partly. The best judges (Phi-4 and Mistral Small) are precise when they call a unit unneeded (precision \rqtwoPrecLphib{} and \rqtwoPrecLmistralsmallb{}), but they call few units unneeded (recall \rqtwoRecLphib{} and \rqtwoRecLmistralsmallb{}), reaching MCC \rqtwoMccLphib{} and \rqtwoMccLmistralsmallb{}. The smaller Qwen2.5-Coder~7B flags more units at lower precision and attains the highest F1 (\rqtwoFoneLqwencoderb{}). Llama~3.1~8B is close to chance (MCC \rqtwoMccLllamab{}). All judges retain most nonlocal needed units, unlike the location proxies, because they reason about the issue rather than about file names. Their judgements are moderately stable across seeds (\rqtwoSeedAgreeMin--\rqtwoSeedAgreeMax{} of units receive the same judgement in all three samples) and almost always parseable (at least \rqtwoParseMin{} of responses).
+\emph{Can LLM judges stand in for counterfactual evidence?} Partly. The best judges, Mistral Small and Phi-4, reach MCC \rqtwoMccLmistralsmallb{} and \rqtwoMccLphib{}, on a par with the best location proxy. They are precise when they call a unit unneeded (precision \rqtwoPrecLmistralsmallb{} and \rqtwoPrecLphib{}) but call few units unneeded (recall \rqtwoRecLmistralsmallb{} and \rqtwoRecLphib{}). Qwen2.5-Coder~7B flags more units at lower precision (F1 \rqtwoFoneLqwencoderb{}), and Llama~3.1~8B is close to chance (MCC \rqtwoMccLllamab{}). Unlike the location proxies, the judges retain almost all nonlocal needed units, because they reason about the issue rather than about file names. This high retention must be read together with their low recall: a judge that rarely calls any unit unneeded also rarely calls a nonlocal unit unneeded. Judgements are moderately stable across seeds (\rqtwoSeedAgreeMin--\rqtwoSeedAgreeMax{} of units receive the same judgement in all three samples) and almost always parseable (at least \rqtwoParseMin{} of responses).
 
 \emph{Would the tests help the judges?} A judge that knows which tests define success might reason like the oracle. In an exploratory variant (one seed), we added the goal-test names and the instance's test patch to each prompt (Table~\ref{tab:informed}). The tests improve two judges (Phi-4 and Qwen2.5-Coder) and leave the others essentially unchanged, but recall stays at or below \rqtwoInfMaxRecall{} and the best MCC is \rqtwoInfMaxMcc{}. Reading the tests is not the same as executing them.
 
@@ -669,17 +790,17 @@ LLM judge & Qwen2.5-Coder 7B & 0.49 & 0.36 & 0.41 [0.34, 0.49] & 0.19 [0.10, 0.3
 \cmidrule(lr){2-4}\cmidrule(lr){5-7}
 Judge & Prec. & Rec. & MCC & Prec. & Rec. & MCC \\
 \midrule
-Qwen2.5-Coder 7B & 0.48 & 0.34 & 0.18 & 0.59 & 0.46 & 0.33 \\
-Llama 3.1 8B & 0.31 & 0.32 & 0.00 & 0.32 & 0.32 & -0.01 \\
-Gemma 2 9B & 0.76 & 0.16 & 0.25 & 0.80 & 0.14 & 0.25 \\
-Phi-4 14B & 0.90 & 0.18 & 0.33 & 0.96 & 0.25 & 0.41 \\
-Mistral Small 24B & 0.91 & 0.32 & 0.45 & 0.95 & 0.27 & 0.43 \\
+Qwen2.5-Coder 7B & 0.51 & 0.35 & 0.19 & 0.61 & 0.48 & 0.34 \\
+Llama 3.1 8B & 0.33 & 0.33 & 0.02 & 0.34 & 0.32 & -0.01 \\
+Gemma 2 9B & 0.76 & 0.17 & 0.25 & 0.82 & 0.14 & 0.25 \\
+Phi-4 14B & 0.92 & 0.22 & 0.37 & 0.97 & 0.27 & 0.43 \\
+Mistral Small 24B & 0.91 & 0.34 & 0.46 & 0.96 & 0.30 & 0.45 \\
 \bottomrule
 \end{tabular}
 \end{table}
 % END:rq2-informed-table
 
-\emph{Answer to RQ2.} About one in four source edits of resolved agent patches is not needed for the instance's obligations, and the same holds for a similar share of human reference edits. Location proxies cannot recover necessity because unneeded agent edits sit inside the files the reference patch edits. LLM judges are better and can serve as a cheap filter with high precision, but they miss most removable edits. Counterfactual execution remains necessary to establish what a patch needs.
+\begin{answerbox}\textbf{Answer to RQ2.} About one in three source edits of resolved agent patches (\rqtwoAgentSrcUnneeded{}) is not needed for the instance's obligations, and a similar share of human reference edits (\rqtwoGoldSrcUnneeded{}) is not either. Location proxies capture part of this signal but miss most removable edits, which sit inside the files the reference patch edits, and they reject needed edits on alternative repair routes. LLM judges reach similar overall agreement with high precision but low recall. Neither replaces counterfactual execution for establishing what a patch needs.\end{answerbox}
 
 
 \subsection{RQ3: Preservation envelope}\label{sec:rq3}
@@ -688,11 +809,24 @@ Mistral Small 24B & 0.91 & 0.32 & 0.45 & 0.95 & 0.27 & 0.43 \\
 \emph{Real patches.} Envelope regressions are rare. They occur in \rqthreeAgentRegN{} agent patches (\rqthreeAgentRegRate{} \rqthreeAgentRegCI{}) and \rqthreeGoldRegN{} reference patches. In \rqthreeAgentHarmful{} agent patches \tool{} attributes a regression to a unit outside $D^\star$ (\lab{H}), so the regression disappears when that unit is removed. In \rqthreeAgentRegMinimal{} patches the regression persists in $D^\star$, which indicates a conflict between the obligations and preserved behaviour rather than a removable edit.
 
 % BEGIN:rq3-injection-table
+\begin{table}[t]
+\caption{Outcomes of the injection study: one injected unit per reference patch, in a module within two import hops of the edited modules. \emph{Official tests}: the patched program fails F2P or P2P. \emph{Envelope}: official tests pass, the envelope exposes a regression and attributes it to the injected unit. \emph{Undetected}: neither detects a change, and the unit is labelled unneeded.}
+\label{tab:injection}
+\centering\footnotesize
+\begin{tabular}{lrrrrr}
+\toprule
+Injection & Official tests & Envelope (\lab{H}) & Undetected (\lab{U}) & Error & Total \\
+\midrule
+Neutral & 0 & 0 & 249 & 1 & 250 \\
+Semantic & 78 & 25 & 146 & 1 & 250 \\
+\bottomrule
+\end{tabular}
+\end{table}
 % END:rq3-injection-table
 
-\emph{Injection study.} Table~\ref{tab:injection} shows that the official tests detect \rqthreeSemanticOfficial{} of semantic injections. Adding the envelope raises detection to \rqthreeSemanticEnvelope{}, an absolute gain of \rqthreeSemanticGain{}. Every detected injection is attributed to the injected unit. Neutral injections are never labelled harmful and are labelled unneeded in \rqthreeNeutralLabelledU{} of cases, as expected. The remaining semantic injections are not executed or not observed by any selected test, which bounds what any test-based oracle can establish about them.
+\emph{Injection study.} Table~\ref{tab:injection} shows that the official tests detect \rqthreeSemanticOfficial{} of semantic injections. Adding the envelope raises detection to \rqthreeSemanticEnvelope{}, an absolute gain of \rqthreeSemanticGain{}. Neutral injections are never labelled harmful and are labelled unneeded in \rqthreeNeutralLabelledU{} of cases, as expected. The remaining semantic injections are not executed or not observed by any selected test, which bounds what any test-based oracle can establish about them.
 
-\emph{Answer to RQ3.} A cheap import-based envelope exposes behaviour changes that the benchmark's regression tests miss and attributes them to the responsible unit without false alarms on neutral edits. Most injected faults in neighbouring modules, however, remain invisible to both, so a \lab{U} label must be read as ``not needed and not observed to change tested behaviour'', not as ``harmless''.
+\begin{answerbox}\textbf{Answer to RQ3.} A cheap import-based envelope exposes behaviour changes that the benchmark's regression tests miss and attributes them to the responsible unit without false alarms on neutral edits. Most injected faults in neighbouring modules, however, remain invisible to both, so a \lab{U} label must be read as ``not needed and not observed to change tested behaviour'', not as ``harmless''.\end{answerbox}
 
 
 \subsection{RQ4: Cost of counterfactual triage}\label{sec:rq4}
@@ -700,46 +834,48 @@ Mistral Small 24B & 0.91 & 0.32 & 0.45 & 0.95 & 0.27 & 0.43 \\
 
 % BEGIN:rq4-table
 \begin{table}[t]
-\caption{Cost of counterfactual triage. Left: median oracle executions and wall-clock seconds per patch by number of units (all 1{,}461 valid patches). Right: total and median oracle executions of alternative strategies on the 349 patches with at least three units. Alternative strategies are replayed with \tool{}'s outcome cache as ground truth and counted as if run alone. \tool{}'s count includes leave-one-out, minimisation and the repeated full-patch run.}
+\caption{Cost of counterfactual triage. Left: median oracle executions and wall-clock seconds per patch by number of units (all 1{,}674 valid patches). Right: total and median oracle executions of alternative strategies on the 421 patches with at least three units. Alternative strategies are replayed with \tool{}'s outcome cache as ground truth and counted as if run alone. \tool{}'s count includes leave-one-out, minimisation and the repeated full-patch run.}
 \label{tab:cost}
 \centering\footnotesize
 \begin{tabular}{lrrr}
 \toprule
 Units & Patches & Calls & Seconds \\
 \midrule
-0--1 & 791 & 3 & 28 \\
-1--2 & 321 & 5 & 39 \\
-2--4 & 197 & 8 & 45 \\
-4--8 & 88 & 14 & 70 \\
-8--16 & 42 & 26 & 78 \\
-16--1000 & 22 & 76 & 254 \\
+0--1 & 877 & 3 & 30 \\
+1--2 & 376 & 5 & 39 \\
+2--4 & 249 & 8 & 47 \\
+4--8 & 101 & 14 & 76 \\
+8--16 & 45 & 25 & 82 \\
+16--1000 & 26 & 66 & 272 \\
 \bottomrule
 \end{tabular}\hfill
 \begin{tabular}{lrr}
 \toprule
 Strategy & Total & Median \\
 \midrule
-\tool{} (memoised triage, this paper) & 6388 & 9 \\
-\textsc{ddmin}, closure and pre-check & 4079 & 5 \\
-\textsc{ddmin} only (no closure, no pre-check) & 5016 & 6 \\
-\textsc{ddmin} with pre-check only & 4892 & 6 \\
-Leave-one-out only & 2135 & 4 \\
-Exhaustive ($\leq$8 units) & 2778 & 5 \\
+\tool{} (memoised triage, this paper) & 7271 & 9 \\
+\textsc{ddmin}, closure and pre-check & 4533 & 5 \\
+\textsc{ddmin} only (no closure, no pre-check) & 5583 & 6 \\
+\textsc{ddmin} with pre-check only & 5459 & 6 \\
+Leave-one-out only & 2517 & 4 \\
+Exhaustive ($\leq$8 units) & 3396 & 5 \\
 \bottomrule
 \end{tabular}
 \end{table}
 % END:rq4-table
 
-\emph{Results.} Triage is affordable at the scale of a code review. The median patch needs \rqfourCallsMedian{} oracle executions (90th percentile \rqfourCallsPninety{}) and \rqfourWallMedian{} seconds of wall-clock time, of which \rqfourOracleSecMedian{} seconds are test execution. Cost grows with the number of units but remains in minutes for the largest patches. The syntax pre-check rejected \rqfourPrecheck{} configurations without running tests, and plain \textsc{ddmin} without closure or pre-check would have spent \rqfourPlainInvalid{} oracle executions on configurations that do not load. On the \rqfourExhN{} patches small enough for exhaustive search, $D^\star$ has the minimum cardinality in \rqfourExhMatch{} of cases. In the remaining \rqfourExhLarger{} patches, $D^\star$ is 1-minimal but a smaller valid subset exists, which is the expected limitation of \textsc{ddmin}. Leave-one-out alone would have missed jointly needed units in \rqfourPatchesJ{} patches and misreported \rqfourCoupled{} coupled units as necessary.
+\emph{Results.} Triage is affordable at the scale of a code review. The median patch needs \rqfourCallsMedian{} oracle executions (90th percentile \rqfourCallsPninety{}) and \rqfourWallMedian{} seconds of wall-clock time, of which \rqfourOracleSecMedian{} seconds are test execution. Cost grows with the number of units but remains in minutes for the largest patches. The syntax pre-check rejected \rqfourPrecheck{} configurations without running tests, and plain \textsc{ddmin} without closure or pre-check would have spent \rqfourPlainInvalid{} oracle executions on configurations that do not load. On the \rqfourExhN{} patches small enough for exhaustive search, $D^\star$ has the minimum cardinality in \rqfourExhMatch{} of cases. In the remaining \rqfourExhLarger{} patches, $D^\star$ is 1-minimal but a smaller valid subset exists, which is the expected limitation of \textsc{ddmin}. Leave-one-out alone would have missed jointly needed units in \rqfourPatchesJ{} patches and would have reported the coupled units of \rqfourCoupled{} patches as necessary.
 
-\emph{Answer to RQ4.} Counterfactual triage costs a median of \rqfourCallsMedian{} test runs per patch. Closure and pre-check prevent wasted executions on ill-formed configurations, and minimisation adds information that leave-one-out cannot provide (jointly needed and coupled units) at modest extra cost.
+\begin{answerbox}\textbf{Answer to RQ4.} Counterfactual triage costs a median of \rqfourCallsMedian{} test runs per patch. Closure and pre-check prevent wasted executions on ill-formed configurations, and minimisation adds information that leave-one-out cannot provide (jointly needed and coupled units) at modest extra cost.\end{answerbox}
 
 
 \subsection{Threats to validity}\label{sec:threats}
 
+We follow the classification of \citet{wohlin2012experimentation}.
+
 \paragraph{Construct validity.} \tool{}'s labels are relative to test obligations, which are incomplete specifications~\citep{barr2015oracle}. A unit labelled \lab{U} may still matter for untested behaviour or for readability, and a \lab{N} unit is needed but not necessarily correct, as the private-attribute access in the running example shows. We mitigate the first problem with the envelope (RQ3) and report labels as ``needed for the obligations'', never as ``useless''. The goal tests are the benchmark's F2P tests, which in deployment would be replaced by an issue-reproduction test of possibly lower quality. Location proxies were defined from the reference patch, which favours them, and still performed poorly. LLM judges received the same units and issue text as \tool{}, but not test results. They answer a harder question than \tool{} and are not a like-for-like competitor. We use them to test whether stated explanations can replace counterfactual evidence, not to rank methods.
 
-\paragraph{Internal validity.} Flaky tests could produce spurious labels. We rerun the full patch, exclude patches whose outcome changes, and exclude envelope tests whose outcome differs between two base runs. The requires relation is a name-based over-approximation. It can only enlarge the analysed configurations and never removes a unit. We corrected three implementation issues during execution (closure-aware reduction, the coupled label and per-module scoping of import bindings), each triggered by a consistency check, and re-ran every affected record. Our environments are native \texttt{arm64} rebuilds of the official specifications. We validated each one with the reference patch and excluded the instance or patch when resolution was not reproduced. \textsc{DDMin} returns one closed 1-minimal subset, so a unit labelled \lab{U} may be part of an alternative minimal subset. RQ4 shows this ambiguity is rare on small patches.
+\paragraph{Internal validity.} Flaky tests could produce spurious labels. We rerun the full patch, exclude patches whose outcome changes, and exclude envelope tests whose outcome differs between two base runs. The requires relation is a name-based over-approximation. It can only enlarge the analysed configurations and never removes a unit. We corrected four implementation issues during execution (closure-aware reduction, the coupled label, per-module scoping of import bindings, and orphaned test processes after timeouts), each triggered by a consistency check, and re-ran every affected record. Every envelope regression was confirmed by an independent re-execution, which removed regressions caused by flaky tests, including one of a reference patch against itself. Our environments are native \texttt{arm64} rebuilds of the official specifications. We validated each one with the reference patch and excluded the instance or patch when resolution was not reproduced. \textsc{DDMin} returns one closed 1-minimal subset, so a unit labelled \lab{U} may be part of an alternative minimal subset. RQ4 shows this ambiguity is rare on small patches.
 
 \paragraph{External validity.} The execution study covers two Python projects (Django and SymPy), which together account for 61\% of SWE-bench Verified, and eight agent systems in one scaffold. Patches from tool-rich scaffolds, other languages or industrial code bases may differ. The footprint study (RQ1) covers all 12 repositories and \rqoneSystems{} systems, but only one scaffold family. Model versions evolve quickly, and our panel includes older and newer models to show trends rather than a single snapshot.
 
@@ -750,17 +886,35 @@ Exhaustive ($\leq$8 units) & 2778 & 5 \\
 
 \subsection{Discussion}\label{sec:discussion}
 
-\paragraph{Where the human-centric view breaks.} RQ1 and RQ2 together explain why location is a weak signal of relevance for agent patches. Capable agents already edit where humans edit, so location separates good from bad \emph{patches} reasonably well (Figure~\ref{fig:rq1}). It does not separate needed from unneeded \emph{edits}, because the unneeded edits sit next to the needed ones, in the same files. When an agent does take a different route, as in the running example, location gives no guidance at all. The outcome-relative question that \tool{} asks is orthogonal to location, which is why it adds information in both cases.
+The four research questions combine into five insights. We discuss each, then summarise implications for practice (Table~\ref{tab:implications}) and the conditions under which \tool{} is not the right tool.
 
-\paragraph{Exploration is not edit sprawl.} The starting hypothesis of this work was that agents, unconstrained by human habits, would edit more and wider. The data contradict it. Agents explore several files per edited file and then make concentrated edits, while leftover artefacts come from scaffold behaviour rather than from the models. A governance mechanism for agents should therefore not cap the number of files an agent may touch. It should require evidence for each edit that remains in the final patch.
+\paragraph{Insight 1: agent patches are concentrated, but not lean.} We started from the hypothesis that agents, unconstrained by human habits, would edit more and wider. RQ1 contradicts it. Agents explore several files for each file they edit and then make edits that are as concentrated as human ones, and the auxiliary files they leave behind are an artefact of the scaffold, not of the model. Concentration, however, does not mean that every edit is needed: about a third of the source edits of resolved agent patches are removable (RQ2). A governance rule that caps how many files an agent may touch would therefore miss the problem. What matters is whether each remaining edit is backed by evidence.
 
-\paragraph{What reviewers and tools can do with the labels.} The labels support three uses. First, reviewers can read $D^\star$, which is smaller than the patch whenever a unit is removable, and treat the remaining units as optional changes that need their own justification. Second, an agent can run \tool{} before submitting and drop removable units or explain them. Third, benchmark maintainers can use \lab{U} labels on reference patches to identify edits that their tests do not cover, which is a cheap way to find gaps in the oracle.
+\paragraph{Insight 2: location separates patches, not edits.} Figure~\ref{fig:rq1} shows that location is a good signal at the level of whole patches: systems that edit where humans edit resolve more issues. At the level of individual edits it is a weak signal. Most removable agent edits (\rqtwoUnneededInGoldShare{}) sit in the same files as the needed ones, so a location-based reviewer cannot tell them apart, and when an agent takes another route, as in Figure~\ref{fig:motivation}, location rejects needed edits. This is the concrete sense in which change judgement must move beyond a human-centric yardstick: the reference location says where \emph{a} fix is, not which edits \emph{this} fix depends on.
 
-\paragraph{Why LLM judges are not enough.} LLM judges are conservative: they rarely call an edit unneeded, and when they do they are usually right. They share the agent's narrative, however. In the running example, every judge accepted the agent's own description of the unneeded edit as the fix. A judge can therefore filter obviously spurious edits, such as leftover scripts, but cannot establish necessity. Execution is cheap at the scale of a pull request (RQ4), so we see LLM judgement as a complement that explains \emph{why} a needed edit matters once \tool{} has shown \emph{that} it matters.
+\paragraph{Insight 3: plausible explanations are not evidence.} The LLM judges are conservative: they rarely call an edit unneeded, and when they do they are usually right. Their errors, however, are systematic. They share the narrative of the patch, as in the running example, where every judge accepted the agent's own comment and named the removable edit u2 as the fix. Showing them the tests improves some judges but does not close the gap (Table~\ref{tab:informed}). Reading a test is not the same as running it. LLM judgement is therefore useful to explain \emph{why} an edit matters once execution has shown \emph{that} it matters, and to filter obvious debris such as leftover scripts, but not to decide what a patch needs.
 
-\paragraph{When \tool{} is not the right tool.} \tool{} needs an executable oracle that discriminates the base from the patched program. Where no such test exists, or where tests are slow or flaky, the labels become unresolved or expensive. For edits whose value lies outside tested behaviour, such as documentation, logging or defensive checks, \lab{U} is the expected and correct label, and a reviewer should judge those edits on other grounds. Finally, \tool{} analyses a given patch. It does not generate alternatives, although $D^\star$ is itself a smaller valid patch.
+\paragraph{Insight 4: reference patches are not a gold standard of relevance.} A similar share of the maintainers' own source edits (\rqtwoGoldSrcUnneeded{}) is removable under the instance's tests. Typical cases are the same fix applied to a sibling code path that no test exercises, or a defensive check beside the fix. These edits may be good engineering, but their value is invisible to the benchmark. Metrics that score agents by overlap with the reference files, such as localisation accuracy, therefore reward agents for reproducing untested human edits and penalise valid alternative routes.
 
+\paragraph{Insight 5: counterfactual evidence is cheap at review scale.} The median patch needs \rqfourCallsMedian{} test runs and well under a minute of execution (RQ4). Cost grows with the number of units and with slow tests, and the envelope dominates for a few SymPy instances with catch-all test modules. At the scale of a pull request, however, the evidence is affordable. The rare expensive cases are also the patches a reviewer would most like help with.
 
+\begin{table*}[pos=htbp]
+\caption{Implications of the findings for different stakeholders.}
+\label{tab:implications}
+\centering\footnotesize
+\begin{tabular}{p{30mm}p{64mm}p{64mm}}
+\toprule
+Stakeholder & Finding & Suggested action \\
+\midrule
+Reviewers and maintainers & About a third of the edits of a passing agent patch are not needed (RQ2); location and LLM explanations do not reveal which (RQ2). & Review $D^\star$ first and treat removable units as optional changes that need their own justification. \\
+Agent and tool builders & Agents explore broadly but leave removable edits in concentrated patches (RQ1, RQ2). & Run triage before submission and drop or justify removable units; record evidence per edit rather than limiting the number of edited files. \\
+Benchmark designers & Reference patches contain untested edits (RQ2), and overlap with reference files rewards reproducing them. & Report removable units of reference patches as oracle gaps; avoid reference-file overlap as a measure of edit relevance. \\
+Researchers & Envelope tests expose changes missed by the official tests, but most injected faults remain unobserved (RQ3). & Combine counterfactual triage with stronger, coverage-based envelopes and with patch-correctness assessment applied to $D^\star$. \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\paragraph{When \tool{} is not the right tool.} \tool{} needs an executable oracle that separates the base from the patched program. Where no such test exists, or where tests are slow or flaky, the labels become unresolved or expensive. For edits whose value lies outside tested behaviour, such as documentation, logging or defensive checks, \lab{U} is the expected and correct label, and a reviewer should judge those edits on other grounds. Finally, \tool{} analyses a given patch. It does not generate alternatives, although $D^\star$ is itself a smaller valid patch.
 
 \section{Related work}\label{sec:related}
 
@@ -768,16 +922,16 @@ We group related work into four families by the assumption they make about how a
 
 \paragraph{Change impact analysis and regression test selection.} CIA estimates the consequences of a known modification by traversing static or dynamic dependencies~\citep{bohner1996cia,li2013cia,orso2003field}. Chianti decomposes a change into atomic changes and maps them to affected tests~\citep{ren2004chianti}. Safe RTS selects every test whose behaviour may change~\citep{rothermel1997safe}, and practical RTS tools trade safety for speed using file-level dependencies~\citep{gligoric2015ekstazi}. These techniques are precise about what a change \emph{may} affect and are agnostic about who wrote it. They do not ask whether each edit is needed for an intended outcome, and they do not distinguish an edit that a fix requires from an edit that merely accompanies it. \tool{} uses an RTS step (C4) as one component and adds the counterfactual question of necessity. Where a safe dynamic RTS is available, it would be a stronger envelope than our static import-based selection.
 
-\paragraph{Automated program repair and patch correctness.} Generate-and-validate repair searches large spaces of candidate edits and validates them with tests~\citep{legoues2012genprog,long2016prophet}. Studies of these search spaces showed that test-passing patches are often incorrect or overfitted~\citep{qi2015kali,long2016searchspace,smith2015cure}, which motivated patch correctness assessment~\citep{wang2020apr} and semantics-based repair that synthesises fixes from constraints~\citep{nguyen2013semfix,mechtaev2016angelix}. The overfitting literature asks whether a whole patch is correct beyond its tests. \tool{} asks a complementary question at the edit level: which parts of a test-passing patch are needed for its obligations, and which parts change behaviour outside them. The two can be combined, for example by applying correctness assessment to $D^\star$ instead of to the full patch.
+\paragraph{Automated program repair and patch correctness.} Generate-and-validate repair searches large spaces of candidate edits and validates them with tests~\citep{legoues2012genprog,long2016prophet}. Studies of these search spaces showed that test-passing patches are often incorrect or overfitted~\citep{qi2015kali,long2016searchspace,smith2015cure}, which motivated patch correctness assessment~\citep{wang2020apr,monperrus2018living} and semantics-based repair that synthesises fixes from constraints~\citep{nguyen2013semfix,mechtaev2016angelix}. The overfitting literature asks whether a whole patch is correct beyond its tests. \tool{} asks a complementary question at the edit level: which parts of a test-passing patch are needed for its obligations, and which parts change behaviour outside them. The two can be combined, for example by applying correctness assessment to $D^\star$ instead of to the full patch.
 
 \paragraph{Delta debugging and change untangling.} Delta debugging isolates failure-relevant changes~\citep{zeller1999yesterday,zeller2002ddmin}, and hierarchical variants respect program structure~\citep{misherghi2006hdd}. Research on tangled changes showed that commits mix unrelated modifications~\citep{herzig2013tangled,kirinuki2014tangled} and proposed to untangle them for review using static dependencies~\citep{barnett2015untangle,dias2015untangling}. Untangling groups edits by their structural relations but does not test whether a group is needed for a behaviour. \tool{} borrows minimisation from delta debugging and uses a dependency relation only to keep configurations well formed, so that necessity is decided by execution.
 
-\paragraph{LLM coding agents and LLM-based judgment.} Repository-level benchmarks~\citep{jimenez2024swebench,chowdhury2024verified} and agent scaffolds~\citep{yang2024sweagent,xia2025agentless,miniswe2025} evaluate whether a patch resolves an issue. Agentless evaluates localisation against the files of the reference patch~\citep{xia2025agentless}, an instance of the location-based view that RQ2 examines. LLMs are also used as judges of other models' outputs~\citep{zheng2023judge}, but their explanations need not reflect the factors that actually determine an outcome~\citep{turpin2023unfaithful}. RQ2 measures this gap for edit-level patch judgments, using counterfactual execution as the reference.
+\paragraph{LLM coding agents and LLM-based judgment.} Repository-level benchmarks~\citep{jimenez2024swebench,chowdhury2024verified} and agent scaffolds~\citep{yang2024sweagent,xia2025agentless,miniswe2025} evaluate whether a patch resolves an issue. Agentless evaluates localisation against the files of the reference patch~\citep{xia2025agentless}, an instance of the location-based view that RQ2 examines. Fault localisation more generally ranks code by its suspiciousness for a failure~\citep{jones2005tarantula,wong2016fl}. It answers where a fix should go, whereas \tool{} asks which edits of a given fix are needed. LLMs are also used as judges of other models' outputs~\citep{zheng2023judge}, but their explanations need not reflect the factors that actually determine an outcome~\citep{turpin2023unfaithful}. RQ2 measures this gap for edit-level patch judgments, using counterfactual execution as the reference.
 
 \paragraph{Synthesis.} Existing work judges a change by where it is (CIA, localisation), by whether the whole patch passes or generalises (repair and patch correctness), or by how its parts are structurally related (untangling). None of these families provides an edit-level judgment of whether each part of a test-passing patch is needed for, neutral to, or harmful to explicitly stated obligations. \tool{} fills this gap with counterfactual triage and a preservation envelope, and our evaluation shows when this judgment departs from location-based judgments.
 
 \section{Conclusion}\label{sec:conclusion}
-Judging an agent's patch by where its edits are, or accepting it whole because its tests pass, leaves reviewers without an answer to the question that matters for maintenance: which edits does the intended outcome depend on? \tool{} answers it counterfactually, with labels that are sound relative to explicit goal and preservation obligations and a preservation envelope that exposes changes the obligations miss. On SWE-bench Verified, agent patches turned out to be as concentrated as human patches, yet about a quarter of their source edits were not needed, and neither location proxies nor LLM judges recovered this reliably. Future work includes stronger, dynamic envelopes based on coverage, issue-reproduction tests as goal obligations in place of benchmark tests, integration of the labels into agent loops so that agents justify or drop unneeded edits before submission, and replication in other languages and scaffolds.
+Judging an agent's patch by where its edits are, or accepting it whole because its tests pass, leaves reviewers without an answer to the question that matters for maintenance: which edits does the intended outcome depend on? \tool{} answers it counterfactually, with labels that are sound relative to explicit goal and preservation obligations and a preservation envelope that exposes changes the obligations miss. On SWE-bench Verified, agent patches turned out to be as concentrated as human patches, yet about a third of their source edits were not needed, and neither location proxies nor LLM judges recovered this reliably. Future work includes stronger, dynamic envelopes based on coverage, issue-reproduction tests as goal obligations in place of benchmark tests, integration of the labels into agent loops so that agents justify or drop unneeded edits before submission, and replication in other languages and scaffolds.
 
 
 \section*{Data availability}

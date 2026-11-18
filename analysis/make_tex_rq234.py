@@ -112,6 +112,8 @@ System & Patches & Units & \lab{{N}} & \lab{{J}} & \lab{{C}} & \lab{{U}} & Src U
     M["rqtwoSrcUnneededN"] = _n((~a.needed).sum())
     M["rqtwoSrcNeededN"] = _n(a.needed.sum())
     M["rqtwoNonlocalUnits"] = _n((~a.in_gold_file).sum())
+    M["rqtwoUnneededInGoldShare"] = pct((~a.needed & a.in_gold_file).sum() / max(1, (~a.needed).sum()), 0)
+    M["rqtwoBestLlmMcc"] = f(max(x["mcc"] for x in r2["proxies"] if x["proxy"].startswith("llm_")))
     M["rqtwoNonlocalNeededShare"] = pct(a[~a.in_gold_file].needed.mean())
     M["rqtwoLocalNeededShare"] = pct(a[a.in_gold_file].needed.mean())
 
@@ -230,6 +232,8 @@ Injection & {' & '.join(head[c] for c in cols)} & Total \\
                 M[f"rqthree{K}Envelope"] = ci(r3[f"inj_{kind}_with_envelope"])
                 M[f"rqthree{K}Gain"] = ci(r3[f"inj_{kind}_gain"])
                 M[f"rqthree{K}LabelledU"] = pct(r3[f"inj_{kind}_labelled_U"])
+        M["rqthreeSemOffShort"] = pct(r3["inj_semantic_official"][0], 0)
+        M["rqthreeSemEnvShort"] = pct(r3["inj_semantic_with_envelope"][0], 0)
 
     # ---------------- RQ4
     r4 = s["rq4"]
@@ -240,6 +244,7 @@ Injection & {' & '.join(head[c] for c in cols)} & Total \\
     M["rqfourOracleSecMedian"] = f"{r4['oracle_seconds_median']:.0f}"
     M["rqfourPrecheck"] = _n(r4["precheck_rejections_total"])
     M["rqfourCoupled"] = _n(r4["anomalies"])
+    M["rqfourCoupledUnits"] = _n((units.shift_label == "C").sum())
     M["rqfourMultiN"] = _n(r4["multi_n"])
     M["rqfourPlainInvalid"] = _n(r4["abl_plain_invalid_runs_sum"])
     M["rqfourExhN"] = _n(r4["exhaustive_n"])
