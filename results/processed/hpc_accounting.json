@@ -1,0 +1,9 @@
+{
+ "gpu_hours_total": 11.55,
+ "jobs": 27,
+ "by_site": {
+  "narval": 4.27,
+  "rorqual": 7.28
+ },
+ "full_jobs_completed": 15
+}

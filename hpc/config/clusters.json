@@ -1,0 +1,13 @@
+{
+  "username": "mbabaei",
+  "clusters": {
+    "fir":     {"host": "fir.alliancecan.ca",     "gpu_account": "def-mbabaei_gpu", "cpu_account": "def-mbabaei_cpu",
+                "gres": "gpu:h100:1", "work": "/scratch/mbabaei/shift"},
+    "rorqual": {"host": "rorqual.alliancecan.ca", "gpu_account": "def-mbabaei_gpu", "cpu_account": "def-mbabaei_cpu",
+                "gres": "gpu:h100:1", "work": "/scratch/mbabaei/shift"},
+    "narval":  {"host": "narval.alliancecan.ca",  "gpu_account": "def-mbabaei_gpu", "cpu_account": "def-mbabaei_cpu",
+                "gres": "gpu:a100:1", "work": "/scratch/mbabaei/shift"}
+  },
+  "ollama_bin_candidates": ["/scratch/mbabaei/heartness-work/ollama/bin/ollama", "/scratch/mbabaei/ssevoh/ollama/bin/ollama"],
+  "model_dir_candidates": ["/scratch/mbabaei/ssevoh/models", "/scratch/mbabaei/heartness-work/ollama-models"]
+}

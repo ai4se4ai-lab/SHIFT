@@ -1,0 +1,8 @@
+site,model,n,ok_rate,median_wall,median_out_tok,tok_per_s
+narval,qwen2.5-coder:7b,4,1.0,4.955,115.0,34.91264190550019
+rorqual,deepseek-coder-v2:16b,3,0.0,355.93,,
+rorqual,gemma2:9b,24,1.0,5.220000000000001,180.5,44.17453515068612
+rorqual,llama3.1:8b,24,1.0,4.305,234.5,68.32955229360908
+rorqual,mistral-small:24b,24,1.0,6.865,198.5,33.20394658562038
+rorqual,phi4:14b,23,1.0,6.38,259.0,46.47952256745135
+rorqual,qwen2.5-coder:7b,24,1.0,3.01,133.0,58.83636627453268

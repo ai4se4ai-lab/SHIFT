@@ -1,0 +1,43 @@
+# SHIFT study configuration (frozen 2026-11-17 before any SHIFT measurement).
+dataset: data/external/swebench_verified.parquet
+harness: swebench==4.0.4 (local arm64 images, namespace none)
+
+rq1:
+  track: bash-only                 # mini-swe-agent scaffold, all systems
+  min_patches: 450                 # systems with fewer patch files are excluded
+
+# Execution panel for RQ2-RQ4 (chosen to span vendors, open/closed weights, and capability).
+panel:
+  - 20260217_mini-v2.0.0_claude-4-6-opus
+  - 20260217_mini-v2.0.0_gpt-5-2-high
+  - 20260217_mini-v2.0.0_gemini-3-pro-high
+  - 20260217_mini-v2.0.0_kimi-k2-5-high
+  - 20260217_mini-v2.0.0_deepseek-3-2-high
+  - 20260217_mini-v2.0.0_gpt-5-mini
+  - 20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct
+  - 20250720_mini-v0.0.0-gpt-4o-2024-11-20
+
+execution:
+  repos: [django/django, sympy/sympy]
+  oracle_timeout_s: 900
+  full_patch_repeats: 2
+  envelope_k: 6
+  workers: 14
+  ablation_max_units_exhaustive: 8
+  sample_seed: 2026
+
+llm:
+  runtime: ollama
+  models: [qwen2.5-coder:7b, phi4:14b, gpt-oss:20b, devstral:24b, qwen3-coder:30b]
+  smoke_models: [qwen2.5-coder:7b, phi4:14b]
+  temperature: 0.2
+  top_p: 0.9
+  num_ctx: 16384
+  num_predict: 2048
+  seeds: [11, 22, 33]
+
+injection:
+  operators_semantic: [relop_flip, bool_negate, const_perturb, return_none]
+  operators_neutral: [comment_add, local_rename, redundant_parens]
+  per_instance: 2                  # one semantic + one neutral per validated gold patch
+  seed: 2026

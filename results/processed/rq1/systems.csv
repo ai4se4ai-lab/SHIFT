@@ -1,0 +1,56 @@
+system,n_patches,included,name,resolved_reported,trajs
+20250720_mini-v0.0.0-Llama-4-Maverick-17B-Instruct,499,True,Llama 4 Maverick Instruct,21.04,0
+20250720_mini-v0.0.0-Llama-4-Scout-17B-Instruct,496,True,Llama 4 Scout Instruct,9.06,0
+20250720_mini-v0.0.0-claude-3-7-sonnet-20250219,98,False,Claude 3.7 Sonnet (20250219),52.8,0
+20250720_mini-v0.0.0-gpt-4o-2024-11-20,495,True,GPT 4o (2024-11-20),21.62,0
+20250720_mini-v0.0.0_gpt-4.1-mini-2025-04-14,0,False,GPT 4.1 mini (2025-04-14),23.94,0
+20250726_mini-v1.0.0_claude-sonnet-4-20250514,499,True,Claude 4 Sonnet (20250514),64.93,0
+20250726_mini-v1.0.0_gemini-2.0-flash,488,True,Gemini 2.0 Flash,13.52,0
+20250726_mini-v1.0.0_gemini-2.5-flash,418,False,Gemini 2.5 Flash (2025-04-17),28.73,0
+20250726_mini-v1.0.0_gemini-2.5-pro,498,True,Gemini 2.5 Pro (2025-05-06),53.6,0
+20250726_mini-v1.0.0_gpt-4.1-2025-04-14,0,False,GPT 4.1 (2025-04-14),39.58,0
+20250726_mini-v1.0.0_o3-2025-04-16,500,True,o3 (2025-04-16),58.4,0
+20250726_mini-v1.0.0_o4-mini-2025-04-16,499,True,o4-mini (2025-04-16),45.0,0
+20250802_mini-v1.0.0_claude-4-opus-20250514,500,True,Claude 4 Opus (20250514),67.6,0
+20250802_mini-v1.0.0_qwen3-coder-480b-a35b-instruct,499,True,Qwen3-Coder 480B/A35B Instruct,55.4,0
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct,496,True,Qwen2.5-Coder 32B Instruct,9.0,500
+20250807_mini-v1.7.0_gpt-5,500,True,GPT 5 (2025-08-07) (medium),65.0,0
+20250807_mini-v1.7.0_gpt-5-mini,500,True,GPT 5 mini (2025-08-07) (medium),59.8,0
+20250807_mini-v1.7.0_gpt-5-nano,500,True,GPT 5 nano (2025-08-07) (medium),34.8,0
+20250807_mini-v1.7.0_gpt-oss-120b,495,True,gpt-oss-120b,26.0,0
+20250807_mini-v1.7.0_kimi-k2-instruct,498,True,Kimi K2 Instruct,43.8,0
+20250822_mini-v1.9.1_glm-4.5,498,True,GLM 4.5 (2025-08-22),54.2,0
+20250929_mini-v1.13.3_sonnet-4-5-20250929,500,True,Claude 4.5 Sonnet (20250929),70.6,0
+20251118_mini-v1.15.0_gemini-3-pro-preview-20251118,500,True,Gemini 3 Pro Preview (2025-11-18),74.2,0
+20251120_mini-v1.15.0_gpt-5.1-2025-11-13,500,True,GPT 5.1 (2025-11-13) (medium),66.0,0
+20251124_mini-v1.16.0_claude-opus-4-5-20251101,500,True,Claude 4.5 Opus (20251101) (medium),74.4,0
+20251124_mini-v1.16.0_gpt-5.1-codex,500,True,GPT 5.1 Codex (medium),66.0,0
+20251124_mini-v1.17.0_minimax-m2,500,True,MiniMax M2,61.0,0
+20251125_gpt-5.1-2025-11-13-high,0,False,20251125_gpt-5.1-2025-11-13-high,,0
+20251125_mini-v1.17.1_claude-haiku-4-5-20251001,500,True,20251125_mini-v1.17.1_claude-haiku-4-5-20251001,,0
+20251201_mini-v1.17.1_deepseek-v3.2-reasoner,500,True,DeepSeek V3.2 Reasoner,60.0,0
+20251201_mini-v1.17.1_glm-4.6,499,True,GLM 4.6 (T=1),55.4,0
+20251209_mini-v1.17.2_devstral-2512,500,True,Devstral (2512),53.8,0
+20251209_mini-v1.17.2_devstral-small-2512,500,True,Devstral Small (2512),56.4,0
+20251210_mini-v1.17.2_kimi-k2-thinking,500,True,Kimi K2 Thinking,63.4,0
+20251211_mini-v1.17.2_gpt-5.2-2025-12-11,500,True,GPT 5.2 (2025-12-11),69.0,0
+20251211_mini-v1.17.2_gpt-5.2-2025-12-11-high,500,True,GPT 5.2 (2025-12-11) (high),71.8,0
+20251217_mini-v1.17.3_gemini-3-flash-preview,500,True,20251217_mini-v1.17.3_gemini-3-flash-preview,,0
+20260128_mini-v2.0.0-toolcall_claude-4-5-opus,0,False,20260128_mini-v2.0.0-toolcall_claude-4-5-opus,,0
+20260128_mini-v2.0.0-toolcall_claude-4-5-sonnet,0,False,20260128_mini-v2.0.0-toolcall_claude-4-5-sonnet,,0
+20260128_mini-v2.0.0-toolcall_gpt-5-2,0,False,20260128_mini-v2.0.0-toolcall_gpt-5-2,,0
+20260128_mini-v2.0.0-toolcall_gpt-5-mini,0,False,20260128_mini-v2.0.0-toolcall_gpt-5-mini,,0
+20260217_mini-v2.0.0_claude-4-5-haiku-high,500,True,Claude 4.5 Haiku (high),66.6,0
+20260217_mini-v2.0.0_claude-4-5-opus-high,500,True,Claude 4.5 Opus (high),76.8,0
+20260217_mini-v2.0.0_claude-4-5-sonnet-high,500,True,Claude 4.5 Sonnet (high),71.4,0
+20260217_mini-v2.0.0_claude-4-6-opus,500,True,Claude 4.6 Opus,75.6,500
+20260217_mini-v2.0.0_deepseek-3-2-high,500,True,DeepSeek V3.2 (high),70.0,500
+20260217_mini-v2.0.0_gemini-3-flash-high,500,True,Gemini 3 Flash (high),75.8,0
+20260217_mini-v2.0.0_gemini-3-pro-high,495,True,20260217_mini-v2.0.0_gemini-3-pro-high,,495
+20260217_mini-v2.0.0_glm-5-high,500,True,GLM 5 (high),72.8,0
+20260217_mini-v2.0.0_gpt-5-2-high,500,True,GPT 5.2 (high),72.8,500
+20260217_mini-v2.0.0_gpt-5-mini,500,True,GPT 5 mini,56.2,500
+20260217_mini-v2.0.0_kimi-k2-5-high,500,True,Kimi K2.5 (high),70.8,500
+20260217_mini-v2.0.0_minimax-2-5-high,500,True,MiniMax M2.5 (high),75.8,0
+20260219_mini-v2.0.0_gpt-5-2-codex,500,True,GPT 5.2 Codex,72.8,0
+20260226_mini-v2.0.0_gemini-3-pro-high,500,True,Gemini 3 Pro,69.6,0

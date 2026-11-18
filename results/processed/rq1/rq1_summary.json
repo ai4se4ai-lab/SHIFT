@@ -1,0 +1,196 @@
+{
+  "n_systems": 46,
+  "n_instances": 500,
+  "n_src_files": {
+    "sig_greater": 6,
+    "sig_less": 20,
+    "median_r": -0.3057793270559228,
+    "gold_mean": 1.242
+  },
+  "src_blocks": {
+    "sig_greater": 1,
+    "sig_less": 29,
+    "median_r": -0.2902079080027422,
+    "gold_mean": 3.192
+  },
+  "src_churn": {
+    "sig_greater": 14,
+    "sig_less": 11,
+    "median_r": 0.10016903970815355,
+    "gold_mean": 14.31
+  },
+  "n_aux_files": {
+    "sig_greater": 32,
+    "sig_less": 0,
+    "median_r": 0.9961061946902655,
+    "gold_mean": 0.004
+  },
+  "n_test_files": {
+    "sig_greater": 22,
+    "sig_less": 0,
+    "median_r": 1.0,
+    "gold_mean": 0.0
+  },
+  "dispersion": {
+    "sig_greater": 0,
+    "sig_less": 22,
+    "median_r": -0.45186880529346285,
+    "gold_mean": 0.1982631930527722
+  },
+  "spearman_resolve_vs_nonlocal_share_mean": [
+    -0.8345257201020555,
+    5.77929575956441e-13
+  ],
+  "spearman_resolve_vs_touches_gold_file": [
+    0.9438756648024429,
+    8.58451709697049e-23
+  ],
+  "spearman_resolve_vs_src_blocks_agent_mean": [
+    -0.37874676277782293,
+    0.009443062622634942
+  ],
+  "spearman_resolve_vs_aux_leftover_rate": [
+    -0.6469857800385802,
+    1.1835199865490381e-06
+  ],
+  "aux_by_scaffold": [
+    {
+      "scaffold": "0.0",
+      "n": 3,
+      "aux": 0.5932722376828424
+    },
+    {
+      "scaffold": "1.0",
+      "n": 8,
+      "aux": 0.45521118953782247
+    },
+    {
+      "scaffold": "1.13",
+      "n": 1,
+      "aux": 0.7171717171717171
+    },
+    {
+      "scaffold": "1.15",
+      "n": 2,
+      "aux": 0.05435112649541507
+    },
+    {
+      "scaffold": "1.16",
+      "n": 2,
+      "aux": 0.023675416838914155
+    },
+    {
+      "scaffold": "1.17",
+      "n": 10,
+      "aux": 0.505139811490109
+    },
+    {
+      "scaffold": "1.7",
+      "n": 5,
+      "aux": 0.2569172095503618
+    },
+    {
+      "scaffold": "1.9",
+      "n": 1,
+      "aux": 0.8765432098765432
+    },
+    {
+      "scaffold": "2.0",
+      "n": 14,
+      "aux": 0.0
+    }
+  ],
+  "v2_systems": 14,
+  "v2_aux_sig_greater": 0,
+  "gee": {
+    "log_churn": {
+      "coef": -0.006035766177379864,
+      "p": 0.7107385254694001,
+      "ci": [
+        -0.03793390482368848,
+        0.02586237246892875
+      ]
+    },
+    "nonlocal_sh": {
+      "coef": -1.0709557320254293,
+      "p": 6.780360913940832e-15,
+      "ci": [
+        -1.3404597147135546,
+        -0.8014517493373039
+      ]
+    },
+    "n_src_files": {
+      "coef": 0.033751033010316144,
+      "p": 0.34194626337650846,
+      "ci": [
+        -0.035857457822666465,
+        0.10335952384329875
+      ]
+    }
+  },
+  "exploration": [
+    {
+      "system": "20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct",
+      "n": 496,
+      "steps_median": 31.5,
+      "referenced_median": 1.0,
+      "eer_median": 1.0,
+      "edited_median": 0.0,
+      "resolved": 0.0907258064516129
+    },
+    {
+      "system": "20260217_mini-v2.0.0_claude-4-6-opus",
+      "n": 500,
+      "steps_median": 25.0,
+      "referenced_median": 3.0,
+      "eer_median": 3.0,
+      "edited_median": 1.0,
+      "resolved": 0.756
+    },
+    {
+      "system": "20260217_mini-v2.0.0_deepseek-3-2-high",
+      "n": 500,
+      "steps_median": 83.0,
+      "referenced_median": 6.0,
+      "eer_median": 5.0,
+      "edited_median": 1.0,
+      "resolved": 0.7
+    },
+    {
+      "system": "20260217_mini-v2.0.0_gemini-3-pro-high",
+      "n": 495,
+      "steps_median": 48.0,
+      "referenced_median": 4.0,
+      "eer_median": 4.0,
+      "edited_median": 1.0,
+      "resolved": 0.703030303030303
+    },
+    {
+      "system": "20260217_mini-v2.0.0_gpt-5-2-high",
+      "n": 500,
+      "steps_median": 33.0,
+      "referenced_median": 3.0,
+      "eer_median": 2.166666666666667,
+      "edited_median": 1.0,
+      "resolved": 0.728
+    },
+    {
+      "system": "20260217_mini-v2.0.0_gpt-5-mini",
+      "n": 500,
+      "steps_median": 18.0,
+      "referenced_median": 2.0,
+      "eer_median": 2.0,
+      "edited_median": 1.0,
+      "resolved": 0.562
+    },
+    {
+      "system": "20260217_mini-v2.0.0_kimi-k2-5-high",
+      "n": 500,
+      "steps_median": 44.5,
+      "referenced_median": 4.0,
+      "eer_median": 4.0,
+      "edited_median": 1.0,
+      "resolved": 0.708
+    }
+  ]
+}
