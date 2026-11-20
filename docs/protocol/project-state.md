@@ -58,3 +58,8 @@ Running / open
   Added to v3 RQ2 table/text. gpt-oss:20b and devstral:24b still running.
 - 2026-11-20: gpt-oss:20b local judge complete (parse 99.9%): coverage ~100%, precision .91, recall .20,
   F1 .33, MCC .34 [.26,.44]; below mistral-small, H3 unchanged. Added to v3. devstral:24b running (~0.06 gen/s).
+- 2026-11-20: local judge run paused (GB10 relocated). devstral:24b at 977/1,683 (seed 11), output file
+  cleaned to complete lines. Resume: `experiments/run_local_judges.sh >> results/raw/llm_local/run_local_judges.log 2>&1`
+  (skips finished pairs; qwen3-coder and gpt-oss are complete). Then: `analysis/llm_judges.py --tag local
+  --glob 'results/raw/llm_local/full/*.jsonl'`, `analysis/revision/local_judges.py`, add the Devstral row and
+  name it in the v3 method text (Setup "Obligations and comparisons"), rebuild, commit.
