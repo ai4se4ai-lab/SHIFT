@@ -1,0 +1,1 @@
+{"instance_id": "django__django-14011", "status": {"test_set_up_class (servers.tests.LiveServerTestCaseSetupTest)": "PASSED", "Contrast to": "PASSED", "setUpClass": "ERROR"}, "seconds": 1.7, "timed_out": false, "utc": "2026-11-20T04:16:28Z"}

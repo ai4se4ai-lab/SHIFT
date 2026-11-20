@@ -1,0 +1,24 @@
+{
+ "record": "20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-24443",
+ "witness": [
+  "u04",
+  "u05"
+ ],
+ "executed": [
+  {
+   "cfg": [
+    "u04",
+    "u05"
+   ],
+   "is_witness_recheck": true,
+   "outcome": "valid",
+   "sec": 1.25
+  }
+ ],
+ "started_utc": "2026-11-19T01:32:28Z",
+ "n_smaller_executed": 0,
+ "smaller_valid": [],
+ "smaller_error": [],
+ "witness_recheck": "valid",
+ "certified_min_after_followup": true
+}

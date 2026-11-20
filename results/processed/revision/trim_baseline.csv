@@ -1,0 +1,798 @@
+record,complete,n_units,n_files,has_requires,trim_size,trim_runs,trim_invalid_runs,trim_closed,trim_witness,shift_witness,trim_new_undefined_names,shift_size,same_as_shift,shift_reduction_runs,shift_total_runs,plain_ddmin_runs
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-10880,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-11066,True,9,7,True,1,8,0,True,u02,u02,,1,True,5,15,5
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-11099,True,3,2,False,2,4,0,True,u01 u02,u01 u02,,2,True,6,9,6
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-11119,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-11133,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-11179,True,4,3,True,1,4,0,True,u01,u01,,1,True,3,8,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-11206,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-11603,True,10,9,True,2,11,0,True,u01 u02,u01 u02,,2,True,4,17,4
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-11880,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-11964,True,10,10,True,1,11,0,True,u02,u02,,1,True,5,16,5
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-12143,True,5,5,False,1,6,0,True,u02,u02,,1,True,4,11,4
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-13158,True,5,5,True,1,5,0,True,u01,u01,,1,True,3,10,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-13279,True,3,2,True,2,4,0,True,u01 u02,u01 u02,,2,True,3,7,6
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-13410,True,9,2,True,2,12,0,True,u07 u08,u07 u08,,2,True,5,15,6
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-13516,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-13590,True,5,5,False,1,5,0,True,u01,u01,,1,True,3,10,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-13670,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-13786,True,4,4,False,1,4,0,True,u01,u01,,1,True,3,9,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-13821,True,26,13,True,1,14,0,True,u04,u04,,1,True,6,21,6
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-14089,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-14238,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-14349,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-14493,True,4,2,False,1,4,0,True,u01,u01,,1,True,3,9,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-14500,True,5,5,False,1,5,0,True,u01,u01,,1,True,3,10,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-14752,True,20,10,True,2,24,0,True,u05 u07,u05 u07,,2,True,7,29,16
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-14771,True,8,8,False,1,8,0,True,u01,u01,,1,True,4,14,4
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-14855,True,4,4,False,1,5,0,True,u02,u02,,1,True,4,10,4
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-15277,True,3,2,False,1,4,0,True,u02,u02,,1,True,3,8,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-15315,True,3,2,False,2,4,0,True,u01 u02,u01 u02,,2,True,6,9,6
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-15368,True,7,7,True,1,7,0,True,u01,u01,,1,True,3,12,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-15467,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-15561,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-15731,True,4,2,True,2,5,0,True,u01 u02,u01 u02,,2,True,3,9,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-15851,True,3,2,False,2,4,0,True,u01 u02,u01 u02,,2,True,6,9,6
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-15863,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-16082,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-16116,True,10,9,True,1,10,0,True,u01,u01,,1,True,4,16,4
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-16136,True,3,2,False,1,4,0,True,u02,u02,,1,True,3,8,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-16255,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-16429,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-16569,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-16595,True,3,2,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-16612,True,5,5,False,1,5,0,True,u01,u01,,1,True,3,10,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-16661,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-16801,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__django__django-17029,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-11618,True,13,2,True,2,15,0,True,u01 u05,u01 u05,,2,True,7,22,18
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-12096,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-16766,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-18189,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-18763,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-19637,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-19954,True,3,2,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-20154,True,4,1,False,2,7,0,True,u02 u04,u02 u04,,2,True,8,14,8
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-21847,True,3,2,False,2,4,0,True,u01 u02,u01 u02,,2,True,6,9,6
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-22456,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-24213,True,4,4,False,1,4,0,True,u01,u01,,1,True,3,9,3
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-24539,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250720_mini-v0.0.0-gpt-4o-2024-11-20__sympy__sympy-24661,True,4,2,True,2,5,0,False,u01 u02,u01 u02 u03,0.0,3,False,3,8,3
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__django__django-11163,True,6,5,True,1,6,0,True,u01,u01,,1,True,3,11,3
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__django__django-13410,True,15,2,True,11,25,3,False,u01 u02 u04 u05 u06 u08 u09 u10 u11 u12 u13,u01 u02 u04 u05 u06 u07 u08 u09 u10 u11 u12 u13 u14,0.0,13,False,22,25,72
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__django__django-14373,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__django__django-15741,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__django__django-16569,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__django__django-16819,True,3,2,False,1,4,0,True,u02,u02,,1,True,3,8,3
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__sympy__sympy-13480,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__sympy__sympy-18763,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__sympy__sympy-19954,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__sympy__sympy-20154,True,3,2,False,2,4,0,True,u01 u02,u01 u02,,2,True,6,9,6
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__sympy__sympy-21847,True,3,2,False,2,4,0,True,u01 u02,u01 u02,,2,True,6,9,6
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__sympy__sympy-22914,True,3,3,True,1,4,0,False,u02,u01 u02,0.0,2,False,2,5,3
+20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__sympy__sympy-23534,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11095,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11099,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11133,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11138,True,17,4,False,12,29,0,True,u03 u04 u05 u06 u08 u09 u10 u11 u14 u15 u16 u17,u03 u04 u05 u06 u08 u09 u10 u11 u14 u15 u16 u17,,12,True,78,97,78
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11149,True,6,1,False,3,10,0,True,u02 u04 u06,u02 u04 u06,,3,True,17,25,17
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11163,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11239,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11276,True,3,1,True,2,5,0,True,u01 u03,u01 u03,,2,True,4,5,5
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11292,True,3,1,False,1,4,0,True,u03,u03,,1,True,4,9,4
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11333,True,4,2,True,4,6,0,True,u01 u02 u03 u04,u04,,1,False,5,9,7
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11532,True,2,2,False,2,2,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11551,True,5,1,False,5,6,1,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,14,14,14
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11603,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11728,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11740,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-11749,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-12039,True,3,1,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-12125,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-12276,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-12741,True,3,2,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-12774,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13279,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13297,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13343,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13346,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13363,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13410,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13568,True,4,1,True,4,5,3,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,9,4,10
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13741,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13786,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13809,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13810,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13821,True,4,4,False,1,4,0,True,u01,u01,,1,True,3,9,3
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13837,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-13933,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-14007,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-14017,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-14053,True,5,1,True,4,7,0,True,u01 u02 u03 u05,u01 u02,,2,False,3,10,3
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-14404,True,3,1,True,1,6,0,True,u03,u03,,1,True,4,6,4
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-14559,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,7,6
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-14608,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-14631,True,6,2,True,2,10,0,True,u03 u04,u03 u04,,2,True,5,11,20
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-14725,True,8,2,True,7,17,0,True,u02 u03 u04 u05 u06 u07 u08,u02 u03 u04 u05 u06 u07 u08,,7,True,21,28,25
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-14752,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-14765,True,2,1,False,2,3,1,True,u01 u02,u01 u02,,2,True,2,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-15037,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-15127,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-15128,True,4,1,True,4,5,0,True,u01 u02 u03 u04,u01,,1,False,3,8,3
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-15161,True,22,2,True,6,22,0,True,u12 u13 u15 u16 u17 u18,u12 u13 u15 u16 u17 u18,,6,True,45,70,45
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-15382,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-15503,True,7,1,False,4,9,0,True,u01 u02 u03 u07,u01 u02 u03 u07,,4,True,13,23,13
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-15563,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-15731,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,3,7,6
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-15741,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-15851,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-15957,True,4,1,True,3,5,0,True,u01 u02 u03,u01 u02 u03,,3,True,9,10,12
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-16116,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-16819,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-16877,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-16899,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__django__django-16901,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-12419,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,7,6
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-12489,True,24,1,False,14,36,0,True,u01 u02 u03 u05 u06 u07 u11 u12 u13 u14 u16 u18 u22 u23,u01 u02 u03 u05 u06 u07 u11 u12 u13 u14 u16 u18 u22 u23,,14,True,143,170,143
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-13091,True,47,3,False,7,60,0,True,u01 u02 u11 u12 u17 u18 u23,u01 u02 u11 u12 u17 u18 u23,,7,True,123,173,123
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-13372,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-13551,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-13878,True,14,1,True,2,17,0,True,u02 u03,u02 u03,,2,True,6,22,6
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-14531,True,11,1,False,2,14,0,True,u05 u10,u05 u10,,2,True,27,40,27
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-15017,True,4,2,False,1,3,0,True,u01,u01,,1,True,3,9,3
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-15345,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-15976,True,4,1,False,3,8,0,True,u02 u03 u04,u02 u03 u04,,3,True,9,15,9
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-16792,True,4,1,False,1,4,0,True,u01,u01,,1,True,3,9,3
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-17655,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-18211,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-18698,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-19783,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-19954,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-20154,True,5,1,False,2,8,0,True,u03 u05,u03 u05,,2,True,8,16,8
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-20801,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-21847,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-23413,True,3,1,True,1,4,0,True,u03,u03,,1,True,4,7,4
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-24066,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-24443,True,2,1,True,1,3,0,True,u02,u02,,1,True,3,4,3
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-24562,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,3,4,6
+20260217_mini-v2.0.0_claude-4-6-opus__sympy__sympy-24661,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-10914,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11095,True,3,1,True,2,6,0,True,u02 u03,u02 u03,,2,True,4,6,4
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11099,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11133,True,3,1,True,1,4,0,True,u02,u02,,1,True,3,7,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11149,True,7,1,True,4,10,0,True,u01 u02 u04 u06,u01 u02 u04 u06,,4,True,4,11,25
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11163,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11265,True,4,1,True,2,6,0,False,u01 u03,u01 u02 u03,0.0,3,False,3,8,10
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11276,True,3,1,True,2,5,0,True,u01 u03,u01 u03,,2,True,4,5,5
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11292,True,3,1,False,1,4,0,True,u03,u03,,1,True,4,9,4
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11333,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11551,True,5,1,False,5,6,1,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,14,14,14
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11603,True,6,1,False,2,8,0,True,u01 u05,u01 u05,,2,True,17,24,17
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11740,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11749,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11999,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-12039,True,5,1,True,2,6,0,True,u01 u02,u01 u02,,2,True,3,11,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-12125,True,7,1,True,5,9,0,True,u01 u02 u03 u04 u07,u01 u02 u03 u04 u07,,5,True,20,24,4
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-12193,True,3,1,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-12209,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-12276,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-12304,True,3,1,False,1,4,0,True,u03,u03,,1,True,4,9,4
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-12419,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-12741,True,3,2,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-12754,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-12965,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13033,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13089,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13112,True,2,2,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13279,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13315,True,3,3,False,1,4,0,True,u03,u03,,1,True,4,9,4
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13343,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13346,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13363,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13410,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13449,True,5,1,False,2,7,0,True,u01 u04,u01 u04,,2,True,13,20,13
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13551,True,2,1,True,1,3,0,True,u02,u02,,1,True,3,4,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13568,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13590,True,3,1,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13786,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13807,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13809,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13810,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13820,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13821,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13837,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,3,7,6
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13925,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-13933,True,4,1,False,1,5,0,True,u04,u04,,1,True,5,11,5
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14007,True,4,1,True,3,7,3,True,u01 u03 u04,u01 u03 u04,,3,True,4,4,10
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14017,True,4,1,False,2,6,0,True,u01 u03,u01 u03,,2,True,10,15,10
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14053,True,5,1,True,4,6,0,True,u01 u02 u03 u04,u01 u02,,2,False,3,10,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14122,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14349,True,3,1,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14376,True,3,2,False,1,3,0,True,u03,u03,,1,True,4,9,4
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14404,True,4,1,True,3,5,0,True,u01 u02 u03,u03,,1,False,3,7,4
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14559,True,4,1,False,3,8,0,True,u02 u03 u04,u02 u03 u04,,3,True,9,15,9
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14608,True,3,2,False,1,4,0,True,u02,u02,,1,True,3,8,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14631,True,10,2,True,2,14,0,True,u04 u05,u04 u05,,2,True,8,21,8
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14752,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14765,True,3,1,False,1,5,0,True,u01,u01,,1,True,2,7,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14771,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15037,True,3,1,True,2,5,0,True,u01 u03,u01 u03,,2,True,4,6,5
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15127,True,4,1,True,2,6,0,True,u01 u04,u01 u04,,2,True,6,9,9
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15128,True,9,1,True,6,14,0,True,u01 u02 u04 u05 u07 u08,u01 u02 u04 u05 u07 u08,,6,True,31,40,35
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15161,True,15,1,False,6,22,0,True,u03 u04 u06 u07 u08 u11,u03 u04 u06 u07 u08 u11,,6,True,59,76,59
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15375,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15525,True,4,1,True,2,5,0,True,u01 u02,u01 u02,,2,True,2,7,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15554,True,3,2,False,1,2,0,True,u01,u01,,1,True,2,7,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15561,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15563,True,5,2,False,2,7,0,True,u01 u04,u01 u04,,2,True,15,22,15
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15572,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15731,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,3,7,6
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15741,True,5,1,True,2,6,0,True,u01 u02,u01 u02,,2,True,3,9,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15851,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15973,True,15,2,True,1,3,0,True,u15,u15,,1,True,4,20,4
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-15987,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-16116,True,5,1,False,1,6,0,True,u03,u03,,1,True,4,11,4
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-16315,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-16560,True,26,2,True,15,37,0,False,u09 u10 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u23 u26,u08 u09 u10 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u23 u25 u26,0.0,17,False,89,117,107
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-16612,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-16819,True,10,1,True,4,11,0,False,u01 u02 u03 u04,u01 u02 u03 u04 u06 u07 u09,0.0,7,False,4,10,15
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-16899,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-16901,True,2,1,True,1,3,0,True,u02,u02,,1,True,3,4,3
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-16938,True,2,2,False,2,2,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__django__django-17084,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-11618,True,3,1,True,1,3,0,False,u01,u01 u02 u03,0.0,3,False,2,3,2
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-12419,True,10,7,False,2,10,0,True,u04 u05,u04 u05,,2,True,8,21,8
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-12481,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-13031,True,11,6,True,2,13,0,True,u09 u10,u09 u10,,2,True,9,23,13
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-13372,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-13551,True,5,1,False,2,8,0,True,u03 u04,u03 u04,,2,True,4,12,4
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-13878,True,43,17,True,2,38,0,True,u13 u15,u13 u15,,2,True,14,58,17
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-13974,True,3,1,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-14531,True,11,1,True,3,15,0,True,u05 u06 u09,u05 u06 u09,,3,True,16,30,32
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-15017,True,6,3,False,1,6,0,True,u02,u02,,1,True,4,12,4
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-16792,True,9,1,True,2,10,0,False,u01 u02,u01 u02 u03 u05 u07,0.0,5,False,4,12,4
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-17655,True,5,1,True,1,6,0,True,u05,u05,,1,True,4,9,4
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-18189,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-19040,True,4,1,False,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,10,13,10
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-19783,True,3,2,False,2,5,0,True,u01 u03,u01 u03,,2,True,5,9,5
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-19954,True,4,1,True,3,6,0,True,u01 u02 u04,u01 u02 u04,,3,True,2,5,11
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-20154,True,15,1,False,2,18,0,True,u06 u08,u06 u08,,2,True,30,47,30
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-20590,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-20801,True,4,1,False,1,5,0,True,u02,u02,,1,True,4,10,4
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-21379,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-21847,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-22456,True,5,1,True,3,10,0,True,u01 u02 u04,u01 u02 u04,,3,True,9,13,18
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-22914,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-23262,True,4,1,False,1,5,0,True,u02,u02,,1,True,4,10,4
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-23413,True,2,1,True,1,3,0,True,u03,u03,,1,True,3,4,3
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-24213,True,4,1,True,2,6,0,True,u01 u03,u01 u03,,2,True,5,9,10
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-24443,True,4,1,True,2,7,0,True,u02 u03,u02 u03,,2,True,4,9,9
+20260217_mini-v2.0.0_deepseek-3-2-high__sympy__sympy-24661,True,3,1,True,2,6,0,True,u02 u03,u02 u03,,2,True,4,7,4
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-10973,True,6,1,True,1,10,0,True,u05,u05,,1,True,5,8,5
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11095,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11099,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11133,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11138,True,19,4,True,14,32,0,True,u03 u04 u05 u06 u07 u09 u10 u11 u12 u13 u16 u17 u18 u19,u03 u04 u05 u06 u07 u09 u10 u11 u12 u13 u16 u17 u18 u19,,14,True,87,108,91
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11239,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11292,True,3,1,False,1,4,0,True,u03,u03,,1,True,4,9,4
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11333,True,3,1,True,3,4,0,True,u01 u02 u03,u02,,1,False,3,7,3
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11551,True,5,1,False,5,6,1,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,14,14,14
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11555,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11603,True,4,1,False,2,6,0,True,u01 u04,u01 u04,,2,True,9,14,9
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11728,True,4,1,False,2,7,0,True,u02 u04,u02 u04,,2,True,8,14,8
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11740,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11749,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,6,6
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11885,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-11964,True,4,1,True,2,7,0,True,u03 u04,u03 u04,,2,True,3,7,4
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-12039,True,4,1,False,3,5,0,True,u01 u02 u03,u01 u02 u03,,3,True,12,15,12
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-12125,True,2,1,True,1,3,0,False,u02,u01 u02,0.0,2,False,2,3,3
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-12276,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-12304,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-12419,True,4,4,False,1,4,0,True,u01,u01,,1,True,3,9,3
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-12741,True,3,2,True,2,5,0,True,u02 u03,u02 u03,,2,True,4,7,4
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-12754,True,2,1,True,1,3,0,False,u02,u01 u02,1.0,2,False,3,4,3
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13112,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13279,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13297,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13343,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13346,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13363,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13401,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13410,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13449,True,5,2,True,1,7,0,False,u03,u02 u03 u04 u05,0.0,4,False,4,5,4
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13568,True,3,1,False,3,4,3,True,u01 u02 u03,u01 u02 u03,,3,True,6,3,6
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13590,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13658,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13741,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13786,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13807,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13809,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13810,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13821,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13837,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-13933,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-14007,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-14017,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-14376,True,3,2,False,1,3,0,True,u03,u03,,1,True,4,9,4
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-14559,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,7,6
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-14608,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-14631,True,7,2,True,2,11,0,True,u03 u04,u03 u04,,2,True,12,20,15
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-14752,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-14999,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-15037,True,3,1,False,2,5,0,True,u01 u03,u01 u03,,2,True,5,9,5
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-15128,True,5,1,False,5,6,0,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,14,17,14
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-15161,True,13,1,False,6,20,0,True,u03 u04 u06 u07 u08 u09,u03 u04 u06 u07 u08 u09,,6,True,41,56,41
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-15382,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-15503,True,7,1,True,4,9,0,False,u01 u02 u03 u07,u01 u02 u03 u05 u07,0.0,5,False,10,19,13
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-15554,True,3,2,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-15572,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-15731,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,3,7,6
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-15851,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-16100,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-16116,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-16315,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-16642,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-16819,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-16899,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-16938,True,2,2,False,2,2,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__django__django-17084,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-11618,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-12419,True,19,12,False,2,15,0,True,u03 u04,u03 u04,,2,True,6,28,6
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-13372,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-13551,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-13877,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-13878,True,25,8,False,2,22,0,True,u11 u12,u11 u12,,2,True,14,41,14
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-13974,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-14531,True,29,18,False,2,25,0,True,u14 u16,u14 u16,,2,True,21,52,21
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-14711,True,27,18,False,1,22,0,True,u12,u12,,1,True,9,38,9
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-15017,True,4,2,False,1,3,0,True,u01,u01,,1,True,3,9,3
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-15599,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-15875,True,9,1,True,3,12,0,False,u01 u03 u07,u01 u08,0.0,2,False,8,16,20
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-15976,True,6,1,True,3,14,0,True,u03 u04 u05,u03 u04 u05,,3,True,7,14,17
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-16792,True,3,1,True,2,5,0,True,u01 u03,u01 u03,,2,True,4,5,5
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-17655,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-19040,True,6,1,True,6,7,0,True,u01 u02 u03 u04 u05 u06,u01 u02 u03 u04 u05 u06,,6,True,15,17,14
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-19346,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-19783,True,3,2,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,7,6
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-19954,True,3,1,True,2,5,0,True,u01 u03,u01 u03,,2,True,5,6,5
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-20154,True,9,1,False,2,12,0,True,u07 u09,u07 u09,,2,True,11,23,11
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-20801,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-21379,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-21847,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-10914,True,5,3,False,1,3,0,True,u01,u01,,1,True,3,10,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11095,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11099,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11133,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11138,True,15,4,True,10,24,0,False,u04 u05 u06 u07 u09 u10 u11 u12 u14 u15,u04 u05 u06 u07 u09 u10 u11 u12 u13 u14 u15,0.0,11,False,40,53,63
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11163,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11211,True,2,1,True,1,3,0,False,u02,u01 u02,0.0,2,False,2,3,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11239,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11265,True,5,1,True,3,7,0,True,u01 u02 u05,u01 u02 u05,,3,True,7,14,9
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11276,True,3,1,True,2,5,0,True,u01 u03,u01 u03,,2,True,4,5,5
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11292,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11333,True,3,1,True,2,5,0,True,u01 u03,u01 u03,,2,True,4,7,5
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11490,True,6,1,True,2,9,0,False,u02 u03,u02 u03 u04,0.0,3,False,5,12,5
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11532,True,4,2,True,2,5,0,True,u03 u04,u03 u04,,2,True,4,7,4
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11551,True,4,1,True,4,5,1,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,6,6,10
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11555,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,4,5,6
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11603,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11728,True,4,1,False,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,10,13,10
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11740,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11749,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-11885,True,6,1,True,6,7,0,True,u01 u02 u03 u04 u05 u06,u01 u02 u03 u04 u05 u06,,6,True,11,13,14
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-12039,True,6,1,True,3,7,0,True,u01 u02 u03,u01 u02 u03,,3,True,7,15,7
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-12125,True,7,1,True,6,9,0,True,u01 u02 u03 u04 u05 u07,u07,,1,False,4,12,4
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-12209,True,6,1,True,1,7,0,True,u06,u06,,1,True,6,11,9
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-12262,True,4,1,False,1,5,0,True,u02,u02,,1,True,4,10,4
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-12276,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-12419,True,7,6,False,1,6,0,True,u01,u01,,1,True,3,12,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-12741,True,3,2,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-12754,True,4,1,True,2,6,0,True,u01 u04,u01 u04,,2,True,4,8,9
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-12858,True,7,4,True,2,8,0,False,u01 u04,u01 u03 u04,0.0,3,False,6,15,25
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13089,True,3,1,True,2,6,0,True,u02 u03,u01,,1,False,2,6,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13112,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13128,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13279,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13297,True,4,1,True,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,3,4,10
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13343,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13346,True,4,1,True,3,8,0,False,u02 u03 u04,u01 u02 u03 u04,1.0,4,False,6,7,9
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13363,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13401,True,4,1,True,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,9,10,10
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13410,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,3,4,6
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13551,True,3,1,True,1,4,0,True,u03,u03,,1,True,3,6,4
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13658,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13786,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13807,True,5,1,True,4,7,0,True,u01 u02 u03 u05,u01 u02 u03 u05,,4,True,15,16,17
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13809,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13810,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13821,True,3,3,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13837,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,2,5,6
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13925,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-13933,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14007,True,5,1,True,4,8,0,True,u01 u02 u04 u05,u01 u02 u04 u05,,4,True,9,11,16
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14017,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,5,7,6
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14053,True,11,1,True,4,16,0,True,u05 u06 u08 u11,u05 u06,,2,False,9,22,11
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14349,True,3,1,True,1,3,0,True,u01,u01,,1,True,2,6,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14404,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14434,True,4,1,True,2,6,0,True,u01 u03,u01 u03,,2,True,5,9,10
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14500,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14559,True,4,1,True,3,8,0,True,u02 u03 u04,u02 u03 u04,,3,True,7,12,9
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14608,True,3,2,False,1,4,0,True,u02,u02,,1,True,3,8,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14631,True,8,2,True,3,13,0,True,u03 u04 u05,u03 u04 u05,,3,True,15,24,21
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14752,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14765,True,2,1,False,2,3,1,True,u01 u02,u01 u02,,2,True,2,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-14999,True,2,1,True,1,2,0,True,u01,u01,,1,True,2,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15037,True,9,1,True,6,16,0,True,u02 u03 u04 u05 u06 u08,u02 u03 u04 u05 u06 u08,,6,True,27,36,34
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15127,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15128,True,6,1,True,6,7,0,True,u01 u02 u03 u04 u05 u06,u01 u02 u03 u04 u05 u06,,6,True,10,12,14
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15161,True,13,1,False,6,20,0,True,u03 u04 u06 u07 u08 u09,u03 u04 u06 u07 u08 u09,,6,True,41,56,41
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15278,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15368,True,2,1,True,1,3,0,True,u02,u02,,1,True,3,4,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15382,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15554,True,2,2,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15572,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15731,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,3,7,6
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15732,True,6,1,True,4,10,0,True,u01 u03 u04 u06,u01 u03 u04 u06,,4,True,17,23,20
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15741,True,7,1,True,3,9,0,True,u01 u02 u04,u01 u02 u04,,3,True,6,13,27
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15851,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15863,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-15916,True,3,1,False,2,5,0,True,u01 u03,u01 u03,,2,True,5,9,5
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16032,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16116,True,3,1,False,1,4,0,True,u03,u03,,1,True,4,9,4
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16429,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16560,True,28,3,True,17,40,0,False,u09 u11 u12 u14 u15 u16 u17 u18 u19 u20 u21 u22 u23 u24 u25 u26 u28,u09 u10 u11 u12 u14 u15 u16 u17 u18 u19 u20 u21 u22 u23 u24 u25 u26 u27 u28,0.0,19,False,57,80,101
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16612,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16642,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16661,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16662,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16819,True,4,1,False,1,5,0,True,u03,u03,,1,True,4,10,4
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16899,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16901,True,4,1,True,2,6,0,True,u01 u04,u01 u04,,2,True,4,9,9
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-16938,True,2,2,False,2,2,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__django__django-17084,True,7,1,True,4,12,0,True,u02 u03 u04 u06,u02 u03 u04 u06,,4,True,18,26,24
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-12489,True,34,1,False,17,50,0,True,u01 u02 u04 u06 u07 u08 u12 u14 u15 u18 u20 u21 u23 u29 u30 u31 u32,u01 u02 u04 u06 u07 u08 u12 u14 u15 u18 u20 u21 u23 u29 u30 u31 u32,,17,True,212,249,212
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-13031,True,7,5,False,2,11,0,True,u05 u06,u05 u06,,2,True,6,16,6
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-13091,True,48,6,True,7,54,0,False,u03 u04 u13 u14 u19 u20 u25,u03 u04 u13 u14 u19 u20 u25 u39,0.0,8,False,67,115,109
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-13480,True,6,5,True,1,6,0,True,u05,u05,,1,True,5,13,8
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-13551,True,8,6,True,2,18,4,True,u01 u02,u01 u02,,2,True,4,13,5
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-13615,True,6,5,True,1,6,0,True,u06,u06,,1,True,6,14,9
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-13647,True,2,2,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-13757,True,5,4,True,1,5,0,True,u05,u05,,1,True,4,11,4
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-13877,True,26,15,False,1,17,0,True,u07,u07,,1,True,6,34,6
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-14531,True,10,2,False,2,14,0,True,u07 u09,u07 u09,,2,True,14,27,14
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-14711,True,9,7,True,1,8,0,True,u08,u08,,1,True,16,26,17
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-15017,True,7,3,False,1,6,0,True,u02,u02,,1,True,4,13,4
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-15809,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-16450,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-16792,True,18,2,True,2,21,0,False,u04 u06,u04 u05 u06 u08 u09 u12 u13 u16 u17,0.0,9,False,7,21,20
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-17139,True,7,1,True,1,7,0,True,u01,u01,,1,True,3,11,3
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-18189,True,4,1,True,3,6,0,True,u01 u02 u04,u01 u02 u04,,3,True,5,6,11
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-18698,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-19040,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,6,6
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-19346,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-19495,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-19783,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,6,6
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-19954,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,2,3,6
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-20154,True,6,1,False,2,9,0,True,u04 u06,u04 u06,,2,True,7,16,7
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-20801,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-21379,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-21847,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-22456,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,3,4,6
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-22714,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-23262,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,3,4,6
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-23413,True,3,1,True,1,4,0,True,u03,u03,,1,True,4,7,4
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-24066,True,10,1,True,2,13,0,False,u02 u04,u02 u09,0.0,2,False,5,16,13
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-24213,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-24443,True,3,1,True,2,6,0,False,u02 u03,u01 u02 u03,0.0,3,False,2,3,4
+20260217_mini-v2.0.0_gpt-5-mini__django__django-11095,True,3,1,True,2,5,0,True,u01 u03,u01 u03,,2,True,4,6,5
+20260217_mini-v2.0.0_gpt-5-mini__django__django-11099,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-11133,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-11149,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_gpt-5-mini__django__django-11276,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-11299,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-mini__django__django-11333,True,3,1,True,2,5,0,True,u01 u03,u01 u03,,2,True,4,7,5
+20260217_mini-v2.0.0_gpt-5-mini__django__django-11551,True,5,1,False,5,6,1,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,14,14,14
+20260217_mini-v2.0.0_gpt-5-mini__django__django-11603,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-11740,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-12039,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-12155,True,3,1,False,1,3,0,True,u01,u01,,1,True,2,7,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-12193,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-mini__django__django-12209,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-mini__django__django-12262,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-12276,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-12741,True,2,2,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-mini__django__django-12754,True,3,1,True,1,4,0,False,u03,u02 u03,0.0,2,False,3,5,4
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13297,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13363,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13401,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,3,5,6
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13410,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13512,True,4,3,True,3,6,0,True,u01 u02 u04,u01 u02 u04,,3,True,8,12,11
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13568,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13590,True,2,1,False,2,3,2,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13741,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13786,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13807,True,4,1,True,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,9,11,10
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13809,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13810,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13820,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13837,True,4,1,True,1,5,0,True,u02,u02,,1,True,3,9,4
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13925,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-13933,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-mini__django__django-14122,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_gpt-5-mini__django__django-14404,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,2,3,6
+20260217_mini-v2.0.0_gpt-5-mini__django__django-14434,True,3,1,True,2,5,0,True,u01 u03,u01 u03,,2,True,4,6,5
+20260217_mini-v2.0.0_gpt-5-mini__django__django-14559,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,7,6
+20260217_mini-v2.0.0_gpt-5-mini__django__django-14608,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-mini__django__django-14752,True,3,1,True,2,6,0,True,u02 u03,u02 u03,,2,True,4,7,4
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15022,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15037,True,3,1,False,2,5,0,True,u01 u03,u01 u03,,2,True,5,9,5
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15128,True,4,1,False,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,10,13,10
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15161,True,15,1,False,6,22,0,True,u03 u04 u06 u07 u08 u11,u03 u04 u06 u07 u08 u11,,6,True,59,76,59
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15278,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15382,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15572,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15731,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,3,7,6
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15741,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15851,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15863,True,3,1,False,1,4,0,True,u02,u02,,1,True,3,8,3
+20260217_mini-v2.0.0_gpt-5-mini__django__django-15987,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,3,7,6
+20260217_mini-v2.0.0_gpt-5-mini__django__django-16100,True,3,1,False,1,4,0,True,u03,u03,,1,True,4,9,4
+20260217_mini-v2.0.0_gpt-5-mini__django__django-16116,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-16315,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-16429,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-mini__django__django-16819,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__django__django-16901,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-13372,True,3,2,False,1,4,0,True,u02,u02,,1,True,3,8,3
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-13615,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-13877,True,3,1,False,1,4,0,True,u02,u02,,1,True,3,8,3
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-13878,True,10,1,True,2,11,0,False,u01 u02,u01 u02 u03 u04 u07 u10,0.0,6,False,4,13,4
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-14976,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-15017,True,4,2,False,1,3,0,True,u01,u01,,1,True,3,9,3
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-15809,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-16792,True,4,1,False,1,4,0,True,u01,u01,,1,True,3,9,3
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-17139,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-19346,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-19637,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-19954,True,4,1,True,3,8,0,True,u02 u03 u04,u02 u03 u04,,3,True,5,10,9
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-20154,True,4,1,False,2,7,0,True,u02 u04,u02 u04,,2,True,8,14,8
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-20801,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-21847,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-22456,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-23262,True,5,1,True,1,6,0,True,u03,u03,,1,True,4,10,4
+20260217_mini-v2.0.0_gpt-5-mini__sympy__sympy-24443,True,5,1,True,2,8,0,True,u04 u05,u04 u05,,2,True,7,13,7
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11095,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11099,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11133,True,3,1,False,1,4,0,True,u02,u02,,1,True,3,8,3
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11138,True,14,4,True,10,24,0,False,u03 u04 u05 u06 u08 u09 u10 u11 u13 u14,u03 u04 u05 u06 u08 u09 u10 u11 u12 u13 u14,0.0,11,False,41,51,61
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11149,True,5,1,True,4,6,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,12,16,14
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11163,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11239,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11265,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11276,True,4,1,True,2,6,0,True,u01 u03,u01 u03,,2,True,4,9,10
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11292,True,3,1,False,1,4,0,True,u03,u03,,1,True,4,9,4
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11333,True,4,2,True,4,6,0,True,u01 u02 u03 u04,u04,,1,False,5,9,7
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11551,True,5,1,False,5,6,1,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,14,14,14
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11555,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11603,True,4,1,False,2,6,0,True,u01 u04,u01 u04,,2,True,9,14,9
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11740,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11749,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-11815,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-12039,True,5,1,False,3,6,0,True,u01 u02 u03,u01 u02 u03,,3,True,16,23,16
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-12209,True,8,1,True,3,13,0,True,u01 u02 u07,u01 u02 u07,,3,True,15,24,19
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-12262,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-12276,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-12663,True,3,1,True,1,4,0,True,u03,u03,,1,True,4,7,4
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-12741,True,3,2,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-12965,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13158,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13279,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13297,True,4,2,True,2,5,0,True,u03 u04,u03 u04,,2,True,4,8,4
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13315,True,3,3,False,1,4,0,True,u03,u03,,1,True,4,9,4
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13343,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13346,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13363,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13401,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13410,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13551,True,2,1,True,1,3,0,True,u02,u02,,1,True,3,4,3
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13568,True,4,1,True,4,5,3,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,9,4,10
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13590,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13786,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13807,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13809,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13810,True,3,1,True,1,4,0,True,u02,u02,,1,True,3,7,3
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13821,True,4,4,False,1,4,0,True,u01,u01,,1,True,3,9,3
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13837,True,6,1,True,1,11,0,True,u02,u02,,1,True,11,15,5
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-13933,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-14007,True,3,2,True,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-14017,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,6,6
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-14053,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,6,6
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-14559,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-14608,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-14725,True,5,1,False,5,6,0,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,14,17,14
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-14752,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-15022,True,3,1,True,2,6,0,True,u02 u03,u02 u03,,2,True,4,7,4
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-15128,True,7,1,True,6,13,0,True,u01 u03 u04 u05 u06 u07,u01 u03 u04 u05 u06 u07,,6,True,23,29,25
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-15161,True,15,1,False,6,22,0,True,u03 u04 u06 u07 u08 u11,u03 u04 u06 u07 u08 u11,,6,True,59,76,59
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-15382,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-15503,True,10,1,True,7,13,0,True,u01 u02 u03 u04 u05 u09 u10,u01 u02 u03 u04 u05 u09 u10,,7,True,24,31,35
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-15572,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-15731,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,3,7,6
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-15741,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-15851,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-15863,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-16315,True,6,4,False,4,9,0,True,u03 u04 u05 u06,u03 u04 u05 u06,,4,True,15,23,15
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-16819,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-16899,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-16901,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-16938,True,2,2,False,2,2,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-16950,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__django__django-17084,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,6,6
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-11618,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-12419,True,4,3,False,2,6,0,True,u03 u04,u03 u04,,2,True,4,11,4
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-12481,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-13091,True,9,2,True,8,11,0,False,u01 u02 u03 u04 u05 u06 u07 u08,u01 u02 u03 u04 u05 u06 u07 u09,0.0,8,False,21,26,36
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-13372,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-13551,True,2,1,True,1,3,0,True,u02,u02,,1,True,3,4,3
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-13878,True,22,9,True,2,25,0,True,u08 u10,u08 u10,,2,True,9,33,12
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-14531,True,11,1,False,2,14,0,True,u05 u08,u05 u08,,2,True,25,38,25
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-15017,True,4,2,False,1,3,0,True,u01,u01,,1,True,3,9,3
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-15976,True,5,1,True,3,13,0,True,u03 u04 u05,u03 u04 u05,,3,True,8,13,8
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-16792,True,8,1,True,2,9,0,False,u01 u02,u01 u02 u03 u04 u05 u06 u07 u08,0.0,8,False,3,4,4
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-17655,True,4,1,True,1,7,0,True,u03,u03,,1,True,4,7,6
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-18211,True,3,2,True,2,4,0,True,u01 u02,u01 u02,,2,True,3,7,6
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-19040,True,5,1,False,3,9,0,True,u02 u04 u05,u02 u04 u05,,3,True,15,21,15
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-19783,True,4,3,True,2,6,0,True,u01 u03,u02 u03 u04,,3,False,4,8,9
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-19954,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-20154,True,6,1,False,2,9,0,True,u04 u06,u04 u06,,2,True,7,16,7
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-20801,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-21847,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-22456,True,5,3,False,1,5,0,True,u01,u01,,1,True,3,10,3
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-23413,True,3,1,True,1,4,0,True,u03,u03,,1,True,4,7,4
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-24443,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-24539,True,2,1,False,2,3,1,True,u01 u02,u01 u02,,2,True,2,4,2
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-24562,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-24661,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-10554,True,2,2,True,2,2,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-10973,True,7,1,True,2,13,0,True,u04 u06,u04 u06,,2,True,6,10,7
+gold__django__django-11087,True,4,1,True,3,6,0,True,u01 u02 u04,u01 u02 u04,,3,True,7,9,11
+gold__django__django-11095,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-11099,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-11138,True,14,4,True,10,24,0,False,u03 u04 u05 u06 u08 u09 u10 u11 u13 u14,u03 u04 u05 u06 u08 u09 u10 u11 u12 u13 u14,0.0,11,False,41,51,61
+gold__django__django-11141,True,3,1,False,2,5,0,True,u01 u03,u01 u03,,2,True,5,9,5
+gold__django__django-11149,True,5,1,True,4,6,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,12,16,14
+gold__django__django-11239,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-11265,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-11276,True,7,1,True,2,13,0,True,u01 u03,u01 u03,,2,True,4,12,6
+gold__django__django-11292,True,4,1,False,1,5,0,True,u03,u03,,1,True,4,10,4
+gold__django__django-11333,True,4,2,True,4,6,0,True,u01 u02 u03 u04,u04,,1,False,5,9,7
+gold__django__django-11400,True,7,3,True,7,10,0,True,u01 u02 u03 u04 u05 u06 u07,u01 u02 u03 u04 u05 u06 u07,,7,True,14,16,18
+gold__django__django-11532,True,11,5,True,3,9,0,True,u03 u04 u08,u03 u04 u08,,3,True,6,18,36
+gold__django__django-11551,True,5,1,False,5,6,0,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,14,17,14
+gold__django__django-11603,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-11728,True,6,1,False,2,9,0,True,u03 u06,u03 u06,,2,True,14,22,14
+gold__django__django-11734,True,3,3,False,2,5,0,True,u02 u03,u02 u03,,2,True,4,9,4
+gold__django__django-11740,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+gold__django__django-11749,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-11820,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-11848,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-11885,True,15,2,True,8,23,0,True,u02 u03 u09 u10 u11 u12 u13 u15,u02 u03 u09 u10 u11 u12 u13 u15,,8,True,55,71,72
+gold__django__django-12039,True,4,1,False,3,5,0,True,u01 u02 u03,u01 u02 u03,,3,True,12,15,12
+gold__django__django-12155,True,5,2,True,2,6,0,True,u01 u03,u01 u03,,2,True,7,9,14
+gold__django__django-12276,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+gold__django__django-12325,True,3,2,True,1,2,0,True,u01,u01,,1,True,2,6,2
+gold__django__django-12406,True,4,2,True,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,9,11,10
+gold__django__django-12741,True,3,2,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+gold__django__django-13128,True,4,1,False,1,5,0,True,u02,u02,,1,True,4,10,4
+gold__django__django-13158,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-13195,True,4,3,False,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,10,13,10
+gold__django__django-13212,True,19,2,False,19,20,0,True,u01 u02 u03 u04 u05 u06 u07 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19,u01 u02 u03 u04 u05 u06 u07 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19,,19,True,70,73,70
+gold__django__django-13279,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-13297,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,4,5,6
+gold__django__django-13315,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-13343,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-13344,True,14,3,True,4,20,0,True,u02 u04 u06 u13,u02 u04 u06 u13,,4,True,45,62,45
+gold__django__django-13346,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-13363,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-13401,True,4,1,False,3,7,0,True,u01 u03 u04,u01 u03 u04,,3,True,10,15,10
+gold__django__django-13410,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+gold__django__django-13449,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-13512,True,3,2,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,7,6
+gold__django__django-13513,True,6,1,True,6,7,1,True,u01 u02 u03 u04 u05 u06,u01 u02 u03 u04 u05 u06,,6,True,5,5,14
+gold__django__django-13551,True,2,1,True,1,3,0,True,u02,u02,,1,True,3,4,3
+gold__django__django-13590,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-13741,True,3,1,False,1,3,0,True,u01,u01,,1,True,2,7,2
+gold__django__django-13786,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-13807,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+gold__django__django-13809,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-13810,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,2,4,6
+gold__django__django-13820,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-13837,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,2,3,2
+gold__django__django-14007,True,3,1,False,2,5,0,True,u01 u03,u01 u03,,2,True,5,9,5
+gold__django__django-14011,True,3,2,True,1,4,0,False,u02,u01 u02,1.0,2,False,3,7,3
+gold__django__django-14034,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-14053,True,4,1,True,4,5,0,True,u01 u02 u03 u04,u01 u02,,2,False,3,8,3
+gold__django__django-14315,True,2,2,False,2,2,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-14349,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-14376,True,4,2,True,2,5,0,True,u03 u04,u03 u04,,2,True,3,7,4
+gold__django__django-14404,True,3,1,True,1,6,0,True,u03,u03,,1,True,4,6,4
+gold__django__django-14434,True,4,1,False,2,6,0,True,u01 u04,u01 u04,,2,True,9,14,9
+gold__django__django-14500,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+gold__django__django-14559,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,7,6
+gold__django__django-14608,True,2,1,True,1,3,0,True,u02,u02,,1,True,3,4,3
+gold__django__django-14631,True,11,2,True,2,20,0,True,u04 u09,u04 u09,,2,True,7,19,41
+gold__django__django-14725,True,5,1,True,5,6,0,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,9,10,14
+gold__django__django-14752,True,3,1,True,2,6,0,True,u02 u03,u02 u03,,2,True,4,6,4
+gold__django__django-14765,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-14999,True,2,1,True,1,2,0,True,u01,u01,,1,True,2,4,2
+gold__django__django-15022,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-15037,True,3,1,False,2,4,0,True,u01 u02,u01 u02,,2,True,6,9,6
+gold__django__django-15127,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,4,5,6
+gold__django__django-15128,True,9,1,True,5,14,0,True,u01 u04 u07 u08 u09,u01 u04 u07 u08 u09,,5,True,29,40,30
+gold__django__django-15161,True,6,1,False,6,7,0,True,u01 u02 u03 u04 u05 u06,u01 u02 u03 u04 u05 u06,,6,True,14,17,14
+gold__django__django-15268,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,3,4,6
+gold__django__django-15368,True,2,1,True,1,3,0,True,u02,u02,,1,True,3,4,3
+gold__django__django-15503,True,6,1,True,4,8,0,True,u01 u02 u03 u05,u01 u02 u03 u05,,4,True,13,16,22
+gold__django__django-15554,True,10,1,True,7,17,0,True,u01 u03 u04 u06 u07 u08 u10,u01 u03 u04 u06 u07 u08 u10,,7,True,13,19,41
+gold__django__django-15561,True,3,2,False,2,4,0,True,u01 u03,u01 u03,,2,True,5,9,5
+gold__django__django-15563,True,5,2,True,5,6,0,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,10,12,14
+gold__django__django-15572,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-15629,True,7,4,False,2,6,0,True,u06 u07,u06 u07,,2,True,7,17,7
+gold__django__django-15731,True,3,1,True,2,4,0,True,u01 u02,u01 u02,,2,True,3,7,6
+gold__django__django-15732,True,5,1,True,2,10,0,True,u02 u05,u02 u05,,2,True,5,10,8
+gold__django__django-15851,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-15916,True,4,1,True,2,6,0,True,u01 u03,u01 u03,,2,True,8,10,10
+gold__django__django-15957,True,4,1,True,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,4,5,10
+gold__django__django-16032,True,5,2,False,2,6,0,True,u03 u04,u03 u04,,2,True,4,12,4
+gold__django__django-16116,True,3,1,False,1,4,0,True,u02,u02,,1,True,3,8,3
+gold__django__django-16145,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-16256,True,11,2,True,11,13,0,True,u01 u02 u03 u04 u05 u06 u07 u08 u09 u10 u11,u01 u02 u03 u04 u05 u06 u07 u08 u09 u10 u11,,11,True,9,11,36
+gold__django__django-16263,True,21,4,True,11,36,2,False,u01 u02 u04 u05 u06 u08 u10 u11 u12 u13 u14,u01 u02 u04 u05 u06 u08 u10 u11 u12 u13 u14 u15 u16 u19 u20 u21,0.0,16,False,69,62,157
+gold__django__django-16315,True,5,2,True,5,6,0,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,14,16,14
+gold__django__django-16454,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__django__django-16502,True,4,1,True,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,10,12,10
+gold__django__django-16560,True,25,2,True,16,22,0,False,u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u25,u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u23 u25,0.0,17,False,72,94,93
+gold__django__django-16631,True,5,2,True,5,7,0,True,u01 u02 u03 u04 u05,u01 u02 u03 u04 u05,,5,True,7,9,14
+gold__django__django-16642,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-16661,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+gold__django__django-16801,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+gold__django__django-16899,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-16901,True,3,1,True,2,5,0,True,u01 u03,u01 u03,,2,True,4,7,5
+gold__django__django-16938,True,2,2,False,2,2,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__django__django-17084,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,6,6
+gold__sympy__sympy-12419,True,6,1,True,5,10,0,True,u01 u02 u04 u05 u06,u01 u02 u04 u05 u06,,5,True,16,22,16
+gold__sympy__sympy-12489,True,38,1,True,16,55,0,True,u04 u05 u07 u09 u12 u13 u19 u21 u22 u23 u25 u27 u33 u34 u35 u36,u04 u05 u07 u09 u12 u13 u19 u21 u22 u23 u25 u27 u33 u34 u35 u36,,16,True,216,256,193
+gold__sympy__sympy-13031,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__sympy__sympy-13091,True,56,21,False,7,47,0,True,u01 u02 u06 u07 u12 u13 u18,u01 u02 u06 u07 u12 u13 u18,,7,True,115,174,115
+gold__sympy__sympy-13372,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+gold__sympy__sympy-13852,True,5,1,True,3,7,0,True,u01 u02 u04,u01 u02 u04,,3,True,11,17,15
+gold__sympy__sympy-13877,True,8,2,True,3,9,0,True,u01 u03 u05,u01 u03 u05,,3,True,7,17,29
+gold__sympy__sympy-13878,True,45,1,True,1,46,0,True,u03,u03,,1,True,7,54,7
+gold__sympy__sympy-13974,True,8,1,True,4,13,0,True,u03 u04 u07 u08,u03 u04 u07 u08,,4,True,14,23,16
+gold__sympy__sympy-14531,True,14,1,False,2,17,0,True,u05 u13,u05 u13,,2,True,25,42,25
+gold__sympy__sympy-15345,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+gold__sympy__sympy-15599,True,4,1,True,1,5,0,True,u04,u04,,1,True,5,10,7
+gold__sympy__sympy-15976,True,5,1,True,3,13,0,True,u03 u04 u05,u03 u04 u05,,3,True,7,11,8
+gold__sympy__sympy-16597,True,27,6,True,3,14,0,True,u18 u19 u20,u18 u19 u20,,3,True,29,59,35
+gold__sympy__sympy-16792,True,4,1,True,2,9,0,True,u01 u04,u01 u04,,2,True,9,12,9
+gold__sympy__sympy-17318,True,4,2,False,1,3,0,True,u04,u04,,1,True,5,11,5
+gold__sympy__sympy-18199,True,4,1,True,3,5,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,9,12
+gold__sympy__sympy-18211,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__sympy__sympy-18698,True,3,1,False,2,5,0,True,u01 u03,u01 u03,,2,True,5,9,5
+gold__sympy__sympy-19495,True,4,1,False,1,5,0,True,u04,u04,,1,True,5,11,5
+gold__sympy__sympy-19783,True,3,2,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,7,6
+gold__sympy__sympy-19954,True,3,1,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,2,3,6
+gold__sympy__sympy-20154,True,5,1,False,2,8,0,True,u03 u05,u03 u05,,2,True,8,16,8
+gold__sympy__sympy-20438,True,8,3,True,5,16,0,True,u02 u04 u06 u07 u08,u02 u04 u06 u07 u08,,5,True,27,36,28
+gold__sympy__sympy-20801,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+gold__sympy__sympy-20916,True,2,1,False,1,2,0,True,u01,u01,,1,True,2,5,2
+gold__sympy__sympy-21379,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__sympy__sympy-21596,True,4,1,True,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,6,8,10
+gold__sympy__sympy-21847,True,2,1,False,2,3,0,True,u01 u02,u01 u02,,2,True,2,5,2
+gold__sympy__sympy-21930,True,3,1,False,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,6,9,6
+gold__sympy__sympy-22080,True,3,2,True,3,4,0,True,u01 u02 u03,u01 u02 u03,,3,True,5,7,6
+gold__sympy__sympy-22456,True,4,1,True,1,5,0,True,u04,u04,,1,True,5,10,7
+gold__sympy__sympy-23262,True,2,1,False,1,3,0,True,u02,u02,,1,True,3,5,3
+gold__sympy__sympy-23413,True,3,1,True,1,4,0,True,u03,u03,,1,True,4,7,4
+gold__sympy__sympy-24443,True,2,1,True,2,3,0,True,u01 u02,u01 u02,,2,True,3,4,2
+gold__sympy__sympy-24539,True,2,1,False,2,3,1,True,u01 u02,u01 u02,,2,True,2,4,2
+gold__sympy__sympy-24562,True,4,1,True,4,5,0,True,u01 u02 u03 u04,u01 u02 u03 u04,,4,True,5,6,10

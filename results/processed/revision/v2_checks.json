@@ -1,0 +1,187 @@
+{
+ "hypotheses": {
+  "H2": {
+   "n_src_files": {
+    "greater": 6,
+    "less": 20,
+    "threshold": 31,
+    "supported": false,
+    "direction": null
+   },
+   "src_blocks": {
+    "greater": 1,
+    "less": 29,
+    "threshold": 31,
+    "supported": false,
+    "direction": null
+   },
+   "src_churn": {
+    "greater": 14,
+    "less": 11,
+    "threshold": 31,
+    "supported": false,
+    "direction": null
+   },
+   "dispersion": {
+    "greater": 0,
+    "less": 22,
+    "threshold": 31,
+    "supported": false,
+    "direction": null
+   },
+   "n_aux_files": {
+    "greater": 32,
+    "less": 0,
+    "threshold": 31,
+    "supported": true,
+    "direction": "agent>reference"
+   },
+   "n_test_files": {
+    "greater": 22,
+    "less": 0,
+    "threshold": 31,
+    "supported": false,
+    "direction": null
+   }
+  },
+  "H2_threshold": "31/46",
+  "H3": {
+   "p_gold_file": {
+    "nonlocal_needed_retention": 0.0,
+    "retention_below_0.5": true,
+    "unneeded_f1": 0.4085576259489303,
+    "best_llm_f1": 0.4410540915395284,
+    "f1_below_best_llm": true,
+    "both": true
+   },
+   "p_issue": {
+    "nonlocal_needed_retention": 0.36666666666666664,
+    "retention_below_0.5": true,
+    "unneeded_f1": 0.4909155682223014,
+    "best_llm_f1": 0.4410540915395284,
+    "f1_below_best_llm": false,
+    "both": false
+   },
+   "p_dep1": {
+    "nonlocal_needed_retention": 0.6333333333333333,
+    "retention_below_0.5": false,
+    "unneeded_f1": 0.337061894108874,
+    "best_llm_f1": 0.4410540915395284,
+    "f1_below_best_llm": true,
+    "both": false
+   }
+  },
+  "H3_supported_all_location_proxies": false,
+  "H3_note": "SHIFT's own F1 is 1 by construction (it defines the labels), so the 'or SHIFT's' clause is vacuous; the informative comparison is the best LLM judge."
+ },
+ "ablation": {
+  "n_multi": 797,
+  "n_with_requires": 363,
+  "all_plain_ddmin_runs_sum": 6397,
+  "all_plain_ddmin_invalid_sum": 47,
+  "all_plain_ddmin_patches_with_invalid": 17,
+  "all_plain_ddmin_same_as_shift": 764,
+  "all_plain_ddmin_not_closed": 33,
+  "all_plain_ddmin_mean_size": 2.2095357590966125,
+  "all_precheck_only_runs_sum": 6267,
+  "all_precheck_only_invalid_sum": 0,
+  "all_precheck_only_patches_with_invalid": 0,
+  "all_precheck_only_same_as_shift": 764,
+  "all_precheck_only_not_closed": 33,
+  "all_precheck_only_mean_size": 2.2107904642409033,
+  "all_closure_only_runs_sum": 5437,
+  "all_closure_only_invalid_sum": 77,
+  "all_closure_only_patches_with_invalid": 18,
+  "all_closure_only_same_as_shift": 797,
+  "all_closure_only_not_closed": 0,
+  "all_closure_only_mean_size": 2.2885821831869513,
+  "all_loo_runs_sum": 3246,
+  "all_shift_witness_mean": 2.2885821831869513,
+  "all_loo_retained_mean": 2.4027603513174403,
+  "all_loo_retained_gt_witness": 45,
+  "with_requires_plain_ddmin_runs_sum": 3734,
+  "with_requires_plain_ddmin_invalid_sum": 20,
+  "with_requires_plain_ddmin_patches_with_invalid": 6,
+  "with_requires_plain_ddmin_same_as_shift": 330,
+  "with_requires_plain_ddmin_not_closed": 33,
+  "with_requires_plain_ddmin_mean_size": 2.6611570247933884,
+  "with_requires_precheck_only_runs_sum": 3631,
+  "with_requires_precheck_only_invalid_sum": 0,
+  "with_requires_precheck_only_patches_with_invalid": 0,
+  "with_requires_precheck_only_same_as_shift": 330,
+  "with_requires_precheck_only_not_closed": 33,
+  "with_requires_precheck_only_mean_size": 2.6639118457300275,
+  "with_requires_closure_only_runs_sum": 2774,
+  "with_requires_closure_only_invalid_sum": 50,
+  "with_requires_closure_only_patches_with_invalid": 7,
+  "with_requires_closure_only_same_as_shift": 363,
+  "with_requires_closure_only_not_closed": 0,
+  "with_requires_closure_only_mean_size": 2.834710743801653,
+  "with_requires_loo_runs_sum": 1673,
+  "with_requires_shift_witness_mean": 2.834710743801653,
+  "with_requires_loo_retained_mean": 2.997245179063361,
+  "with_requires_loo_retained_gt_witness": 28,
+  "with_requires_closure_saving_median": 0.0,
+  "with_requires_closure_fewer": 174,
+  "with_requires_closure_more": 96
+ },
+ "alignment": {
+  "base_outcomes": {
+   "goal_fail": 1674
+  },
+  "base_pres_fail_records": 25,
+  "base_pres_fail_instances": [
+   "django__django-11532",
+   "django__django-11728",
+   "django__django-14238",
+   "django__django-14349"
+  ],
+  "regression_records": 25,
+  "addback_direct_vs_transitive_differences": 0
+ },
+ "structure": {
+  "agent_removable_n": 1093,
+  "agent_removable_other_code": 0.5316,
+  "agent_removable_adds_branch_or_exception": 0.3102,
+  "agent_removable_comment_or_docstring": 0.0677,
+  "agent_removable_import": 0.0586,
+  "agent_removable_whitespace": 0.032,
+  "agent_removable_same_file_as_retained": 0.6935,
+  "agent_removable_within_20_lines_of_retained": 0.3376,
+  "agent_removable_similar_to_retained_0.6": 0.2882,
+  "agent_removable_median_changed_lines": 2.0,
+  "agent_retained_n": 2113,
+  "agent_retained_other_code": 0.5532,
+  "agent_retained_adds_branch_or_exception": 0.4013,
+  "agent_retained_import": 0.0279,
+  "agent_retained_comment_or_docstring": 0.0175,
+  "agent_retained_same_file_as_retained": 0.5225,
+  "agent_retained_within_20_lines_of_retained": 0.3436,
+  "agent_retained_similar_to_retained_0.6": 0.1879,
+  "agent_retained_median_changed_lines": 3.0,
+  "reference_removable_n": 328,
+  "reference_removable_other_code": 0.7744,
+  "reference_removable_adds_branch_or_exception": 0.0854,
+  "reference_removable_whitespace": 0.0518,
+  "reference_removable_import": 0.0457,
+  "reference_removable_comment_or_docstring": 0.0427,
+  "reference_removable_same_file_as_retained": 0.6768,
+  "reference_removable_within_20_lines_of_retained": 0.2744,
+  "reference_removable_similar_to_retained_0.6": 0.2378,
+  "reference_removable_median_changed_lines": 2.0,
+  "reference_retained_n": 586,
+  "reference_retained_other_code": 0.5973,
+  "reference_retained_adds_branch_or_exception": 0.3225,
+  "reference_retained_import": 0.0563,
+  "reference_retained_comment_or_docstring": 0.0239,
+  "reference_retained_same_file_as_retained": 0.6519,
+  "reference_retained_within_20_lines_of_retained": 0.401,
+  "reference_retained_similar_to_retained_0.6": 0.2474,
+  "reference_retained_median_changed_lines": 2.5
+ },
+ "manual_sample": {
+  "n": 152,
+  "agent": 100,
+  "seed": 2026
+ }
+}

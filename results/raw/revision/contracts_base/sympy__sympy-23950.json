@@ -1,0 +1,1 @@
+{"instance_id": "sympy__sympy-23950", "status": {"sympy/sets/tests/test_contains.py:test_as_set": "FAILED", "test_contains_basic": "PASSED", "test_issue_6194": "PASSED", "test_issue_10326": "PASSED", "test_binary_symbols": "PASSED", "test_as_set": "ERROR"}, "seconds": 2.1, "timed_out": false, "utc": "2026-11-20T04:19:46Z"}

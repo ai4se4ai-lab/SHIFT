@@ -1,0 +1,1 @@
+{"record": "20260217_mini-v2.0.0_claude-4-6-opus__django__django-11333", "executed": [{"cfg": ["u01", "u02", "u03"], "outcome": "goal_fail", "sec": 0.69}, {"cfg": ["u02", "u03", "u04"], "outcome": "goal_fail", "sec": 0.95}]}

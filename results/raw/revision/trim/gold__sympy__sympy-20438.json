@@ -1,0 +1,1 @@
+{"record": "gold__sympy__sympy-20438", "executed": [{"cfg": ["u01", "u02", "u03", "u04", "u05", "u06", "u08"], "outcome": "goal_fail", "sec": 2.83}, {"cfg": ["u01", "u02", "u03", "u06", "u07", "u08"], "outcome": "goal_fail", "sec": 13.62}, {"cfg": ["u01", "u02", "u04", "u06", "u07", "u08"], "outcome": "valid", "sec": 13.15}]}

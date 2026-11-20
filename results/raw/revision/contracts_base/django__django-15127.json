@@ -1,0 +1,1 @@
+{"instance_id": "django__django-15127", "status": {"test_eq (messages_tests.tests.MessageTests)": "PASSED", "test_override_settings_level_tags (messages_tests.tests.TestLevelTags)": "FAILED", "test_override_settings_level_tags": "FAILED"}, "seconds": 0.9, "timed_out": false, "utc": "2026-11-20T04:17:12Z"}

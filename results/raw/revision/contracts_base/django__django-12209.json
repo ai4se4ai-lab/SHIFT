@@ -1,0 +1,1 @@
+{"instance_id": "django__django-12209", "status": {"partial(func, *args, **keywords) - new function with partial application": "ERROR", "test_json_serializer": "ERROR", "test_python_serializer": "ERROR", "test_xml_serializer": "ERROR", "test_yaml_serializer": "ERROR"}, "seconds": 1.5, "timed_out": false, "utc": "2026-11-20T04:14:49Z"}

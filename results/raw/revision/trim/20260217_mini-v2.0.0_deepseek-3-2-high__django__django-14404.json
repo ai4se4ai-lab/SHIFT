@@ -1,0 +1,1 @@
+{"record": "20260217_mini-v2.0.0_deepseek-3-2-high__django__django-14404", "executed": [{"cfg": ["u01", "u03"], "outcome": "goal_fail", "sec": 25.86}, {"cfg": ["u02", "u03"], "outcome": "goal_fail", "sec": 24.09}]}

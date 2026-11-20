@@ -1,0 +1,510 @@
+intent django__django_14672 {
+  goal goal_1 {
+    test catalog.django__django_14672.goal_1
+  }
+  goal goal_2 {
+    test catalog.django__django_14672.goal_2
+  }
+  goal goal_3 {
+    test catalog.django__django_14672.goal_3
+  }
+  goal goal_4 {
+    test catalog.django__django_14672.goal_4
+  }
+  goal goal_5 {
+    test catalog.django__django_14672.goal_5
+  }
+  goal goal_6 {
+    test catalog.django__django_14672.goal_6
+  }
+  goal goal_7 {
+    test catalog.django__django_14672.goal_7
+  }
+  goal goal_8 {
+    test catalog.django__django_14672.goal_8
+  }
+  goal goal_9 {
+    test catalog.django__django_14672.goal_9
+  }
+  goal goal_10 {
+    test catalog.django__django_14672.goal_10
+  }
+  goal goal_11 {
+    test catalog.django__django_14672.goal_11
+  }
+  goal goal_12 {
+    test catalog.django__django_14672.goal_12
+  }
+  goal goal_13 {
+    test catalog.django__django_14672.goal_13
+  }
+  goal goal_14 {
+    test catalog.django__django_14672.goal_14
+  }
+  goal goal_15 {
+    test catalog.django__django_14672.goal_15
+  }
+  goal goal_16 {
+    test catalog.django__django_14672.goal_16
+  }
+  goal goal_17 {
+    test catalog.django__django_14672.goal_17
+  }
+  goal goal_18 {
+    test catalog.django__django_14672.goal_18
+  }
+  goal goal_19 {
+    test catalog.django__django_14672.goal_19
+  }
+  goal goal_20 {
+    test catalog.django__django_14672.goal_20
+  }
+  goal goal_21 {
+    test catalog.django__django_14672.goal_21
+  }
+  goal goal_22 {
+    test catalog.django__django_14672.goal_22
+  }
+  goal goal_23 {
+    test catalog.django__django_14672.goal_23
+  }
+  goal goal_24 {
+    test catalog.django__django_14672.goal_24
+  }
+  goal goal_25 {
+    test catalog.django__django_14672.goal_25
+  }
+  goal goal_26 {
+    test catalog.django__django_14672.goal_26
+  }
+  goal goal_27 {
+    test catalog.django__django_14672.goal_27
+  }
+  goal goal_28 {
+    test catalog.django__django_14672.goal_28
+  }
+  goal goal_29 {
+    test catalog.django__django_14672.goal_29
+  }
+  goal goal_30 {
+    test catalog.django__django_14672.goal_30
+  }
+  goal goal_31 {
+    test catalog.django__django_14672.goal_31
+  }
+  goal goal_32 {
+    test catalog.django__django_14672.goal_32
+  }
+  goal goal_33 {
+    test catalog.django__django_14672.goal_33
+  }
+  goal goal_34 {
+    test catalog.django__django_14672.goal_34
+  }
+  goal goal_35 {
+    test catalog.django__django_14672.goal_35
+  }
+  goal goal_36 {
+    test catalog.django__django_14672.goal_36
+  }
+  goal goal_37 {
+    test catalog.django__django_14672.goal_37
+  }
+  goal goal_38 {
+    test catalog.django__django_14672.goal_38
+  }
+  goal goal_39 {
+    test catalog.django__django_14672.goal_39
+  }
+  goal goal_40 {
+    test catalog.django__django_14672.goal_40
+  }
+  goal goal_41 {
+    test catalog.django__django_14672.goal_41
+  }
+  goal goal_42 {
+    test catalog.django__django_14672.goal_42
+  }
+  goal goal_43 {
+    test catalog.django__django_14672.goal_43
+  }
+  goal goal_44 {
+    test catalog.django__django_14672.goal_44
+  }
+  goal goal_45 {
+    test catalog.django__django_14672.goal_45
+  }
+  goal goal_46 {
+    test catalog.django__django_14672.goal_46
+  }
+  goal goal_47 {
+    test catalog.django__django_14672.goal_47
+  }
+  goal goal_48 {
+    test catalog.django__django_14672.goal_48
+  }
+  goal goal_49 {
+    test catalog.django__django_14672.goal_49
+  }
+  goal goal_50 {
+    test catalog.django__django_14672.goal_50
+  }
+  goal goal_51 {
+    test catalog.django__django_14672.goal_51
+  }
+  goal goal_52 {
+    test catalog.django__django_14672.goal_52
+  }
+  goal goal_53 {
+    test catalog.django__django_14672.goal_53
+  }
+  goal goal_54 {
+    test catalog.django__django_14672.goal_54
+  }
+  goal goal_55 {
+    test catalog.django__django_14672.goal_55
+  }
+  goal goal_56 {
+    test catalog.django__django_14672.goal_56
+  }
+  goal goal_57 {
+    test catalog.django__django_14672.goal_57
+  }
+  goal goal_58 {
+    test catalog.django__django_14672.goal_58
+  }
+  goal goal_59 {
+    test catalog.django__django_14672.goal_59
+  }
+  goal goal_60 {
+    test catalog.django__django_14672.goal_60
+  }
+  goal goal_61 {
+    test catalog.django__django_14672.goal_61
+  }
+  goal goal_62 {
+    test catalog.django__django_14672.goal_62
+  }
+  goal goal_63 {
+    test catalog.django__django_14672.goal_63
+  }
+  goal goal_64 {
+    test catalog.django__django_14672.goal_64
+  }
+  goal goal_65 {
+    test catalog.django__django_14672.goal_65
+  }
+  goal goal_66 {
+    test catalog.django__django_14672.goal_66
+  }
+  goal goal_67 {
+    test catalog.django__django_14672.goal_67
+  }
+  goal goal_68 {
+    test catalog.django__django_14672.goal_68
+  }
+  goal goal_69 {
+    test catalog.django__django_14672.goal_69
+  }
+  goal goal_70 {
+    test catalog.django__django_14672.goal_70
+  }
+  goal goal_71 {
+    test catalog.django__django_14672.goal_71
+  }
+  goal goal_72 {
+    test catalog.django__django_14672.goal_72
+  }
+  goal goal_73 {
+    test catalog.django__django_14672.goal_73
+  }
+  goal goal_74 {
+    test catalog.django__django_14672.goal_74
+  }
+  goal goal_75 {
+    test catalog.django__django_14672.goal_75
+  }
+  goal goal_76 {
+    test catalog.django__django_14672.goal_76
+  }
+  goal goal_77 {
+    test catalog.django__django_14672.goal_77
+  }
+  goal goal_78 {
+    test catalog.django__django_14672.goal_78
+  }
+  goal goal_79 {
+    test catalog.django__django_14672.goal_79
+  }
+  goal goal_80 {
+    test catalog.django__django_14672.goal_80
+  }
+  goal goal_81 {
+    test catalog.django__django_14672.goal_81
+  }
+  goal goal_82 {
+    test catalog.django__django_14672.goal_82
+  }
+  goal goal_83 {
+    test catalog.django__django_14672.goal_83
+  }
+  goal goal_84 {
+    test catalog.django__django_14672.goal_84
+  }
+  goal goal_85 {
+    test catalog.django__django_14672.goal_85
+  }
+  goal goal_86 {
+    test catalog.django__django_14672.goal_86
+  }
+  goal goal_87 {
+    test catalog.django__django_14672.goal_87
+  }
+  goal goal_88 {
+    test catalog.django__django_14672.goal_88
+  }
+  goal goal_89 {
+    test catalog.django__django_14672.goal_89
+  }
+  goal goal_90 {
+    test catalog.django__django_14672.goal_90
+  }
+  goal goal_91 {
+    test catalog.django__django_14672.goal_91
+  }
+  goal goal_92 {
+    test catalog.django__django_14672.goal_92
+  }
+  goal goal_93 {
+    test catalog.django__django_14672.goal_93
+  }
+  goal goal_94 {
+    test catalog.django__django_14672.goal_94
+  }
+  goal goal_95 {
+    test catalog.django__django_14672.goal_95
+  }
+  goal goal_96 {
+    test catalog.django__django_14672.goal_96
+  }
+  goal goal_97 {
+    test catalog.django__django_14672.goal_97
+  }
+  goal goal_98 {
+    test catalog.django__django_14672.goal_98
+  }
+  goal goal_99 {
+    test catalog.django__django_14672.goal_99
+  }
+  goal goal_100 {
+    test catalog.django__django_14672.goal_100
+  }
+  goal goal_101 {
+    test catalog.django__django_14672.goal_101
+  }
+  goal goal_102 {
+    test catalog.django__django_14672.goal_102
+  }
+  goal goal_103 {
+    test catalog.django__django_14672.goal_103
+  }
+  goal goal_104 {
+    test catalog.django__django_14672.goal_104
+  }
+  goal goal_105 {
+    test catalog.django__django_14672.goal_105
+  }
+  goal goal_106 {
+    test catalog.django__django_14672.goal_106
+  }
+  goal goal_107 {
+    test catalog.django__django_14672.goal_107
+  }
+  goal goal_108 {
+    test catalog.django__django_14672.goal_108
+  }
+  goal goal_109 {
+    test catalog.django__django_14672.goal_109
+  }
+  goal goal_110 {
+    test catalog.django__django_14672.goal_110
+  }
+  goal goal_111 {
+    test catalog.django__django_14672.goal_111
+  }
+  goal goal_112 {
+    test catalog.django__django_14672.goal_112
+  }
+  goal goal_113 {
+    test catalog.django__django_14672.goal_113
+  }
+  goal goal_114 {
+    test catalog.django__django_14672.goal_114
+  }
+  goal goal_115 {
+    test catalog.django__django_14672.goal_115
+  }
+  goal goal_116 {
+    test catalog.django__django_14672.goal_116
+  }
+  goal goal_117 {
+    test catalog.django__django_14672.goal_117
+  }
+  goal goal_118 {
+    test catalog.django__django_14672.goal_118
+  }
+  goal goal_119 {
+    test catalog.django__django_14672.goal_119
+  }
+  goal goal_120 {
+    test catalog.django__django_14672.goal_120
+  }
+  goal goal_121 {
+    test catalog.django__django_14672.goal_121
+  }
+  goal goal_122 {
+    test catalog.django__django_14672.goal_122
+  }
+  goal goal_123 {
+    test catalog.django__django_14672.goal_123
+  }
+  goal goal_124 {
+    test catalog.django__django_14672.goal_124
+  }
+  goal goal_125 {
+    test catalog.django__django_14672.goal_125
+  }
+  goal goal_126 {
+    test catalog.django__django_14672.goal_126
+  }
+  goal goal_127 {
+    test catalog.django__django_14672.goal_127
+  }
+  goal goal_128 {
+    test catalog.django__django_14672.goal_128
+  }
+  goal goal_129 {
+    test catalog.django__django_14672.goal_129
+  }
+  goal goal_130 {
+    test catalog.django__django_14672.goal_130
+  }
+  goal goal_131 {
+    test catalog.django__django_14672.goal_131
+  }
+  goal goal_132 {
+    test catalog.django__django_14672.goal_132
+  }
+  goal goal_133 {
+    test catalog.django__django_14672.goal_133
+  }
+  goal goal_134 {
+    test catalog.django__django_14672.goal_134
+  }
+  goal goal_135 {
+    test catalog.django__django_14672.goal_135
+  }
+  goal goal_136 {
+    test catalog.django__django_14672.goal_136
+  }
+  goal goal_137 {
+    test catalog.django__django_14672.goal_137
+  }
+  goal goal_138 {
+    test catalog.django__django_14672.goal_138
+  }
+  goal goal_139 {
+    test catalog.django__django_14672.goal_139
+  }
+  goal goal_140 {
+    test catalog.django__django_14672.goal_140
+  }
+  goal goal_141 {
+    test catalog.django__django_14672.goal_141
+  }
+  goal goal_142 {
+    test catalog.django__django_14672.goal_142
+  }
+  goal goal_143 {
+    test catalog.django__django_14672.goal_143
+  }
+  goal goal_144 {
+    test catalog.django__django_14672.goal_144
+  }
+  goal goal_145 {
+    test catalog.django__django_14672.goal_145
+  }
+  goal goal_146 {
+    test catalog.django__django_14672.goal_146
+  }
+  goal goal_147 {
+    test catalog.django__django_14672.goal_147
+  }
+  goal goal_148 {
+    test catalog.django__django_14672.goal_148
+  }
+  goal goal_149 {
+    test catalog.django__django_14672.goal_149
+  }
+  goal goal_150 {
+    test catalog.django__django_14672.goal_150
+  }
+  goal goal_151 {
+    test catalog.django__django_14672.goal_151
+  }
+  goal goal_152 {
+    test catalog.django__django_14672.goal_152
+  }
+  goal goal_153 {
+    test catalog.django__django_14672.goal_153
+  }
+  goal goal_154 {
+    test catalog.django__django_14672.goal_154
+  }
+  goal goal_155 {
+    test catalog.django__django_14672.goal_155
+  }
+  goal goal_156 {
+    test catalog.django__django_14672.goal_156
+  }
+  goal goal_157 {
+    test catalog.django__django_14672.goal_157
+  }
+  goal goal_158 {
+    test catalog.django__django_14672.goal_158
+  }
+  goal goal_159 {
+    test catalog.django__django_14672.goal_159
+  }
+  goal goal_160 {
+    test catalog.django__django_14672.goal_160
+  }
+  goal goal_161 {
+    test catalog.django__django_14672.goal_161
+  }
+  goal goal_162 {
+    test catalog.django__django_14672.goal_162
+  }
+  goal goal_163 {
+    test catalog.django__django_14672.goal_163
+  }
+  goal goal_164 {
+    test catalog.django__django_14672.goal_164
+  }
+  goal goal_165 {
+    test catalog.django__django_14672.goal_165
+  }
+  goal goal_166 {
+    test catalog.django__django_14672.goal_166
+  }
+  goal goal_167 {
+    test catalog.django__django_14672.goal_167
+  }
+  goal goal_168 {
+    test catalog.django__django_14672.goal_168
+  }
+  envelope import_rts top 6
+  evidence full_repeats 2
+  evidence counterfactual withdraw_and_reduce
+  note "Benchmark obligations for django__django-14672"
+}

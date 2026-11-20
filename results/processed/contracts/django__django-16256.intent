@@ -1,0 +1,36 @@
+intent django__django_16256 {
+  goal goal_1 {
+    test catalog.django__django_16256.goal_1
+  }
+  goal goal_2 {
+    test catalog.django__django_16256.goal_2
+  }
+  goal goal_3 {
+    test catalog.django__django_16256.goal_3
+  }
+  goal goal_4 {
+    test catalog.django__django_16256.goal_4
+  }
+  goal goal_5 {
+    test catalog.django__django_16256.goal_5
+  }
+  goal goal_6 {
+    test catalog.django__django_16256.goal_6
+  }
+  goal goal_7 {
+    test catalog.django__django_16256.goal_7
+  }
+  goal goal_8 {
+    test catalog.django__django_16256.goal_8
+  }
+  goal goal_9 {
+    test catalog.django__django_16256.goal_9
+  }
+  preserve existing_behavior {
+    tests catalog.django__django_16256.pass_to_pass
+  }
+  envelope import_rts top 6
+  evidence full_repeats 2
+  evidence counterfactual withdraw_and_reduce
+  note "Benchmark obligations for django__django-16256"
+}

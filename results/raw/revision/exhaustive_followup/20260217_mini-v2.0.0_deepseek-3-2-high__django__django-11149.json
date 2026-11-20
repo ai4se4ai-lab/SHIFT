@@ -1,0 +1,112 @@
+{
+ "record": "20260217_mini-v2.0.0_deepseek-3-2-high__django__django-11149",
+ "witness": [
+  "u01",
+  "u02",
+  "u04",
+  "u06"
+ ],
+ "executed": [
+  {
+   "cfg": [
+    "u01",
+    "u03"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 1.7
+  },
+  {
+   "cfg": [
+    "u01",
+    "u05"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 1.38
+  },
+  {
+   "cfg": [
+    "u01",
+    "u07"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 1.38
+  },
+  {
+   "cfg": [
+    "u03",
+    "u05"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 1.39
+  },
+  {
+   "cfg": [
+    "u03",
+    "u07"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 1.47
+  },
+  {
+   "cfg": [
+    "u05",
+    "u07"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 1.32
+  },
+  {
+   "cfg": [
+    "u01",
+    "u03",
+    "u05"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 1.42
+  },
+  {
+   "cfg": [
+    "u01",
+    "u03",
+    "u07"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 1.33
+  },
+  {
+   "cfg": [
+    "u01",
+    "u05",
+    "u07"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 1.4
+  },
+  {
+   "cfg": [
+    "u01",
+    "u02",
+    "u04",
+    "u06"
+   ],
+   "is_witness_recheck": true,
+   "outcome": "valid",
+   "sec": 1.35
+  }
+ ],
+ "started_utc": "2026-11-19T01:31:50Z",
+ "n_smaller_executed": 9,
+ "smaller_valid": [],
+ "smaller_error": [],
+ "witness_recheck": "valid",
+ "certified_min_after_followup": true
+}

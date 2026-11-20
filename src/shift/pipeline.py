@@ -20,7 +20,12 @@ from shift.patch.edits import decompose, requires_relation, syntax_ok
 
 
 def analyse_patch(instance_id: str, patch: str, label: str, *, envelope: bool = True,
-                  k_env: int = 6, ablations: bool = False, timeout: int = 900) -> dict:
+                  k_env: int = 6, ablations: bool = False, timeout: int = 900,
+                  contract=None) -> dict:
+    """``contract`` is an optional compiled SHIFT-Intent :class:`~shift.intent.dsl.Contract`.
+    When given, it supplies T_g, T_p, the envelope size and the full-patch repeats;
+    otherwise the benchmark's FAIL_TO_PASS / PASS_TO_PASS lists are used directly
+    (the two are identical for contracts produced by shift.intent.benchmark)."""
     df = load_dataset()
     inst = df.loc[instance_id].to_dict()
     repo, commit = inst["repo"], inst["base_commit"]
@@ -39,7 +44,12 @@ def analyse_patch(instance_id: str, patch: str, label: str, *, envelope: bool = 
             rec["units"] = [{"uid": u.uid, "path": u.path, "kind": u.kind, "op": u.op, "start": u.start,
                              "n_removed": len(u.removed), "n_added": len(u.added)} for u in units]
             rec["requires"] = {a: sorted(b) for a, b in req.items() if b}
-            f2p, p2p = inst["FAIL_TO_PASS"], inst["PASS_TO_PASS"]
+            if contract is not None:
+                f2p, p2p = list(contract.goal_tests), list(contract.preservation_tests)
+                k_env, repeats = contract.envelope[1], contract.full_repeats
+                rec["contract"] = {"name": contract.name, "digest": contract.digest()}
+            else:
+                f2p, p2p, repeats = inst["FAIL_TO_PASS"], inst["PASS_TO_PASS"], 2
             runs: list[dict] = []
 
             def run_cfg(cfg, directives=None):
@@ -57,7 +67,7 @@ def analyse_patch(instance_id: str, patch: str, label: str, *, envelope: bool = 
 
             pre = lambda cfg: syntax_ok(dp.apply(cfg))  # noqa: E731
             sess = Session(ids, oracle, requires=req, precheck=pre)
-            tr = triage(sess, repeats_full=2, full_oracle=oracle)
+            tr = triage(sess, repeats_full=repeats, full_oracle=oracle)
             rec.update({"status": tr.status, "labels": tr.labels, "loo": tr.loo, "minimal": tr.minimal,
                         "oracle_calls": tr.oracle_calls, "precheck_rejections": tr.precheck_rejections,
                         "anomalies": tr.anomalies, "runs": runs})
@@ -66,7 +76,7 @@ def analyse_patch(instance_id: str, patch: str, label: str, *, envelope: bool = 
                 rec["ablations"] = _ablations(ids, req, oracle, pre, sess.cache)
 
             if envelope and tr.status == "ok":
-                rec["envelope"] = _envelope(orc, inst, dp, ids, tr, req, protected, run_cfg, k_env)
+                rec["envelope"] = _envelope(orc, inst, dp, ids, tr, req, protected, run_cfg, k_env, f2p)
             rec["oracle_seconds"] = round(orc.oracle_seconds, 1)
     except Exception as e:  # recorded, never silently dropped
         rec.update({"status": "error", "error": f"{type(e).__name__}: {e}",
@@ -138,7 +148,7 @@ def _passing(rr) -> set[str]:
     return {t for t, s in rr.status.items() if s in PASS_STATES}
 
 
-def _envelope(orc, inst, dp, ids, tr, req, protected, run_cfg, k_env) -> dict:
+def _envelope(orc, inst, dp, ids, tr, req, protected, run_cfg, k_env, goal_tests=None) -> dict:
     """Preservation envelope: regressions invisible to the benchmark tests, with attribution."""
     repo, commit = inst["repo"], inst["base_commit"]
     edited_src = sorted({u.path for u in dp.units if u.kind == "source" and u.uid in ids})
@@ -153,7 +163,8 @@ def _envelope(orc, inst, dp, ids, tr, req, protected, run_cfg, k_env) -> dict:
     flaky = {t for t in set(b1.status) | set(b2.status) if b1.status.get(t) != b2.status.get(t)}
     full = run_cfg(ids, directives)
     gold_fail = stable_pass - _passing(g)
-    regress = sorted(stable_pass - _passing(full) - gold_fail - set(inst["FAIL_TO_PASS"]))
+    goal_tests = set(inst["FAIL_TO_PASS"] if goal_tests is None else goal_tests)
+    regress = sorted(stable_pass - _passing(full) - gold_fail - goal_tests)
     env.update({"n_tests": len(stable_pass), "n_flaky": len(flaky), "gold_changes": len(gold_fail),
                 "regressions": regress, "timed_out": any(r.timed_out for r in (b1, b2, g, full)),
                 "seconds": round(full.seconds + (0 if cached else b1.seconds + b2.seconds + g.seconds), 1)})
@@ -168,7 +179,10 @@ def _envelope(orc, inst, dp, ids, tr, req, protected, run_cfg, k_env) -> dict:
     for u in ids:
         if u in minimal:
             continue
-        cfg = sorted(minimal | {u} | req.get(u, set()))
+        # Add-back under the transitive requires closure (Algorithm 3). Before the v2
+        # revision only direct requirements were added; for all 25 recorded regression
+        # records the two coincide (analysis/revision/v2_checks.py).
+        cfg = sorted(_closure(minimal | {u}, req))
         rr = run_cfg(cfg, directives)
         hit = sorted((set(regress) - set(in_min)) - _passing(rr))
         if hit:
@@ -176,6 +190,16 @@ def _envelope(orc, inst, dp, ids, tr, req, protected, run_cfg, k_env) -> dict:
     env["harmful_units"] = harmful
     env["status"] = "regression"
     return env
+
+
+def _closure(s, req) -> set[str]:
+    s, todo = set(s), list(s)
+    while todo:
+        for b in req.get(todo.pop(), ()):
+            if b not in s:
+                s.add(b)
+                todo.append(b)
+    return s
 
 
 def to_jsonl(rec: dict) -> str:

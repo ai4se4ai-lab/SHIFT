@@ -1,0 +1,12 @@
+intent sympy__sympy_15976 {
+  goal goal_1 {
+    test catalog.sympy__sympy_15976.goal_1
+  }
+  preserve existing_behavior {
+    tests catalog.sympy__sympy_15976.pass_to_pass
+  }
+  envelope import_rts top 6
+  evidence full_repeats 2
+  evidence counterfactual withdraw_and_reduce
+  note "Benchmark obligations for sympy__sympy-15976"
+}

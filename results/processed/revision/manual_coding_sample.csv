@@ -1,0 +1,951 @@
+item,instance_id,label,agent,uid,path,role,removable,category,added,removed,in_reference_file,same_file_as_retained,lines_to_retained,max_similarity_to_retained,diff,code_mechanism,code_value_beyond_tests,coder,notes
+1,django__django-14608,gold,False,u01,django/forms/formsets.py,U,True,other_code,1,1,True,True,47.0,0.887,"-         self._non_form_errors = self.error_class()
+
++         self._non_form_errors = self.error_class(error_class='nonform')
+",,,,
+2,django__django-12858,20260217_mini-v2.0.0_gpt-5-2-high,True,u05,django/db/models/sql/query.py,U,True,import,1,1,False,False,,0.169,"- from django.db.models.expressions import BaseExpression, Col, F, OuterRef, Ref
+
++ from django.db.models.expressions import BaseExpression, Col, F, LookupExpression, OuterRef, Ref
+",,,,
+3,sympy__sympy-13878,gold,False,u08,sympy/stats/crv_types.py,U,True,other_code,1,1,True,True,545.0,0.284,"-     >>> from sympy.stats import Dagum, density
+
++     >>> from sympy.stats import Dagum, density, cdf
+",,,,
+4,django__django-11276,20260217_mini-v2.0.0_kimi-k2-5-high,True,u02,django/utils/html.py,U,True,other_code,0,7,True,True,19.0,0.0,"- _html_escapes = {
+
+-     ord('&'): '&amp;',
+
+-     ord('<'): '&lt;',
+
+-     ord('>'): '&gt;',
+
+-     ord('""'): '&quot;',
+
+-     ord(""'""): '&#39;',
+
+- }
+
+- 
+
+- 
+",,,,
+5,django__django-14053,20260217_mini-v2.0.0_deepseek-3-2-high,True,u03,django/contrib/staticfiles/storage.py,C,True,adds_branch_or_exception,9,1,True,True,7.0,0.535,"-                 yield name, hashed_name, processed
+
++                 if isinstance(processed, Exception):
+
++                     yield name, hashed_name, processed
+
++                 else:
+
++                     # Update result for this file (keep latest hashed_name, combine processed flags)
+
++                     if name in results:
+
++                         old_hash, old_processed = results[name]
+
++                         results[name] = (hashed_name, old_processed or processed)
+
++                     else:
+
++                         results[name] = (hashed_name, processed)
+",,,,
+6,sympy__sympy-12489,gold,False,u02,sympy/combinatorics/permutations.py,U,True,whitespace,0,0,True,True,647.0,0.0,"+ 
+",,,,
+7,sympy__sympy-12419,20260217_mini-v2.0.0_gemini-3-pro-high,True,u14,sympy/tensor/array/ndim_array.py,U,True,adds_branch_or_exception,1,1,False,False,,0.267,"-             if not isinstance(pointer, collections.Iterable):
+
++             if not isinstance(pointer, collections.abc.Iterable):
+",,,,
+8,sympy__sympy-13852,gold,False,u05,sympy/functions/special/zeta_functions.py,U,True,other_code,1,1,True,True,15.0,0.235,"-             return -log(1 + exp_polar(-I*pi)*z)
+
++             return -log(1 - z)
+",,,,
+9,sympy__sympy-13091,20260217_mini-v2.0.0_gpt-5-2-high,True,u07,sympy/core/expr.py,U,True,other_code,1,1,False,False,,0.467,"-             raise TypeError(""Invalid comparison %s > %s"" % (self, other))
+
++             return NotImplemented
+",,,,
+10,sympy__sympy-20154,20260217_mini-v2.0.0_deepseek-3-2-high,True,u03,sympy/utilities/iterables.py,U,True,other_code,1,1,True,True,54.0,0.087,"-     >>> [(M, p.copy()) for M, p in partitions(6, k=2, size=True)]  # doctest: +SKIP
+
++     >>> [(M, p) for M, p in partitions(6, k=2, size=True)]
+",,,,
+11,sympy__sympy-15017,20260217_mini-v2.0.0_gemini-3-pro-high,True,u03,sympy/tensor/array/sparse_ndim_array.py,U,True,other_code,1,1,False,False,,0.958,"-         loop_size = functools.reduce(lambda x,y: x*y, shape) if shape else 0
+
++         loop_size = functools.reduce(lambda x,y: x*y, shape) if shape else 1
+",,,,
+12,sympy__sympy-14531,20260217_mini-v2.0.0_gpt-5-2-high,True,u03,sympy/printing/str.py,U,True,other_code,1,1,True,True,74.0,0.759,"-         return '(%s, %s)' % (expr.expr, expr.cond)
+
++         return '(%s, %s)' % (self._print(expr.expr), self._print(expr.cond))
+",,,,
+13,django__django-15161,20260217_mini-v2.0.0_gemini-3-pro-high,True,u05,django/db/models/expressions.py,U,True,other_code,1,0,True,True,41.0,0.904,"+ @deconstructible(path='django.db.models.ExpressionList')
+",,,,
+14,sympy__sympy-13974,gold,False,u05,sympy/physics/quantum/tensorproduct.py,U,True,adds_branch_or_exception,9,4,True,True,9.0,0.654,"-                 # this won't quite work as we don't want next in the
+
+-                 # TensorProduct
+
+-                 for i in range(len(new_args)):
+
+-                     new_args[i] = new_args[i] * next
+
++                 if isinstance(next, Pow):
+
++                     if isinstance(next.base, TensorProduct):
+
++                         new_tp = tensor_product_simp_Pow(next)
+
++                         for i in range(len(new_args)):
+
++                             new_args[i] = new_args[i] * new_tp.args[i]
+
++                     else:
+
++                         raise TypeError('TensorProduct expected, got: %r' % next)
+
++                 else:
+
++                     raise TypeError('TensorProduct expected, got: %r' % next)
+",,,,
+15,sympy__sympy-13372,20260217_mini-v2.0.0_deepseek-3-2-high,True,u02,sympy/core/evalf.py,U,True,adds_branch_or_exception,2,0,True,True,6.0,1.0,"+             else:
+
++                 raise NotImplementedError
+",,,,
+16,sympy__sympy-16597,gold,False,u13,sympy/assumptions/ask_generated.py,U,True,other_code,2,2,True,False,,0.317,"-         Q.odd: set([Q.algebraic, Q.complex, Q.extended_real, Q.hermitian,
+
+-         Q.integer, Q.nonzero, Q.odd, Q.rational, Q.real]),
+
++         Q.odd: set([Q.algebraic, Q.complex, Q.extended_real, Q.finite,
+
++         Q.hermitian, Q.integer, Q.nonzero, Q.odd, Q.rational, Q.real]),
+",,,,
+17,django__django-15037,20260217_mini-v2.0.0_claude-4-6-opus,True,u02,django/core/management/commands/inspectdb.py,U,True,adds_branch_or_exception,2,2,True,True,1.0,0.079,"-                             ""self"" if relations[column_name][1] == table_name
+
+-                             else table2model(relations[column_name][1])
+
++                             ""self"" if ref_db_table == table_name
+
++                             else table2model(ref_db_table)
+",,,,
+18,sympy__sympy-13878,gold,False,u12,sympy/stats/crv_types.py,U,True,other_code,1,1,True,True,656.0,0.093,"-                 (S.One - exp(-self.rate*x), x>=0),
+
++                 (S.One - exp(-self.rate*x), x >= 0),
+",,,,
+19,django__django-12663,20260217_mini-v2.0.0_kimi-k2-5-high,True,u01,django/db/models/fields/__init__.py,U,True,import,1,1,False,True,1747.0,0.201,"- from django.utils.functional import Promise, cached_property
+
++ from django.utils.functional import LazyObject, Promise, cached_property, empty
+",,,,
+20,django__django-14999,gold,False,u02,django/db/migrations/operations/models.py,U,True,other_code,1,5,True,True,1.0,0.385,"-             schema_editor.alter_db_table(
+
+-                 new_model,
+
+-                 old_model._meta.db_table,
+
+-                 new_model._meta.db_table,
+
+-             )
+
++             schema_editor.alter_db_table(new_model, old_db_table, new_db_table)
+",,,,
+21,sympy__sympy-16792,20260217_mini-v2.0.0_deepseek-3-2-high,True,u09,sympy/utilities/codegen.py,U,True,other_code,1,1,True,True,409.0,0.211,"-     return code_gen.routine(name, expr, argument_sequence, global_vars)
+
++     return code_gen.routine(name, expr, argument_sequence, global_vars)
+",,,,
+22,django__django-15741,20260217_mini-v2.0.0_deepseek-3-2-high,True,u03,django/utils/formats.py,U,True,other_code,1,0,True,True,127.0,0.839,"+         format = force_str(format)
+",,,,
+23,sympy__sympy-13878,20260217_mini-v2.0.0_kimi-k2-5-high,True,u02,sympy/core/basic.py,U,True,import,2,1,False,False,,0.194,"- from collections import Mapping, defaultdict
+
++ from collections.abc import Mapping
+
++ from collections import defaultdict
+",,,,
+24,sympy__sympy-15017,20260217_mini-v2.0.0_deepseek-3-2-high,True,u04,sympy/tensor/array/ndim_array.py,U,True,adds_branch_or_exception,2,0,False,False,,0.309,"+         if self.rank() == 0:
+
++             return self[()]
+",,,,
+25,django__django-15731,gold,False,u03,django/db/models/manager.py,U,True,other_code,0,2,True,True,3.0,0.0,"-             manager_method.__name__ = method.__name__
+
+-             manager_method.__doc__ = method.__doc__
+",,,,
+26,sympy__sympy-13091,gold,False,u35,sympy/polys/polyclasses.py,U,True,other_code,1,1,True,False,,0.78,"-         return not f.__eq__(g)
+
++         return not f == g
+",,,,
+27,django__django-11276,20260217_mini-v2.0.0_gpt-5-2-high,True,u02,django/utils/html.py,U,True,other_code,0,7,True,True,19.0,0.0,"- _html_escapes = {
+
+-     ord('&'): '&amp;',
+
+-     ord('<'): '&lt;',
+
+-     ord('>'): '&gt;',
+
+-     ord('""'): '&quot;',
+
+-     ord(""'""): '&#39;',
+
+- }
+
+- 
+",,,,
+28,sympy__sympy-23262,20260217_mini-v2.0.0_gpt-5-mini,True,u04,sympy/utilities/lambdify.py,C,True,other_code,2,0,True,True,1.0,0.232,"+             inner = ', '.join(_recursive_to_string(doprint, e) for e in arg)
+
++             return left + inner + right
+",,,,
+29,sympy__sympy-12419,20260217_mini-v2.0.0_gemini-3-pro-high,True,u08,sympy/physics/mechanics/linearize.py,U,True,adds_branch_or_exception,1,1,False,False,,0.286,"-         elif isinstance(op_point, collections.Iterable):
+
++         elif isinstance(op_point, collections.abc.Iterable):
+",,,,
+30,sympy__sympy-12489,gold,False,u01,sympy/combinatorics/permutations.py,U,True,whitespace,0,0,True,True,691.0,0.0,"+ 
+",,,,
+31,sympy__sympy-13878,20260217_mini-v2.0.0_claude-4-6-opus,True,u04,sympy/stats/crv_types.py,U,True,other_code,1,0,True,True,513.0,0.165,"+     set = Interval(0, oo)
+
++ 
+",,,,
+32,sympy__sympy-17318,gold,False,u02,sympy/simplify/radsimp.py,U,True,other_code,1,1,True,False,,0.293,"-     split an expression with terms whose squares are rationals
+
++     Split an expression with terms whose squares are positive rationals
+",,,,
+33,django__django-12741,20260217_mini-v2.0.0_gemini-3-pro-high,True,u01,django/core/management/commands/flush.py,U,True,other_code,1,1,True,False,,0.609,"-                 connection.ops.execute_sql_flush(database, sql_list)
+
++                 connection.ops.execute_sql_flush(sql_list)
+",,,,
+34,django__django-15987,20260217_mini-v2.0.0_deepseek-3-2-high,True,u01,django/core/management/commands/loaddata.py,U,True,adds_branch_or_exception,3,1,True,True,5.0,0.389,"-         if len(fixture_dirs) != len(set(fixture_dirs)):
+
++         # Normalize path-like objects to strings for duplicate detection
+
++         normalized_fixture_dirs = [os.fspath(d) for d in fixture_dirs]
+
++         if len(normalized_fixture_dirs) != len(set(normalized_fixture_dirs)):
+",,,,
+35,sympy__sympy-16597,gold,False,u12,sympy/assumptions/ask_generated.py,U,True,other_code,1,1,True,False,,0.414,"-         Q.irrational: set([Q.complex, Q.extended_real, Q.hermitian,
+
++         Q.irrational: set([Q.complex, Q.extended_real, Q.finite, Q.hermitian,
+",,,,
+36,sympy__sympy-20154,20260217_mini-v2.0.0_gemini-3-pro-high,True,u01,sympy/utilities/iterables.py,U,True,other_code,2,2,True,True,82.0,0.05,"-     {1: 2, 2: 2}
+
+-     {1: 4, 2: 1}
+
++     {2: 2, 1: 2}
+
++     {2: 1, 1: 4}
+",,,,
+37,sympy__sympy-13091,20260217_mini-v2.0.0_claude-4-6-opus,True,u09,sympy/core/numbers.py,U,True,other_code,1,1,True,True,545.0,0.677,"-             raise TypeError(""Invalid comparison %s > %s"" % (self, other))
+
++             return NotImplemented
+",,,,
+38,sympy__sympy-20154,20260217_mini-v2.0.0_deepseek-3-2-high,True,u13,sympy/utilities/iterables.py,U,True,other_code,1,1,True,True,124.0,0.897,"-                     yield a
+
++                     yield a.copy()
+",,,,
+39,sympy__sympy-12489,gold,False,u11,sympy/combinatorics/permutations.py,U,True,other_code,0,5,True,True,6.0,0.0,"-         size = len(aform)
+
+-         obj = Basic.__new__(cls, aform)
+
+-         obj._array_form = aform
+
+-         obj._size = size
+
+-         return obj
+",,,,
+40,django__django-14053,20260217_mini-v2.0.0_gpt-5-2-high,True,u08,django/contrib/staticfiles/storage.py,C,True,adds_branch_or_exception,7,2,True,True,7.0,0.853,"-             for name, hashed_name, processed, subst in self._post_process(paths, adjustable_paths, hashed_files):
+
+-                 yield name, hashed_name, processed
+
++             for name, hashed_name, processed, subst in self._post_process(
+
++                 paths, adjustable_paths_set, hashed_files
+
++             ):
+
++                 if isinstance(processed, Exception):
+
++                     yield name, hashed_name, processed
+
++                     return
+
++                 adjustable_results[name] = (hashed_name, processed)
+",,,,
+41,django__django-15161,20260217_mini-v2.0.0_gemini-3-pro-high,True,u02,django/db/models/expressions.py,U,True,other_code,1,0,True,True,12.0,0.909,"+ @deconstructible(path='django.db.models.OuterRef')
+",,,,
+42,django__django-16819,20260217_mini-v2.0.0_gpt-5-2-high,True,u02,django/db/migrations/operations/models.py,U,True,other_code,8,0,True,True,54.0,0.092,"+     def references_model(self, name, app_label):
+
++         return name.lower() == self.model_name_lower
+
++ 
+
++     def can_reduce_through(self, operation, app_label):
+
++         return not operation.references_model(self.model_name, app_label)
+
++ 
+
++     def reduce(self, operation, app_label):
+
++         return super().reduce(operation, app_label) or self.can_reduce_through(
+
++             operation, app_label
+
++         )
+
++ 
+",,,,
+43,sympy__sympy-14711,20260217_mini-v2.0.0_gemini-3-pro-high,True,u09,sympy/matrices/sparse.py,U,True,adds_branch_or_exception,1,1,False,False,,0.16,"-             if isinstance(args[2], collections.Callable):
+
++             if isinstance(args[2], collections.abc.Callable):
+",,,,
+44,django__django-15161,20260217_mini-v2.0.0_gpt-5-mini,True,u05,django/db/models/expressions.py,U,True,other_code,1,0,True,True,41.0,0.904,"+ @deconstructible(path='django.db.models.ExpressionList')
+",,,,
+45,django__django-12304,20260217_mini-v2.0.0_gemini-3-pro-high,True,u02,django/db/models/enums.py,U,True,other_code,1,1,True,True,17.0,0.783,"-         cls = super().__new__(metacls, classname, bases, classdict)
+
++         cls = super().__new__(metacls, classname, bases, classdict, **kwargs)
+",,,,
+46,django__django-16560,gold,False,u03,django/contrib/postgres/constraints.py,U,True,other_code,1,0,True,False,,1.0,"+                 and self.violation_error_code == other.violation_error_code
+",,,,
+47,sympy__sympy-12489,gold,False,u20,sympy/combinatorics/permutations.py,U,True,adds_branch_or_exception,1,1,True,True,4.0,0.444,"-         if type(n) == Perm:
+
++         if isinstance(n, Permutation):
+",,,,
+48,django__django-13128,20260217_mini-v2.0.0_gpt-5-2-high,True,u02,django/db/models/expressions.py,U,True,adds_branch_or_exception,5,1,True,True,16.0,0.2,"-         if self.connector == self.SUB and lhs_type in datetime_fields and lhs_type == rhs_type:
+
++         if (
+
++             self.connector == self.SUB and
+
++             lhs_type in datetime_fields and
+
++             lhs_type == rhs_type
+
++         ):
+",,,,
+49,django__django-14631,gold,False,u01,django/forms/boundfield.py,U,True,import,1,0,True,False,,0.222,"+ from django.core.exceptions import ValidationError
+",,,,
+50,sympy__sympy-20916,gold,False,u02,sympy/printing/conventions.py,U,True,comment_or_docstring,1,1,True,True,53.0,0.273,"-     # make a little exception when a name ends with digits, i.e. treat them
+
++     # Make a little exception when a name ends with digits, i.e. treat them
+",,,,
+51,sympy__sympy-15875,20260217_mini-v2.0.0_gemini-3-pro-high,True,u03,sympy/core/add.py,C,True,other_code,1,1,True,True,10.0,0.211,"-                 im = True
+
++                 iz.append(a)
+",,,,
+52,django__django-14053,gold,False,u04,django/contrib/staticfiles/storage.py,C,True,other_code,2,0,True,True,19.0,0.494,"+         # Yield adjustable files with final, hashed name.
+
++         yield from processed_adjustable_paths.values()
+
++ 
+",,,,
+53,sympy__sympy-14711,20260217_mini-v2.0.0_gemini-3-pro-high,True,u05,sympy/core/function.py,C,True,adds_branch_or_exception,1,1,False,False,,0.136,"-                 if isinstance(v, (collections.Iterable, Tuple, MatrixCommon, NDimArray)):
+
++                 if isinstance(v, (collections.abc.Iterable, Tuple, MatrixCommon, NDimArray)):
+",,,,
+54,sympy__sympy-15017,20260217_mini-v2.0.0_deepseek-3-2-high,True,u06,sympy/tensor/array/sparse_ndim_array.py,U,True,other_code,1,1,False,False,,1.0,"-         self._loop_size = functools.reduce(lambda x,y: x*y, shape) if shape else 0
+
++         self._loop_size = functools.reduce(lambda x,y: x*y, shape, 1)
+",,,,
+55,django__django-11532,gold,False,u01,django/core/mail/message.py,U,True,import,1,1,True,False,,0.884,"- from django.utils.encoding import force_str
+
++ from django.utils.encoding import force_str, punycode
+",,,,
+56,django__django-13837,20260217_mini-v2.0.0_gpt-5-mini,True,u04,django/utils/autoreload.py,U,True,other_code,0,1,True,True,4.0,0.0,"-     args = [sys.executable] + ['-W%s' % o for o in sys.warnoptions]
+",,,,
+57,django__django-11276,gold,False,u07,django/utils/html.py,U,True,other_code,1,1,True,True,288.0,0.495,"-                 url = smart_urlquote('http://%s' % unescape(middle))
+
++                 url = smart_urlquote('http://%s' % html.unescape(middle))
+",,,,
+58,django__django-11490,20260217_mini-v2.0.0_gpt-5-2-high,True,u01,django/db/models/sql/compiler.py,U,True,whitespace,0,0,True,True,2.0,0.0,"+ 
+",,,,
+59,django__django-13933,20260217_mini-v2.0.0_deepseek-3-2-high,True,u02,django/forms/models.py,U,True,adds_branch_or_exception,1,1,True,True,153.0,0.968,"-             raise ValidationError(self.error_messages['invalid_choice'], code='invalid_choice')
+
++             raise ValidationError(self.error_messages['invalid_choice'], code='invalid_choice', params={'value': value})
+",,,,
+60,django__django-11276,20260217_mini-v2.0.0_kimi-k2-5-high,True,u04,django/utils/html.py,U,True,comment_or_docstring,1,1,True,True,223.0,0.217,"-             '&gt;', '>').replace('&quot;', '""').replace('&#39;', ""'"")
+
++             '&gt;', '>').replace('&quot;', '""').replace('&#39;', ""'"").replace('&#x27;', ""'"")
+",,,,
+61,sympy__sympy-19495,gold,False,u01,sympy/sets/conditionset.py,U,True,other_code,0,2,True,True,160.0,0.0,"-     Notes
+
+-     =====
+
+- 
+",,,,
+62,django__django-11333,20260217_mini-v2.0.0_claude-4-6-opus,True,u02,django/urls/base.py,C,True,other_code,1,1,True,False,,0.471,"-     get_resolver.cache_clear()
+
++     _get_cached_resolver.cache_clear()
+",,,,
+63,django__django-15741,20260217_mini-v2.0.0_deepseek-3-2-high,True,u04,django/utils/formats.py,U,True,other_code,1,0,True,True,131.0,0.839,"+         format = force_str(format)
+",,,,
+64,sympy__sympy-13878,gold,False,u42,sympy/stats/crv_types.py,U,True,whitespace,0,0,True,True,2144.0,0.0,"+ 
+",,,,
+65,django__django-11532,gold,False,u02,django/core/mail/message.py,U,True,other_code,1,4,True,False,,0.531,"-     try:
+
+-         domain.encode('ascii')
+
+-     except UnicodeEncodeError:
+
+-         domain = domain.encode('idna').decode('ascii')
+
++     domain = punycode(domain)
+",,,,
+66,django__django-16560,20260217_mini-v2.0.0_deepseek-3-2-high,True,u07,django/contrib/postgres/constraints.py,U,True,adds_branch_or_exception,1,1,True,False,,1.0,"-                 raise ValidationError(self.get_violation_error_message())
+
++                 raise ValidationError(self.get_violation_error_message(), code=self.violation_error_code)
+",,,,
+67,sympy__sympy-12489,gold,False,u38,sympy/combinatorics/permutations.py,U,True,other_code,1,1,True,True,34.0,1.0,"-         return _af_new(perm_array)
+
++         return cls._af_new(perm_array)
+",,,,
+68,django__django-16136,20250720_mini-v0.0.0-gpt-4o-2024-11-20,True,u01,django/views/generic/base.py,U,True,other_code,1,0,True,True,6.0,0.319,"+         print(""http_method_not_allowed called with method:"", request.method)
+",,,,
+69,sympy__sympy-13091,gold,False,u29,sympy/polys/domains/expressiondomain.py,U,True,other_code,1,1,True,False,,0.78,"-             return not f.__eq__(g)
+
++             return not f == g
+",,,,
+70,sympy__sympy-15345,gold,False,u01,sympy/printing/mathematica.py,U,True,comment_or_docstring,2,0,True,True,70.0,0.212,"- 
+
++     ""Max"": [(lambda *x: True, ""Max"")],
+
++     ""Min"": [(lambda *x: True, ""Min"")],
+",,,,
+71,sympy__sympy-13878,20260217_mini-v2.0.0_gemini-3-pro-high,True,u17,sympy/stats/crv_types.py,U,True,other_code,5,0,True,True,1047.0,0.414,"+ 
+
++     def _cdf(self, x):
+
++         a, b = self.a, self.b
+
++         return Piecewise(
+
++             (uppergamma(a, b/x)/gamma(a), x > 0),
+
++             (S.Zero, True))
+",,,,
+72,django__django-11133,20260217_mini-v2.0.0_gemini-3-pro-high,True,u02,django/http/response.py,U,True,adds_branch_or_exception,1,1,True,True,80.0,0.677,"-         if hasattr(value, '__iter__') and not isinstance(value, (bytes, str)):
+
++         if hasattr(value, '__iter__') and not isinstance(value, (bytes, memoryview, str)):
+",,,,
+73,django__django-15741,20260217_mini-v2.0.0_gpt-5-2-high,True,u06,django/utils/formats.py,U,True,adds_branch_or_exception,2,2,True,True,6.0,0.52,"-         val = getattr(settings, format_type)
+
+-     elif format_type in ISO_INPUT_FORMATS:
+
++         val = getattr(settings, format_type_str)
+
++     elif format_type_str in ISO_INPUT_FORMATS:
+",,,,
+74,sympy__sympy-15017,20260217_mini-v2.0.0_deepseek-3-2-high,True,u05,sympy/tensor/array/sparse_ndim_array.py,U,True,other_code,1,1,False,False,,0.948,"-         loop_size = functools.reduce(lambda x,y: x*y, shape) if shape else 0
+
++         loop_size = functools.reduce(lambda x,y: x*y, shape, 1)
+",,,,
+75,django__django-13344,gold,False,u09,django/middleware/cache.py,C,True,other_code,2,0,True,True,19.0,0.041,"+             self.cache_alias = cache_alias
+
++             self.cache = caches[self.cache_alias]
+",,,,
+76,sympy__sympy-20154,20260217_mini-v2.0.0_gpt-5-2-high,True,u01,sympy/utilities/iterables.py,U,True,other_code,2,3,True,True,66.0,0.152,"-     Note that the _same_ dictionary object is returned each time.
+
+-     This is for speed:  generating each partition goes quickly,
+
+-     taking constant time, independent of n.
+
++     The returned dictionaries are independent objects and can be stored
+
++     directly:
+",,,,
+77,sympy__sympy-13878,20260217_mini-v2.0.0_gpt-5-mini,True,u08,sympy/stats/crv_types.py,U,True,other_code,6,0,True,True,60.0,0.638,"+     def _cdf(self, x):
+
++         mu, b = self.mu, self.b
+
++         return Piecewise(
+
++             (S.Half*exp((x - mu)/b), x < mu),
+
++             (1 - S.Half*exp(-(x - mu)/b), True)
+
++         )
+
++ 
+
++ 
+",,,,
+78,django__django-14631,gold,False,u08,django/forms/forms.py,U,True,other_code,0,1,True,True,65.0,0.0,"-             bf = self[name]
+",,,,
+79,django__django-14631,20260217_mini-v2.0.0_gemini-3-pro-high,True,u01,django/forms/boundfield.py,U,True,import,1,0,True,False,,0.176,"+ from django.core.exceptions import ValidationError
+",,,,
+80,sympy__sympy-13091,20260217_mini-v2.0.0_gpt-5-2-high,True,u30,sympy/core/numbers.py,U,True,other_code,1,1,True,True,508.0,0.467,"-             raise TypeError(""Invalid comparison %s < %s"" % (self, other))
+
++             return NotImplemented
+",,,,
+81,sympy__sympy-12489,gold,False,u32,sympy/combinatorics/permutations.py,U,True,other_code,1,1,True,True,3.0,0.8,"-         return Perm(perm)
+
++         return cls(perm)
+",,,,
+82,django__django-15128,gold,False,u06,django/db/models/sql/query.py,U,True,other_code,1,1,True,True,5.0,0.362,"-         after this call.
+
++         after this call. To prevent changing aliases use the exclude parameter.
+",,,,
+83,sympy__sympy-12489,gold,False,u17,sympy/combinatorics/permutations.py,U,True,other_code,1,1,True,True,65.0,0.772,"-         return _af_new(_af_rmul(a, b))
+
++         return self._af_new(_af_rmul(a, b))
+",,,,
+84,django__django-16032,20260217_mini-v2.0.0_gpt-5-2-high,True,u01,django/db/models/sql/query.py,U,True,comment_or_docstring,7,0,True,True,1.0,0.175,"+         # `annotation_select_mask` is used to control which annotations appear
+
++         # in the SELECT clause. It may be set even when the query is still
+
++         # selecting the model's default columns (e.g. when adding an
+
++         # unselected alias() after annotate()). In that case, the query doesn't
+
++         # have explicit select fields and can still be safely reduced to a
+
++         # single primary key column when used as a subquery for lookups such as
+
++         # `__in`.
+",,,,
+85,django__django-15731,20260217_mini-v2.0.0_kimi-k2-5-high,True,u03,django/db/models/manager.py,U,True,other_code,0,2,True,True,3.0,0.0,"-             manager_method.__name__ = method.__name__
+
+-             manager_method.__doc__ = method.__doc__
+",,,,
+86,sympy__sympy-13091,gold,False,u42,sympy/polys/polyclasses.py,U,True,other_code,1,1,True,False,,0.541,"-         return F.__le__(G)
+
++         return F <= G
+",,,,
+87,django__django-11603,20260217_mini-v2.0.0_kimi-k2-5-high,True,u02,django/db/models/aggregates.py,U,True,other_code,1,0,True,True,21.0,1.0,"+     allow_distinct = True
+",,,,
+88,sympy__sympy-20801,20260217_mini-v2.0.0_deepseek-3-2-high,True,u03,sympy/core/numbers.py,U,True,adds_branch_or_exception,2,0,True,True,4.0,0.0,"+         if not self:
+
++             return not other
+",,,,
+89,django__django-11603,20260217_mini-v2.0.0_deepseek-3-2-high,True,u06,django/db/models/aggregates.py,U,True,other_code,1,0,True,True,4.0,1.0,"+     allow_distinct = True
+",,,,
+90,sympy__sympy-13091,20260217_mini-v2.0.0_claude-4-6-opus,True,u39,sympy/core/numbers.py,U,True,other_code,1,1,True,True,981.0,0.677,"-             raise TypeError(""Invalid comparison %s >= %s"" % (self, other))
+
++             return NotImplemented
+",,,,
+91,django__django-13344,gold,False,u11,django/middleware/cache.py,U,True,adds_branch_or_exception,2,3,True,True,23.0,0.191,"-         if cache_timeout is None:
+
+-             cache_timeout = settings.CACHE_MIDDLEWARE_SECONDS
+
+-         self.cache_timeout = cache_timeout
+
++         if cache_timeout is not None:
+
++             self.cache_timeout = cache_timeout
+",,,,
+92,django__django-10973,gold,False,u02,django/db/backends/postgresql/client.py,U,True,other_code,0,5,True,True,30.0,0.0,"- def _escape_pgpass(txt):
+
+-     """"""
+
+-     Escape a fragment of a PostgreSQL .pgpass file.
+
+-     """"""
+
+-     return txt.replace('\\', '\\\\').replace(':', '\\:')
+
+- 
+
+- 
+",,,,
+93,django__django-14007,20260217_mini-v2.0.0_kimi-k2-5-high,True,u02,django/db/models/query.py,U,True,adds_branch_or_exception,4,0,False,False,,0.858,"+                             if result is not None:
+
++                                 converters = field.get_db_converters(connection)
+
++                                 for converter in converters:
+
++                                     result = converter(result, None, connection)
+",,,,
+94,django__django-15973,20260217_mini-v2.0.0_deepseek-3-2-high,True,u04,django/db/backends/base/schema.py,U,True,adds_branch_or_exception,2,2,False,False,,0.209,"-         if field.many_to_many and field.remote_field.through._meta.auto_created:
+
+-             return self.delete_model(field.remote_field.through)
+
++         if field.many_to_many and self._resolve_through_model(field, model)._meta.auto_created:
+
++             return self.delete_model(self._resolve_through_model(field, model))
+",,,,
+95,django__django-14631,gold,False,u07,django/forms/forms.py,C,True,other_code,2,1,True,True,63.0,0.679,"-         for name, field in self.fields.items():
+
++         for name, bf in self._bound_items():
+
++             field = bf.field
+",,,,
+96,sympy__sympy-12419,20260217_mini-v2.0.0_gemini-3-pro-high,True,u18,sympy/tensor/array/ndim_array.py,U,True,adds_branch_or_exception,1,1,False,False,,0.304,"-         if isinstance(other, (collections.Iterable,NDimArray, MatrixBase)):
+
++         if isinstance(other, (collections.abc.Iterable,NDimArray, MatrixBase)):
+",,,,
+97,django__django-13512,20260217_mini-v2.0.0_gpt-5-mini,True,u03,django/contrib/postgres/forms/hstore.py,U,True,other_code,2,1,False,False,,0.737,"-             return json.dumps(value)
+
++             # Preserve non-ASCII characters when serializing for display
+
++             return json.dumps(value, ensure_ascii=False)
+",,,,
+98,sympy__sympy-13878,gold,False,u04,sympy/stats/crv_types.py,U,True,other_code,1,1,True,True,25.0,0.302,"-     >>> from sympy.stats import Arcsin, density
+
++     >>> from sympy.stats import Arcsin, density, cdf
+",,,,
+99,sympy__sympy-20438,gold,False,u01,sympy/core/relational.py,U,True,import,1,0,True,True,3.0,0.447,"+         from sympy.core.expr import Expr
+",,,,
+100,sympy__sympy-13615,20260217_mini-v2.0.0_gpt-5-2-high,True,u01,sympy/assumptions/sathandlers.py,U,True,adds_branch_or_exception,5,1,False,False,,0.019,"- from collections import MutableMapping, defaultdict
+
++ try:
+
++     from collections.abc import MutableMapping
+
++ except ImportError:  # pragma: no cover
+
++     from collections import MutableMapping
+
++ from collections import defaultdict
+",,,,
+101,django__django-16560,20260217_mini-v2.0.0_gpt-5-2-high,True,u01,django/contrib/postgres/constraints.py,U,True,other_code,1,0,True,False,,1.0,"+         violation_error_code=None,
+",,,,
+102,django__django-15037,gold,False,u03,django/core/management/commands/inspectdb.py,U,True,adds_branch_or_exception,2,2,True,True,1.0,0.42,"-                             ""self"" if relations[column_name][1] == table_name
+
+-                             else table2model(relations[column_name][1])
+
++                             'self' if ref_db_table == table_name
+
++                             else table2model(ref_db_table)
+",,,,
+103,django__django-13933,20260217_mini-v2.0.0_kimi-k2-5-high,True,u01,django/forms/models.py,U,True,comment_or_docstring,1,1,True,True,96.0,0.386,"-         'invalid_choice': _('Select a valid choice. That choice is not one of'
+
++         'invalid_choice': _('Select a valid choice. %(value)s is not one of'
+",,,,
+104,sympy__sympy-13091,gold,False,u51,sympy/polys/polytools.py,U,True,other_code,1,1,True,False,,1.0,"-         return not self.__eq__(other)
+
++         return not self == other
+",,,,
+105,django__django-15161,20260217_mini-v2.0.0_gpt-5-mini,True,u01,django/db/models/expressions.py,U,True,other_code,1,1,True,True,259.0,0.937,"- @deconstructible
+
++ @deconstructible(path='django.db.models.Expression')
+",,,,
+106,django__django-14404,gold,False,u02,django/contrib/admin/sites.py,U,True,other_code,1,1,True,True,5.0,0.495,"-                 match = resolve(path, urlconf)
+
++                 match = resolve('%s/' % request.path_info, urlconf)
+",,,,
+107,django__django-16315,20260217_mini-v2.0.0_kimi-k2-5-high,True,u02,django/db/backends/postgresql/operations.py,U,True,other_code,8,0,False,False,,1.0,"+             unique_fields = [
+
++                 field.column if hasattr(field, ""column"") else field
+
++                 for field in unique_fields
+
++             ]
+
++             update_fields = [
+
++                 field.column if hasattr(field, ""column"") else field
+
++                 for field in update_fields
+
++             ]
+",,,,
+108,sympy__sympy-16792,20260217_mini-v2.0.0_gpt-5-2-high,True,u15,sympy/utilities/codegen.py,U,True,comment_or_docstring,4,1,True,True,2.0,0.11,"-             # if the user has supplied IndexedBase instances, we'll accept that
+
++             # If the user has supplied IndexedBase instances, we'll accept that.
+
++             # Preserve array dimensional metadata for arguments even if they do
+
++             # not appear in the expression. This is important for wrapper
+
++             # generation (e.g. Cython) where array-ness impacts the C signature.
+",,,,
+109,django__django-15161,20260217_mini-v2.0.0_claude-4-6-opus,True,u02,django/db/models/aggregates.py,U,True,other_code,1,0,False,False,,0.907,"+ @deconstructible(path='django.db.models.Aggregate')
+",,,,
+110,sympy__sympy-23262,20260217_mini-v2.0.0_gpt-5-mini,True,u01,sympy/utilities/lambdify.py,U,True,comment_or_docstring,1,0,True,True,2.0,0.052,"+             # list: [a, b, ...]
+",,,,
+111,sympy__sympy-23262,20260217_mini-v2.0.0_deepseek-3-2-high,True,u04,sympy/utilities/lambdify.py,U,True,whitespace,0,0,True,True,9.0,0.0,"- 
+",,,,
+112,django__django-15161,20260217_mini-v2.0.0_gpt-5-mini,True,u09,django/db/models/expressions.py,U,True,other_code,1,0,True,True,81.0,0.909,"+ @deconstructible(path='django.db.models.Subquery')
+",,,,
+113,sympy__sympy-12489,20260217_mini-v2.0.0_gpt-5-2-high,True,u05,sympy/combinatorics/permutations.py,U,True,other_code,1,1,True,True,2.0,0.853,"-                 return _af_new(a.list(size))
+
++                 return cls._af_new(a.list(size))
+",,,,
+114,django__django-15554,20260217_mini-v2.0.0_gpt-5-2-high,True,u02,django/db/models/sql/query.py,U,True,adds_branch_or_exception,12,3,True,False,,0.058,"-         alias, _ = self.table_alias(
+
+-             join.table_name, create=True, filtered_relation=join.filtered_relation
+
+-         )
+
++         if join.table_alias is not None and join.table_alias not in self.alias_map:
+
++             alias = join.table_alias
+
++             alias_list = self.table_map.get(join.table_name)
+
++             if alias_list:
+
++                 alias_list.append(alias)
+
++             else:
+
++                 self.table_map[join.table_name] = [alias]
+
++             self.alias_refcount[alias] = 1
+
++         else:
+
++             alias, _ = self.table_alias(
+
++                 join.table_name, create=True, filtered_relation=join.filtered_relation
+
++             )
+",,,,
+115,django__django-12858,20260217_mini-v2.0.0_gpt-5-2-high,True,u06,django/db/models/sql/query.py,U,True,adds_branch_or_exception,7,0,False,False,,0.17,"+ 
+
++         lookup_class = lhs.get_lookup(name)
+
++         if lookup_class and getattr(lookup_class, 'can_use_as_transform', False):
+
++             return LookupExpression(lhs, lookup_class, getattr(lookup_class, 'default_rhs', None))
+
++ 
+
++         output_field = lhs.output_field.__class__
+
++         suggested_lookups = difflib.get_close_matches(name, output_field.get_lookups())
+
++         if suggested_lookups:
+
++             suggestion = ', perhaps you meant %s?' % ' or '.join(suggested_lookups)
+",,,,
+116,django__django-14500,20260217_mini-v2.0.0_gpt-5-2-high,True,u01,django/db/migrations/executor.py,U,True,comment_or_docstring,5,1,True,True,4.0,0.142,"-         # For replacement migrations, record individual statuses
+
++         # For replacement migrations, record individual statuses.
+
++         #
+
++         # Squashed migrations may also have been recorded as applied in
+
++         # django_migrations (e.g. by check_replacements()). When reversing a
+
++         # squashed migration, ensure its own record is removed as well.
+",,,,
+117,django__django-14053,20260217_mini-v2.0.0_deepseek-3-2-high,True,u05,django/contrib/staticfiles/storage.py,U,True,whitespace,0,0,True,True,19.0,0.0,"+ 
+",,,,
+118,django__django-13933,20260217_mini-v2.0.0_gemini-3-pro-high,True,u01,django/forms/models.py,U,True,comment_or_docstring,1,1,True,True,96.0,0.409,"-         'invalid_choice': _('Select a valid choice. That choice is not one of'
+
++         'invalid_choice': _('Select a valid choice. %(value)s is not one of'
+",,,,
+119,django__django-12039,20260217_mini-v2.0.0_deepseek-3-2-high,True,u05,django/db/backends/ddl_references.py,U,True,adds_branch_or_exception,3,1,True,True,29.0,0.437,"-                 pass
+
++                 suffix = ''
+
++             if suffix:
+
++                 col = '{} {}'.format(col, suffix)
+",,,,
+120,sympy__sympy-13877,20260217_mini-v2.0.0_gpt-5-2-high,True,u15,sympy/tensor/array/arrayop.py,U,True,other_code,1,1,False,False,,0.225,"-     array_types = (collections.Iterable, MatrixBase, NDimArray)
+
++     array_types = (collections.abc.Iterable, MatrixBase, NDimArray)
+",,,,
+121,sympy__sympy-14531,20260217_mini-v2.0.0_claude-4-6-opus,True,u01,sympy/printing/str.py,U,True,other_code,1,1,True,True,130.0,0.761,"-         return '%s(%s)' % (expr.func, expr.arg)
+
++         return '%s(%s)' % (self._print(expr.func), self._print(expr.arg))
+",,,,
+122,sympy__sympy-13091,gold,False,u15,sympy/core/numbers.py,U,True,other_code,1,1,True,True,26.0,0.522,"-             return other.__lt__(self)
+
++             return other.__le__(self)
+",,,,
+123,sympy__sympy-13031,20260217_mini-v2.0.0_gpt-5-2-high,True,u07,sympy/plotting/plot.py,U,True,import,1,1,False,False,,0.129,"- from collections import Callable
+
++ from collections.abc import Callable
+",,,,
+124,sympy__sympy-16597,gold,False,u14,sympy/assumptions/ask_generated.py,U,True,other_code,5,5,True,False,,0.202,"-         Q.prime: set([Q.algebraic, Q.complex, Q.extended_real, Q.hermitian,
+
+-         Q.integer, Q.nonnegative, Q.nonzero, Q.positive, Q.prime,
+
+-         Q.rational, Q.real]),
+
+-         Q.rational: set([Q.algebraic, Q.complex, Q.extended_real, Q.hermitian,
+
+-         Q.rational, Q.real]),
+
++         Q.prime: set([Q.algebraic, Q.complex, Q.extended_real, Q.finite,
+
++         Q.hermitian, Q.integer, Q.nonnegative, Q.nonzero, Q.positive,
+
++         Q.prime, Q.rational, Q.real]),
+
++         Q.rational: set([Q.algebraic, Q.complex, Q.extended_real, Q.finite,
+
++         Q.hermitian, Q.rational, Q.real]),
+",,,,
+125,django__django-14631,20260217_mini-v2.0.0_gemini-3-pro-high,True,u05,django/forms/forms.py,U,True,other_code,1,1,True,True,2.0,0.727,"-                 value = self._field_data_value(field, self.add_prefix(name))
+
++                 value = bf.data
+",,,,
+126,sympy__sympy-15017,20260217_mini-v2.0.0_claude-4-6-opus,True,u04,sympy/tensor/array/sparse_ndim_array.py,U,True,other_code,1,1,False,False,,1.0,"-         self._loop_size = functools.reduce(lambda x,y: x*y, shape) if shape else 0
+
++         self._loop_size = functools.reduce(lambda x,y: x*y, shape, 1)
+",,,,
+127,django__django-12209,20260217_mini-v2.0.0_kimi-k2-5-high,True,u05,django/db/models/base.py,U,True,other_code,0,3,True,True,7.0,0.0,"-         if not pk_set and (force_update or update_fields):
+
+-             raise ValueError(""Cannot force an update in save() with no primary key."")
+
+-         updated = False
+",,,,
+128,sympy__sympy-13091,20260217_mini-v2.0.0_gpt-5-2-high,True,u32,sympy/core/numbers.py,U,True,other_code,1,1,True,True,485.0,0.467,"-             raise TypeError(""Invalid comparison %s > %s"" % (self, other))
+
++             return NotImplemented
+",,,,
+129,django__django-15128,gold,False,u03,django/db/models/sql/query.py,U,True,comment_or_docstring,3,0,True,True,33.0,0.189,"+         # If keys and values of change_map were to intersect, an alias might be
+
++         # updated twice (e.g. T4 -> T5, T5 -> T6, so also T4 -> T6) depending
+
++         # on their order in change_map.
+",,,,
+130,django__django-14631,20260217_mini-v2.0.0_claude-4-6-opus,True,u05,django/forms/forms.py,U,True,other_code,1,2,True,True,7.0,0.255,"-                     initial = self.get_initial_for_field(field, name)
+
+-                     value = field.clean(value, initial)
+
++                     value = field.clean(value, bf.initial)
+",,,,
+131,sympy__sympy-13091,gold,False,u40,sympy/polys/polyclasses.py,U,True,other_code,1,1,True,False,,0.541,"-         return F.__ge__(G)
+
++         return F >= G
+",,,,
+132,sympy__sympy-13877,20260217_mini-v2.0.0_gpt-5-2-high,True,u16,sympy/tensor/array/ndim_array.py,U,True,adds_branch_or_exception,1,1,False,False,,0.202,"-         if isinstance(value, (collections.Iterable, MatrixBase, NDimArray)):
+
++         if isinstance(value, (collections.abc.Iterable, MatrixBase, NDimArray)):
+",,,,
+133,django__django-15161,20260217_mini-v2.0.0_gpt-5-2-high,True,u05,django/db/models/expressions.py,U,True,other_code,1,0,True,True,41.0,0.904,"+ @deconstructible(path='django.db.models.ExpressionList')
+",,,,
+134,sympy__sympy-16792,gold,False,u02,sympy/utilities/codegen.py,U,True,other_code,0,1,True,True,8.0,0.0,"-                 dims = []
+",,,,
+135,django__django-13810,20260217_mini-v2.0.0_kimi-k2-5-high,True,u01,django/core/handlers/base.py,U,True,other_code,5,0,True,True,6.0,0.218,"+             # Save the current handler state before attempting to adapt it
+
++             # for this middleware. If MiddlewareNotUsed is raised, we need
+
++             # to restore these values to avoid ""poisoning"" the middleware chain.
+
++             old_handler = handler
+
++             old_handler_is_async = handler_is_async
+",,,,
+136,django__django-11138,20260217_mini-v2.0.0_claude-4-6-opus,True,u01,django/db/backends/mysql/operations.py,U,True,adds_branch_or_exception,4,2,True,False,,0.384,"-         if settings.USE_TZ:
+
+-             field_name = ""CONVERT_TZ(%s, 'UTC', '%s')"" % (field_name, tzname)
+
++         if settings.USE_TZ and tzname:
+
++             db_tz = self.connection.timezone_name
+
++             if db_tz != tzname:
+
++                 field_name = ""CONVERT_TZ(%s, '%s', '%s')"" % (field_name, db_tz, tzname)
+",,,,
+137,django__django-11532,20260217_mini-v2.0.0_gpt-5-2-high,True,u01,django/core/mail/message.py,U,True,import,1,1,True,False,,0.239,"- from django.core.mail.utils import DNS_NAME
+
++ from django.core.mail.utils import DNS_NAME, punycode
+",,,,
+138,django__django-11138,20260217_mini-v2.0.0_kimi-k2-5-high,True,u07,django/db/backends/sqlite3/base.py,U,True,other_code,2,2,True,True,7.0,0.985,"- def _sqlite_datetime_cast_time(dt, tzname):
+
+-     dt = _sqlite_datetime_parse(dt, tzname)
+
++ def _sqlite_datetime_cast_time(dt, tzname_source=None, tzname_target=None):
+
++     dt = _sqlite_datetime_parse(dt, tzname_source, tzname_target)
+",,,,
+139,sympy__sympy-13091,gold,False,u52,sympy/polys/rings.py,C,True,other_code,1,1,True,False,,1.0,"-         return not self.__eq__(other)
+
++         return not self == other
+",,,,
+140,django__django-13741,gold,False,u03,django/contrib/auth/forms.py,U,True,other_code,0,5,True,True,107.0,0.0,"-     def clean_password(self):
+
+-         # Regardless of what the user provides, return the initial value.
+
+-         # This is done here, rather than on the field, because the
+
+-         # field does not have access to the initial value
+
+-         return self.initial.get('password')
+
+- 
+",,,,
+141,sympy__sympy-19954,20260217_mini-v2.0.0_gemini-3-pro-high,True,u02,sympy/combinatorics/perm_groups.py,U,True,other_code,0,2,True,True,3.0,0.0,"-                 # remove non-minimal representative blocks
+
+-                 rep_blocks = [r for r in rep_blocks if r not in to_remove]
+",,,,
+142,sympy__sympy-14711,20260217_mini-v2.0.0_gpt-5-2-high,True,u07,sympy/core/expr.py,U,True,adds_branch_or_exception,5,1,False,False,,0.057,"- from collections import defaultdict, Iterable
+
++ try:
+
++     from collections.abc import Iterable
+
++ except ImportError:  # pragma: no cover
+
++     from collections import Iterable
+
++ from collections import defaultdict
+",,,,
+143,sympy__sympy-13647,20260217_mini-v2.0.0_gpt-5-2-high,True,u01,sympy/__init__.py,U,True,adds_branch_or_exception,16,0,False,False,,0.019,"+ # Compatibility: collections ABCs were moved to collections.abc in Python 3.3+
+
++ # and removed from collections in Python 3.10+. SymPy historically used
+
++ # the old location, so we alias the names when needed.
+
++ import collections as _collections
+
++ try:
+
++     import collections.abc as _collections_abc
+
++ except ImportError:  # pragma: no cover
+
++     _collections_abc = _collections
+
++ for _name in (
+
++     'Mapping', 'MutableMapping', 'Iterable', 'Callable',
+
++     'Sequence', 'MutableSequence', 'Set', 'MutableSet',
+
++     'KeysView', 'ItemsView', 'ValuesView',
+
++ ):
+
++     if not hasattr(_collections, _name) and hasattr(_collections_abc, _name):
+
++         setattr(_collections, _name, getattr(_collections_abc, _name))
+
++ del _collections, _collections_abc, _name
+
++ 
+",,,,
+144,django__django-14631,gold,False,u06,django/forms/forms.py,U,True,other_code,0,2,True,True,54.0,0.0,"-     def _field_data_value(self, field, html_name):
+
+-         return self._widget_data_value(field.widget, html_name)
+
+- 
+",,,,
+145,django__django-14007,20260217_mini-v2.0.0_kimi-k2-5-high,True,u03,django/db/models/query.py,U,True,adds_branch_or_exception,4,0,False,False,,0.858,"+                         if result is not None:
+
++                             converters = field.get_db_converters(connection)
+
++                             for converter in converters:
+
++                                 result = converter(result, None, connection)
+",,,,
+146,django__django-14404,gold,False,u01,django/contrib/admin/sites.py,U,True,other_code,0,1,True,True,7.0,0.0,"-             path = '%s/' % request.path_info
+",,,,
+147,sympy__sympy-13091,20260217_mini-v2.0.0_claude-4-6-opus,True,u41,sympy/core/numbers.py,U,True,adds_branch_or_exception,1,1,True,True,1109.0,0.365,"-         return other is not S.NaN
+
++         return (other is not S.NaN) if isinstance(other, Expr) else NotImplemented
+",,,,
+148,sympy__sympy-14531,gold,False,u04,sympy/printing/str.py,U,True,other_code,1,1,True,True,9.0,0.634,"-             return ""Lambda((%s), %s)"" % (arg_string, expr)
+
++             return ""Lambda((%s), %s)"" % (arg_string, self._print(expr))
+",,,,
+149,django__django-14376,20260217_mini-v2.0.0_deepseek-3-2-high,True,u02,django/db/backends/mysql/base.py,U,True,other_code,1,1,True,False,,0.28,"-             kwargs['passwd'] = settings_dict['PASSWORD']
+
++             kwargs['password'] = settings_dict['PASSWORD']
+",,,,
+150,django__django-12039,20260217_mini-v2.0.0_kimi-k2-5-high,True,u04,django/db/backends/ddl_references.py,U,True,adds_branch_or_exception,4,1,True,True,26.0,0.604,"-             col = '{} {}'.format(self.quote_name(column), self.opclasses[idx])
+
++             col = self.quote_name(column)
+
++             opclass = self.opclasses[idx]
+
++             if opclass:
+
++                 col = '{} {}'.format(col, opclass)
+",,,,
+151,django__django-13344,gold,False,u05,django/middleware/cache.py,U,True,other_code,0,1,True,True,4.0,0.0,"-         self.get_response = get_response
+",,,,
+152,sympy__sympy-20801,20260217_mini-v2.0.0_deepseek-3-2-high,True,u01,sympy/core/numbers.py,U,True,adds_branch_or_exception,3,0,True,True,4.0,0.0,"+         # Handle Python bool before sympification
+
++         if isinstance(other, bool):
+
++             other = int(other)
+",,,,

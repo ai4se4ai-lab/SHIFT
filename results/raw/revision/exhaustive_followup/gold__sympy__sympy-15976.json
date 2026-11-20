@@ -1,0 +1,53 @@
+{
+ "record": "gold__sympy__sympy-15976",
+ "witness": [
+  "u03",
+  "u04",
+  "u05"
+ ],
+ "executed": [
+  {
+   "cfg": [
+    "u02",
+    "u03"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 1.11
+  },
+  {
+   "cfg": [
+    "u02",
+    "u04"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 0.66
+  },
+  {
+   "cfg": [
+    "u02",
+    "u05"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 0.66
+  },
+  {
+   "cfg": [
+    "u03",
+    "u04",
+    "u05"
+   ],
+   "is_witness_recheck": true,
+   "outcome": "valid",
+   "sec": 0.72
+  }
+ ],
+ "started_utc": "2026-11-19T01:33:19Z",
+ "n_smaller_executed": 3,
+ "smaller_valid": [],
+ "smaller_error": [],
+ "witness_recheck": "valid",
+ "certified_min_after_followup": true
+}

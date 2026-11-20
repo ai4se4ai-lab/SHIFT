@@ -1,0 +1,1 @@
+{"instance_id": "sympy__sympy-20916", "status": {"sympy/printing/tests/test_conventions.py:test_super_sub": "FAILED", "test_super_sub": "FAILED", "test_requires_partial": "PASSED"}, "seconds": 2.0, "timed_out": false, "utc": "2026-11-20T04:19:27Z"}

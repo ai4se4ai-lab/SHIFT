@@ -16,14 +16,16 @@ from shift.hypotheses.prompts import parse_answer
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def load(tag: str, prompts: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
+def load(tag: str, prompts: Path, pattern: str | None = None) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """``pattern`` (relative to the repo root) overrides the HPC layout, e.g. the local
+    GB10 runs under results/raw/llm_local/full/*.jsonl (amendment A16)."""
     P = {}
     for l in open(prompts):
         p = json.loads(l)
         P[p["key"]] = p
     rows, gens = [], []
-    for f in sorted(ROOT.glob(f"hpc/fetched/*/outputs/{tag}/*.jsonl")):
-        site = f.parts[-4]
+    for f in sorted(ROOT.glob(pattern or f"hpc/fetched/*/outputs/{tag}/*.jsonl")):
+        site = "local" if pattern else f.parts[-4]
         for l in open(f):
             try:
                 r = json.loads(l)
@@ -54,9 +56,10 @@ def load(tag: str, prompts: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--tag", required=True)
+    ap.add_argument("--glob", default=None, help="read outputs from this repo-relative glob instead of hpc/fetched")
     ap.add_argument("--prompts", default=str(ROOT / "results/processed/llm_inputs/prompts.jsonl"))
     a = ap.parse_args(argv)
-    edits, gens = load(a.tag, Path(a.prompts))
+    edits, gens = load(a.tag, Path(a.prompts), a.glob)
     out = ROOT / "results/processed/llm"
     out.mkdir(parents=True, exist_ok=True)
     edits.to_csv(out / f"{a.tag}_edits.csv", index=False)

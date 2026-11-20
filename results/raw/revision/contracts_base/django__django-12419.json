@@ -1,0 +1,1 @@
+{"instance_id": "django__django-12419", "status": {"test_middleware_headers (project_template.test_settings.TestStartProjectSettings)": "FAILED", "test_middleware_headers": "FAILED"}, "seconds": 1.1, "timed_out": false, "utc": "2026-11-20T04:14:58Z"}

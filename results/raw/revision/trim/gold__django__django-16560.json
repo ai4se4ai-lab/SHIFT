@@ -1,0 +1,1 @@
+{"record": "gold__django__django-16560", "executed": [{"cfg": ["u01", "u02", "u03", "u04", "u05", "u06", "u07"], "outcome": "goal_fail", "sec": 1.07}, {"cfg": ["u08", "u09", "u10", "u11", "u12", "u13", "u14", "u15", "u16", "u17", "u18", "u19", "u20", "u21", "u22", "u23", "u24"], "outcome": "goal_fail", "sec": 1.07}]}

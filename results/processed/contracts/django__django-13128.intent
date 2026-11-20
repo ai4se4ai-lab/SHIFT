@@ -1,0 +1,30 @@
+intent django__django_13128 {
+  goal goal_1 {
+    test catalog.django__django_13128.goal_1
+  }
+  goal goal_2 {
+    test catalog.django__django_13128.goal_2
+  }
+  goal goal_3 {
+    test catalog.django__django_13128.goal_3
+  }
+  goal goal_4 {
+    test catalog.django__django_13128.goal_4
+  }
+  goal goal_5 {
+    test catalog.django__django_13128.goal_5
+  }
+  goal goal_6 {
+    test catalog.django__django_13128.goal_6
+  }
+  goal goal_7 {
+    test catalog.django__django_13128.goal_7
+  }
+  preserve existing_behavior {
+    tests catalog.django__django_13128.pass_to_pass
+  }
+  envelope import_rts top 6
+  evidence full_repeats 2
+  evidence counterfactual withdraw_and_reduce
+  note "Benchmark obligations for django__django-13128"
+}

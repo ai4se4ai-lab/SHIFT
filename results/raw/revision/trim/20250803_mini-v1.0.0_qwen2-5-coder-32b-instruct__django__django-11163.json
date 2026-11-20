@@ -1,0 +1,1 @@
+{"record": "20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct__django__django-11163", "executed": [{"cfg": ["u01", "u02", "u03", "u04"], "outcome": "valid", "sec": 1.31}, {"cfg": ["u01", "u02"], "outcome": "valid", "sec": 1.41}]}

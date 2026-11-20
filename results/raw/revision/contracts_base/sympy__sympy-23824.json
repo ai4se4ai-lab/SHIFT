@@ -1,0 +1,1 @@
+{"instance_id": "sympy__sympy-23824", "status": {"sympy/physics/hep/tests/test_gamma_matrices.py:test_kahane_simplify1": "FAILED", "test_kahane_algorithm": "PASSED", "test_kahane_simplify1": "FAILED", "test_gamma_matrix_class": "PASSED"}, "seconds": 5.3, "timed_out": false, "utc": "2026-11-20T04:19:49Z"}

@@ -184,3 +184,31 @@ def test_closed_one_minimality_property(seed):
     for u in d:
         rest = d - ({u} | (dependents_of(u, req) & d))
         assert not sess.valid(rest)
+
+
+def test_exhaustive_minimum_orders_by_closed_cardinality():
+    # Regression test for the v1 audit: u1 requires u3,u4,u5; {u3,u4,u5} is valid.
+    # The generator {u1,u2} closes to the full patch and must not be reported as minimum.
+    units = ["u1", "u2", "u3", "u4", "u5"]
+    req = {"u1": {"u3", "u4", "u5"}}
+    sess = Session(units, make_oracle([{"u3", "u4", "u5"}]), requires=req)
+    assert exhaustive_minimum(sess, units) == [frozenset({"u3", "u4", "u5"})]
+
+
+@pytest.mark.parametrize("seed", range(40))
+def test_exhaustive_minimum_is_minimum_over_closed_sets_with_requires(seed):
+    rnd = random.Random(1000 + seed)
+    units = [f"u{i}" for i in range(rnd.randint(2, 7))]
+    req = {}
+    for a in units:
+        if rnd.random() < 0.4:
+            others = [b for b in units if b != a]
+            req[a] = set(rnd.sample(others, rnd.randint(1, min(2, len(others)))))
+    needed = set(rnd.sample(units, rnd.randint(1, len(units))))
+    sess = Session(units, make_oracle([needed]), requires=req)
+    ex = exhaustive_minimum(sess, units)
+    closed_valid = [frozenset(c) for k in range(len(units) + 1) for c in itertools.combinations(units, k)
+                    if sess.close(c) == frozenset(c) and sess.valid(c)]
+    m = min(len(c) for c in closed_valid)
+    assert ex and all(len(c) == m for c in ex)
+    assert set(ex) == {c for c in closed_valid if len(c) == m}

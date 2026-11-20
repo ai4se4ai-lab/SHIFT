@@ -1,0 +1,15 @@
+intent django__django_11149 {
+  goal goal_1 {
+    test catalog.django__django_11149.goal_1
+  }
+  goal goal_2 {
+    test catalog.django__django_11149.goal_2
+  }
+  preserve existing_behavior {
+    tests catalog.django__django_11149.pass_to_pass
+  }
+  envelope import_rts top 6
+  evidence full_repeats 2
+  evidence counterfactual withdraw_and_reduce
+  note "Benchmark obligations for django__django-11149"
+}

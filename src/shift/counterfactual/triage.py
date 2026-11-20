@@ -146,11 +146,18 @@ def reduce_closed(sess: Session, d: Iterable[str]) -> list[str]:
 
 
 def exhaustive_minimum(sess: Session, units: list[str], max_units: int = 10) -> list[frozenset[str]] | None:
-    """All cardinality-minimum valid closed subsets (only for small patches)."""
+    """All cardinality-minimum valid closed subsets (only for small patches).
+
+    Enumerates *closed* configurations in order of their own cardinality. (Before the
+    v1 revision, generators were enumerated by pre-closure size, so a small generator
+    with a large closure could be returned before a smaller valid closed set was reached.)
+    """
     if len(units) > max_units:
         return None
     for k in range(0, len(units) + 1):
-        found = [sess.close(c) for c in itertools.combinations(units, k) if sess.valid(c)]
+        closed_k = [frozenset(c) for c in itertools.combinations(units, k)
+                    if sess.close(c) == frozenset(c)]
+        found = [c for c in closed_k if sess.valid(c)]
         if found:
             return sorted(set(found), key=lambda s: sorted(s))
     return []
@@ -202,3 +209,30 @@ def triage(sess: Session, repeats_full: int = 2, full_oracle: Evaluate | None = 
         else:
             labels[u] = "U"
     return TriageResult("ok", labels, loo, minimal, sess.oracle_calls, sess.precheck_rejections, anomalies)
+
+
+def trim_diff_only(sess: Session, groups: list[list[str]], fixpoint: bool = True) -> list[str]:
+    """Diff-only reimplementation of TRIM's search (Mathai et al., 2026), for comparison.
+
+    TRIM traverses edit groups at decreasing granularity in *reverse* order and keeps a
+    removal when the remaining patch still passes and is strictly smaller; TRIM-G repeats
+    each level to a fixpoint. Without agent trajectories, the coarse level is the edited
+    file (``groups``) and the fine level is the edit unit, both in diff order. No requires
+    closure and no syntax pre-check are applied (use a Session with use_closure=False and
+    precheck=None to match the original method). This is not the authors' implementation.
+    """
+    cur = [u for g in groups for u in g]
+    for level in (groups, [[u] for u in cur]):
+        changed = True
+        while changed:
+            changed = False
+            for g in reversed(level):
+                drop = [u for u in g if u in cur]
+                if not drop:
+                    continue
+                rest = [u for u in cur if u not in drop]
+                if sess.valid(rest):
+                    cur, changed = rest, fixpoint
+            if not fixpoint:
+                break
+    return cur

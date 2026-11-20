@@ -1,0 +1,80 @@
+{
+ "record": "20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-15976",
+ "witness": [
+  "u03",
+  "u04",
+  "u05"
+ ],
+ "executed": [
+  {
+   "cfg": [
+    "u02",
+    "u03"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 1.22
+  },
+  {
+   "cfg": [
+    "u02",
+    "u04"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 0.68
+  },
+  {
+   "cfg": [
+    "u02",
+    "u05"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 0.69
+  },
+  {
+   "cfg": [
+    "u02",
+    "u06"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 0.72
+  },
+  {
+   "cfg": [
+    "u03",
+    "u06"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 0.68
+  },
+  {
+   "cfg": [
+    "u04",
+    "u06"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 0.69
+  },
+  {
+   "cfg": [
+    "u03",
+    "u04",
+    "u05"
+   ],
+   "is_witness_recheck": true,
+   "outcome": "valid",
+   "sec": 0.66
+  }
+ ],
+ "started_utc": "2026-11-19T01:32:10Z",
+ "n_smaller_executed": 6,
+ "smaller_valid": [],
+ "smaller_error": [],
+ "witness_recheck": "valid",
+ "certified_min_after_followup": true
+}

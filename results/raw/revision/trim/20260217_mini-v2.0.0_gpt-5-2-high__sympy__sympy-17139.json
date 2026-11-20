@@ -1,0 +1,1 @@
+{"record": "20260217_mini-v2.0.0_gpt-5-2-high__sympy__sympy-17139", "executed": [{"cfg": ["u01", "u02", "u03", "u04", "u05"], "outcome": "valid", "sec": 46.42}, {"cfg": ["u01", "u02", "u03", "u04"], "outcome": "valid", "sec": 44.23}]}

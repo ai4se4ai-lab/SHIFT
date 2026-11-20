@@ -1,0 +1,27 @@
+intent sympy__sympy_21930 {
+  goal goal_1 {
+    test catalog.sympy__sympy_21930.goal_1
+  }
+  goal goal_2 {
+    test catalog.sympy__sympy_21930.goal_2
+  }
+  goal goal_3 {
+    test catalog.sympy__sympy_21930.goal_3
+  }
+  goal goal_4 {
+    test catalog.sympy__sympy_21930.goal_4
+  }
+  goal goal_5 {
+    test catalog.sympy__sympy_21930.goal_5
+  }
+  goal goal_6 {
+    test catalog.sympy__sympy_21930.goal_6
+  }
+  preserve existing_behavior {
+    tests catalog.sympy__sympy_21930.pass_to_pass
+  }
+  envelope import_rts top 6
+  evidence full_repeats 2
+  evidence counterfactual withdraw_and_reduce
+  note "Benchmark obligations for sympy__sympy-21930"
+}

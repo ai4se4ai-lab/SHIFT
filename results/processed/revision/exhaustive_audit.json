@@ -1,0 +1,63 @@
+{
+ "n_records": 1603,
+ "reported_equal_witness": 1598,
+ "reported_discrepant": [
+  {
+   "record": "20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-15976",
+   "n_units": 6,
+   "has_requires": true,
+   "witness_size": 3,
+   "reported_exhaustive_min": 5,
+   "smallest_observed_valid_closed": 3,
+   "n_smaller_unobserved": 6,
+   "certified_min": false
+  },
+  {
+   "record": "20260217_mini-v2.0.0_gemini-3-pro-high__sympy__sympy-19954",
+   "n_units": 3,
+   "has_requires": true,
+   "witness_size": 2,
+   "reported_exhaustive_min": 3,
+   "smallest_observed_valid_closed": 2,
+   "n_smaller_unobserved": 0,
+   "certified_min": true
+  },
+  {
+   "record": "20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-15976",
+   "n_units": 5,
+   "has_requires": true,
+   "witness_size": 3,
+   "reported_exhaustive_min": 5,
+   "smallest_observed_valid_closed": 3,
+   "n_smaller_unobserved": 0,
+   "certified_min": true
+  },
+  {
+   "record": "20260217_mini-v2.0.0_kimi-k2-5-high__sympy__sympy-19783",
+   "n_units": 4,
+   "has_requires": true,
+   "witness_size": 3,
+   "reported_exhaustive_min": 2,
+   "smallest_observed_valid_closed": 2,
+   "n_smaller_unobserved": 0,
+   "certified_min": false
+  },
+  {
+   "record": "gold__sympy__sympy-15976",
+   "n_units": 5,
+   "has_requires": true,
+   "witness_size": 3,
+   "reported_exhaustive_min": 5,
+   "smallest_observed_valid_closed": 3,
+   "n_smaller_unobserved": 3,
+   "certified_min": false
+  }
+ ],
+ "certified_min": 1595,
+ "not_certified": 8,
+ "smaller_valid_found": 1,
+ "not_certified_with_unobserved": 7,
+ "records_with_conflicting_outcomes": 0,
+ "not_certified_precheck": 0,
+ "witness_not_observed_valid": 0
+}

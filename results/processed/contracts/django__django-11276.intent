@@ -1,0 +1,87 @@
+intent django__django_11276 {
+  goal goal_1 {
+    test catalog.django__django_11276.goal_1
+  }
+  goal goal_2 {
+    test catalog.django__django_11276.goal_2
+  }
+  goal goal_3 {
+    test catalog.django__django_11276.goal_3
+  }
+  goal goal_4 {
+    test catalog.django__django_11276.goal_4
+  }
+  goal goal_5 {
+    test catalog.django__django_11276.goal_5
+  }
+  goal goal_6 {
+    test catalog.django__django_11276.goal_6
+  }
+  goal goal_7 {
+    test catalog.django__django_11276.goal_7
+  }
+  goal goal_8 {
+    test catalog.django__django_11276.goal_8
+  }
+  goal goal_9 {
+    test catalog.django__django_11276.goal_9
+  }
+  goal goal_10 {
+    test catalog.django__django_11276.goal_10
+  }
+  goal goal_11 {
+    test catalog.django__django_11276.goal_11
+  }
+  goal goal_12 {
+    test catalog.django__django_11276.goal_12
+  }
+  goal goal_13 {
+    test catalog.django__django_11276.goal_13
+  }
+  goal goal_14 {
+    test catalog.django__django_11276.goal_14
+  }
+  goal goal_15 {
+    test catalog.django__django_11276.goal_15
+  }
+  goal goal_16 {
+    test catalog.django__django_11276.goal_16
+  }
+  goal goal_17 {
+    test catalog.django__django_11276.goal_17
+  }
+  goal goal_18 {
+    test catalog.django__django_11276.goal_18
+  }
+  goal goal_19 {
+    test catalog.django__django_11276.goal_19
+  }
+  goal goal_20 {
+    test catalog.django__django_11276.goal_20
+  }
+  goal goal_21 {
+    test catalog.django__django_11276.goal_21
+  }
+  goal goal_22 {
+    test catalog.django__django_11276.goal_22
+  }
+  goal goal_23 {
+    test catalog.django__django_11276.goal_23
+  }
+  goal goal_24 {
+    test catalog.django__django_11276.goal_24
+  }
+  goal goal_25 {
+    test catalog.django__django_11276.goal_25
+  }
+  goal goal_26 {
+    test catalog.django__django_11276.goal_26
+  }
+  preserve existing_behavior {
+    tests catalog.django__django_11276.pass_to_pass
+  }
+  envelope import_rts top 6
+  evidence full_repeats 2
+  evidence counterfactual withdraw_and_reduce
+  note "Benchmark obligations for django__django-11276"
+}

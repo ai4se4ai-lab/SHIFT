@@ -1,0 +1,1 @@
+{"instance_id": "sympy__sympy-24443", "status": {"sympy/combinatorics/tests/test_homomorphisms.py:test_homomorphism": "FAILED", "test_homomorphism": "ERROR", "test_isomorphisms": "PASSED"}, "seconds": 2.2, "timed_out": false, "utc": "2026-11-20T04:19:48Z"}

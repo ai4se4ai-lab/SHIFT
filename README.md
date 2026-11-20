@@ -5,7 +5,7 @@ candidate patch it decides, by counterfactual execution against explicit goal an
 preservation test obligations, whether the edit is **N**ecessary, **J**ointly needed,
 **C**oupled, **U**nneeded, or **H**armful (via a dependency-selected preservation envelope).
 
-The accompanying manuscript (JSS) is `docs/JSS/main.tex` with `docs/JSS/references.bib`.
+The accompanying manuscript (JSS) is `docs/JSS/v1/main.tex` with `docs/JSS/v1/references.bib`; the v1 revision audit is in `docs/ledgers/v1-revision-report.md`.
 
 ## Repository layout
 
@@ -31,7 +31,7 @@ The accompanying manuscript (JSS) is `docs/JSS/main.tex` with `docs/JSS/referenc
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -e . pandas pyarrow scipy statsmodels unidiff pyyaml pytest swebench==4.0.4 defusedxml
-.venv/bin/python -m pytest -q                                   # 80 tests
+.venv/bin/python -m pytest -q                                   # 121 tests
 # data
 curl -L -o data/external/swebench_verified.parquet https://huggingface.co/api/datasets/princeton-nlp/SWE-bench_Verified/parquet/default/test/0.parquet
 .venv/bin/python -m shift.data.submissions                       # patches + reports (bash-only track)

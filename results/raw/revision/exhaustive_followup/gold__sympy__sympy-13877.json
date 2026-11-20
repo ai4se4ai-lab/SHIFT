@@ -1,0 +1,98 @@
+{
+ "record": "gold__sympy__sympy-13877",
+ "witness": [
+  "u01",
+  "u03",
+  "u05"
+ ],
+ "executed": [
+  {
+   "cfg": [
+    "u01",
+    "u06"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 6.07
+  },
+  {
+   "cfg": [
+    "u01",
+    "u07"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 5.62
+  },
+  {
+   "cfg": [
+    "u01",
+    "u08"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 3.44
+  },
+  {
+   "cfg": [
+    "u02",
+    "u06"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 5.66
+  },
+  {
+   "cfg": [
+    "u02",
+    "u07"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 5.68
+  },
+  {
+   "cfg": [
+    "u02",
+    "u08"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 3.46
+  },
+  {
+   "cfg": [
+    "u06",
+    "u07"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 5.63
+  },
+  {
+   "cfg": [
+    "u06",
+    "u08"
+   ],
+   "is_witness_recheck": false,
+   "outcome": "goal_fail",
+   "sec": 5.56
+  },
+  {
+   "cfg": [
+    "u01",
+    "u03",
+    "u05"
+   ],
+   "is_witness_recheck": true,
+   "outcome": "valid",
+   "sec": 5.58
+  }
+ ],
+ "started_utc": "2026-11-19T01:32:30Z",
+ "n_smaller_executed": 8,
+ "smaller_valid": [],
+ "smaller_error": [],
+ "witness_recheck": "valid",
+ "certified_min_after_followup": true
+}
