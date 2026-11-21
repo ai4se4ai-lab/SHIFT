@@ -63,3 +63,6 @@ Running / open
   (skips finished pairs; qwen3-coder and gpt-oss are complete). Then: `analysis/llm_judges.py --tag local
   --glob 'results/raw/llm_local/full/*.jsonl'`, `analysis/revision/local_judges.py`, add the Devstral row and
   name it in the v3 method text (Setup "Obligations and comparisons"), rebuild, commit.
+- 2026-11-21: devstral:24b complete (parse 99.8%): coverage 98.5%, precision .96, recall .27, F1 .42,
+  MCC .43 [.35,.50]. Highest single-row MCC but below mistral-small on the same seed (F1 .50, MCC .46);
+  best judge F1 still .44 (mistral-small, 3 seeds) -> H3 unchanged. All three A16 judges in v3 Table 3.
